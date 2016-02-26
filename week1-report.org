@@ -1,4 +1,4 @@
-* 2016-Feb-25
+* 2016-Feb-25-Thursday
 ** From 9:30 AM TO 12:30 PM :
   - As I came to know that VLEAD is completely using open source
     technologies. I took a very first step to install an Operating System on my
@@ -25,7 +25,7 @@
     see the OS kernel entries on grub list and I could see both the os's kernel
     list
  
-* 2016-Feb-26
+* 2016-Feb-26-Friday
 ** From 9:30 AM TO 12:30 PM :
   - I resumed my work on installing operating system. This time I tried to
     install Windows OS and on top of it I installed Ubuntu Machine.
