@@ -49,7 +49,7 @@
     + cat -  cat filename, cat > filename, cat >> filename.
     + chmod - chmod -R rwxrwxrwx file/foldername
 * 2016-Feb-27-Saturday
-** From 9:30 AM TO 5:00 PM :
+** From 9:30 AM TO 12:30 PM :
 I have gone through the =git= tutorial which is available at [[https://githowto.com/][here]] and learned some basic commands that includes following commands and also I read about difference between =git= tool and =github.com= , =bitbucket.com= and tried to create multiple repositories at =github.com= & =bitbucket.com= and executed the following commands and got know the uses of following commands
 + git config --global user.name "username"
 + git config --global user.email "emailid"
@@ -64,3 +64,5 @@ I have gone through the =git= tutorial which is available at [[https://githowto.
 + git status
 + git remote -v
 + git pull origin master
+** From 2:00 AM TO 05:30 PM :
+I have practised all the emacs shortcuts and got to know some basic =org-mode= template keywords. And prepared all the work logs using org-mode with emacs
