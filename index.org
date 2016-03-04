@@ -1,4 +1,5 @@
 * Introduction
+This repository contents all the work status reports in weekly wise and also I have explained all the concepts that I learnt with minimal explanation associated with examples. 
 * Work status reports
-** Week1
-** Week2
+** [[https://github.com/kraghupathi/work-reports/blob/master/week1-report.org][Week1]]
+** [[https://github.com/kraghupathi/work-reports/blob/master/week1-report.org][Week2]]
