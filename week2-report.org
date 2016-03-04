@@ -1,3 +1,22 @@
+* 2016-Feb-27-Saturday
+** From 9:30 AM TO 12:30 PM :
+I have gone through the =git= tutorial which is available at [[https://githowto.com/][here]] and learned some basic commands that includes following commands and also I read about difference between =git= tool and =github.com= , =bitbucket.com= and tried to create multiple repositories at =github.com= & =bitbucket.com= and executed the following commands and got know the uses of following commands
++ git config --global user.name "username"
++ git config --global user.email "emailid"
++ git config --global http.proxy http://proxy.iiit.ac.in:8080
++ git config --global https.proxy http://proxy.iiit.ac.in:8080
++ git init 
++ git add filename
++ git commit -m "commit message here"
++ git push origin master
++ git clone repo_url
++ git log
++ git status
++ git remote -v
++ git pull origin master
+** From 2:00 AM TO 05:30 PM :
+I have practised all the emacs shortcuts and got to know some basic =org-mode= template keywords. And prepared all the work logs using org-mode with emacs
+
 * 2016-Feb-29-Monday
 ** From 9:30 AM TO 05:30 PM :
 I have completed Regular Expressions concepts and took video lecture at [[http://sbarjatiya.com/website/video_tutorials/regular_expressions.ogv][www.sbarjatiya.com]] and done the assignments as well. Through which I came to learn the following commands
