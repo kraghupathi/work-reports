@@ -210,3 +210,136 @@ Read various online articles about shell script. And also completed 6 video lect
  
  
 
+
+* 2016-Feb-05-Satarday
+** From 9:30 AM TO 05:00 PM :
+ - I have practised shell commands and wrote a simple shell
+   script that will update and install php, httpd, mysql-server and
+   emacs. This script will also check status of http and mysql
+   services.
+ - Executed the script using command 
+#+begin_example
+sh filename.sh 
+#+end_example
+Script has the following code
+#+begin_example
+#!/bin/bash
+echo "############# WEL-COME ###############"
+#To update the system
+echo "############# Updating System........ ####################"
+yum -y update
+echo "############# Update is done........ ####################"
+
+echo "################ Installing php......... ###########"
+#To install the php
+yum -y install php
+if [ $? -eq 0 ]
+then
+    echo "Successfuly installed php"
+else
+    echo "Unable to installed php"
+    exit
+fi
+
+echo "################ Installing Mysql-server......... ###########"
+#To install the mysql-server
+yum -y install mysql-server
+if [ $? -eq 0 ]
+then
+    echo "Successfuly installed mysql-server"
+else
+    echo "Unable to install mysql-server"
+    exit
+fi
+
+#To start the mysql-server
+service mysql start
+if [ $? -eq 0 ]
+then
+    echo "Successfuly started mysql server"
+else
+    echo "Unable to start myql server"
+fi
+echo "################ Installing Apache-server......... ###########"
+#Installing the apache server
+yum install -y httpd
+if [ $? -eq 0 ]
+then
+    echo "Successfuly installed apache server"
+else
+ echo "Unable to install apache server"
+fi
+
+# To start the apache server
+service httpd start
+if [ $? -eq 0 ]
+then
+    echo "Successfuly started apache server"
+else
+    echo "Unable to start apache server"
+fi
+echo "################ Installing Emacs......... ###########"
+# To installing emacs
+yum install -y emacs
+if [ $? -eq 0 ]
+then 
+    echo "Successfuly installed emacs"
+else
+    echo "Unable to install emacs"
+fi
+echo "############# END - THANK YOU ################"
+exit
+
+#+end_example
+
+ - This script about create a folders, files and define a functions with passing arguments
+ - Executed the script using command 
+#+begin_example
+sh functions.sh 
+#+end_example
+Script has the following code
+#+begin_example
+#!/bin/bash
+echo "####################### WEL-COME ##########################"
+# To create a files from 1-10
+for i in {1..10}
+do
+    touch ~/file$i
+done
+
+# This Function is to print the arguments provide while function call.
+Hello () {
+    first_arg=$1
+    second_arg=$2
+    third_arg=$3
+    fourth_arg=$4
+    fifth_arg=$5
+    echo "Hello this is $first_arg $second_arg $third_arg $fourth_arg $fifth_arg"
+}
+# Function call to Hello with following arguments
+Hello raghu pathi my new script
+
+## To create a folder and file through function with specified argument
+create_folder () {
+    mkdir ~/$1
+    touch ~/$2
+}
+
+create_folder foldername filename 
+
+## To create a folders from 1-10 through function
+folder ()
+{
+    folder $1
+}
+for i in {1..10}
+do
+mkdir ~/folder$i
+done
+exit
+echo "######################### END-THANK YOU ###########################"
+#+end_example
+
+
+
+
