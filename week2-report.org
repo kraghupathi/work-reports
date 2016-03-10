@@ -134,10 +134,23 @@ cat filename | grep [a-z] (which is used to search word or number in a file)
    * Owner  - a single person who owns the file.
    * Group  - every file belongs to a single group.
    * Others - everyone else who is not in the group or the owner.
-
- - Read = 4
- - Write = 2
- - Execute = 1
+   
+ *** User rights/Permissions
+#+begin_example
+chmod rwxrwxrwx <filename>
+#+end_example
+    + The first set of three characters (rwx) is for the owner permissions.
+    + The second set of three characters (rwx) is for the Group permissions.
+    + The third set of three characters (rwx) is for the All Users permissions.
+    
+    + rwx = 111 in binary = 7
+    + rw- = 110 in binary = 6
+    + r-x = 101 in binary = 5
+    + r-- = 100 in binary = 4
+      and so on ...
+    + Read = 4
+    + Write = 2
+    + Execute = 1
 
 #+begin_example
 Syntax:- chmod <options> <mode> <files>
