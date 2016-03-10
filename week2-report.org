@@ -217,10 +217,11 @@ Read various online articles about shell script. And also completed 6 video lect
    script that will update and install php, httpd, mysql-server and
    emacs. This script will also check status of http and mysql
    services.
-** SCRIPT-I
+** SCRIPT-1
  - Executed the script using command 
 #+begin_example
-sh filename.sh 
+chmod +x filename.sh
+./install.sh 
 #+end_example
 Script has the following code
 #+begin_example
@@ -293,11 +294,12 @@ exit
 
 #+end_example
 
-** SCRIPT-II
+** SCRIPT-2
  - This script is about to create a folders, files based on functions using parameters
  - Executed the script using command 
 #+begin_example
-sh functions.sh 
+chmod +x function.sh
+./function.sh 
 #+end_example
 Script has the following code
 #+begin_example
