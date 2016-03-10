@@ -147,7 +147,7 @@ chmod rwxrwxrwx <filename>
     + rw- = 110 in binary = 6
     + r-x = 101 in binary = 5
     + r-- = 100 in binary = 4
-      and so on ...
+    - and so on ...
     + Read = 4
     + Write = 2
     + Execute = 1
