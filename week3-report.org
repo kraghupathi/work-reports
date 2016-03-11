@@ -1,1 +1,256 @@
+* 2016-Feb-07-Monday
+** From 10:00 AM TO 05:00 PM :
+ - Revised all the Centos commands and I have learned various package installation commands in =Centos= those are
+* Yum (yellowdog updater modified):
+ - YUM (Yellowdog Updater Modified) is an open source command-line as well as graphical based package management tool for RPM (RedHat Package Manager)
+   based Linux systems. which allows users and system administrator to easily install, update, remove or search software packages on a systems.
+ + yum -y install <package> (which is used to install software packages)
+#+begin_example
+yum -y install git
+#+end_example
+ + yum -y remove <package> (which is used to remove a sofware packages completely)
+#+begin_example
+yum -y remove git
+#+end_example
+ + yum -y update (which is used to updating a system)
+#+begin_example
+yum -y update
+#+end_example
+ + yum -y update <package> (which is used to updating a specific package)
+#+begin_example
+yum -y update firefox
+#+end_example
+ + yum list <package> (Use the list function to search for the specific package with name)
+#+begin_example
+yum list firefox
+#+end_example
+ + yum search <package> (which is used for search all the available packages to match the name of the package you specified)
+#+begin_example
+yum search firefox
+#+end_example
+ + yum info <package> (which is used to know information of a package)
+#+begin_example
+yum info firefox
+#+end_example
+ + yum check-update (which is used to check find how many of installed packages on your system have updates available)
+#+begin_example
+yum check-update
+#+end_example
+ + /etc/yum.repos.d/ directory (which is used to create YUM Repository configuration file)
+#+begin_example
+ emacs /etc/yum.repos.d/example.repo 
+#+end_example
+ + yum repolist (which is used to show a list of enabled yum repositories)
+#+begin_example
+yum repolist
+#+end_example
+ + wget <URL> (It is a command, which is free utility for non-interactive download of files from the Web.)
+#+begin_example
+wget http://ftp.gnu.org/gnu/wget/wget-1.5.3.tar.gz
+#+end_example
+ + rpm -ivh {rpm-file} (which is used to Install the rpm package)
+#+begin_example
+rpm -ivh pidgin-2.7.9-5.el6.2.i686.rpm
+#+end_example
 
+
+* 2016-Feb-08 Tuesday
+** From 10:00 AM TO 05:00 PM:
+ - I read about Virtualization techniques from online tutorials and various articles.Done the assignment as well.
+* Virtualization:
+ - Virtualization is a technology to run multiple same or different
+   Operating System, which is completely isolated from each other.
+   Which means separating hardware from a single operating system.
+** Virtualization Types
+ - Hardware Virtualization
+ - Operating-Sytem level Virtualization
+*** Hardware virtualization
+ - Hardware virtualization refers to taking the components of a real machine and making them virtual. 
+   This virtual machine works like the real machine and is usually a computer with an operating system. 
+ + Ex:= VMware ESX, MS Virtual Server, Xen and others.
+*** Operating-System Level Virtualization
+ - OS-level virtualization is in single os, where the OS kernel allows for multiple isolated user space instances
+ - good for server consolidation.
+ + Ex:= Chroot, Openvz, Jails
+** Features of Virtualization
+ + Reduce number of servers.
+ + Reduce Cost Ownership.
+ + Improve availability and business continuity.
+ + Increase efficiency for development and test environments.
+* Hypervisor:
+ - Hypervisor is a software layer sits between hardware and OSes which will interact with hardware and resourses and provide interface to share the available
+   to virtual containers.
+
+
+* 2016-Feb-09 Wednesday
+** From 9:30 AM TO 01:00 PM :
+ - Today I read about =Openvz=. Which is available at [[http://www.unixmen.com/install-and-configure-openvz-on-centos/][here]].And completed the tutorial.
+* Openvz:
+ - OpenVZ is a container-based virtualization solution for Linux. We can create ‘n’ number of Virtual machines depending upon the configuration of our physical system.
+   Each virtual machine will act like a separate standalone physical system, and doesn’t conflict with one another.
+   The virtual machines created using OpenVZ can be rebooted independently.
+** System Requirements:
+  + A Processor Intel or AMD PC
+  + Atleast 128MB of RAM
+  + Hard drives with atleast 4GB free disk space
+  + Atleast 1NICs
+  + Internet connection.
+** From 2:00 AM TO 06:00 PM :
+ - I have gone through =Openvz= tutorial and I have installed the *Openvz* using following commands
+** Install Openvz:
+   1. Add OpenVZ Repository
+   - Download OpenVZ Repository and put it in /etc/yum.repos.d/ directory.
+#+begin_example
+yum install wget
+wget -P /etc/yum.repos.d/ http://ftp.openvz.org/openvz.repo
+#+end_example
+   - Import OpenVZ GPG key:
+#+begin_example
+rpm --import http://ftp.openvz.org/RPM-GPG-Key-OpenVZ
+#+end_example
+   2.Install OpenVZ kernel
+#+begin_example
+yum install vzkernel
+#+end_example
+   3.Setting up Kernel parameters
+     Make sure you have added the following kernel parameters before logging into vz kernel.
+#+begin_example
+vi sysctl.conf
+#+end_example  
+   - Add the following lines:
+#+begin_example
+# On Hardware Node we generally need
+# packet forwarding enabled and proxy arp disabled
+net.ipv4.ip_forward = 1
+net.ipv6.conf.default.forwarding = 1
+net.ipv6.conf.all.forwarding = 1
+net.ipv4.conf.default.proxy_arp = 0
+# Enables source route verification
+net.ipv4.conf.all.rp_filter = 1
+# Enables the magic-sysrq key
+kernel.sysrq = 1
+# We do not want all our interfaces to send redirects
+net.ipv4.conf.default.send_redirects = 1
+net.ipv4.conf.all.send_redirects = 0
+#+end_example
+   4. Disable SELinux
+   - Edit /etc/sysconfig/selinux file:
+#+begin_example
+emacs /etc/sysconfig/selinux
+#+end_example
+   - Set as disabled:
+#+begin_example
+SELINUX=disabled
+#+end_example
+   5. Install OpenVz usage statistics tools
+   -  The following tools to be installed to gather the OpenVZ usage statistics. Here is the reason why you should install these tools.
+#+begin_example
+yum install vzctl vzquota ploop
+#+end_example
+   -  That’s it. We have successfully installed OpenVZ.
+
+
+* 2016-Feb-10 Thursday
+** From 9:00 AM TO 01:00 AM:
+ - I have gone through install Openvz and Creating Containers from online tutorial which is available at [[http://www.unixmen.com/how-to-create-openvz-container-in-openvz/][here]] .And done the tutorial.Here I have learned about container and creating containers using following commands those are
+* Container:
+ - The Virtual machines are known as Containers in OpenVZ.the main advantage of Containers is that they will share the resources of the physical machine dynamically.
+   That means, a particular amount of RAM or Disk space will not be allocated to any particular container.
+** Creating Containers in Openvz:
+ - The list of available pre-created templates availale [[ http://openvz.org/Download/template/precreated][here]] for dowbload centos minimal template
+ + vzctl (It is a command, which is used to manage containers)
+ + cd /vz/template/cache/ (which is the default directory to store the downloaded templates.)
+ + vzctl create 101 --ostemplate centos-7-x86_64-minimal (which is used to create the first virtual machine)
+ + 101 – Container ID (It typically starts from 100)
+ + Next, we have to setup the IP address to the Container, for example: 192.168.1.103.
+ + vzctl set 101 --ipadd 192.168.1.103 --save (which is used to set ip address)
+ + vzctl set 101 --nameserver 8.8.8.8 --save (which is used to assign DNS server)
+ + vzctl start 101 (To start container)
+ + vzctl enter 101 (Entering the container)
+
+** From 02:00 AM TO 06:00 PM:
+ - I read about basic commands of Opnenvz and practiced following commands those are 
+ + vzlist (It is a command, which is used to list the running vpss(virtual private service))
+#+begin_example
+vzlist
+#+end_example 
++ vzctl start CTID (which is used to start container)
+#+begin_example
+vzctl start 101
+#+end_example
+ + vzctl stop CTID (which is used to stop container)
+#+begin_example
+vzctl stop 101
+#+end_example
+ + vzctl status CTID (which is used to view the status of vpps)
+#+begin_example
+vzctl status 101
+#+end_example
+ + vzctl enter CTID (which is used to entering container)
+#+begin_example
+vzctl enter 101
+#+end_example
+ + vzctl set CTID --hostname New_hostname --save (Set hostname for a Server)
+#+begin_example
+vzctl set 101 --hostname raghu --save
+#+end_example
+ + vzctl set CTID --ipadd xx.xx.xx.xx --save (Set IP address)
+#+begin_example
+vzctl set 101 --ipadd 10.2.56.110 --save
+#+end_example
+ + vzctl set CTID --ipdel xx.xx.xx.xx --save (Delete IP address)
+#+begin_example
+vzctl set 101 --ipdel 10.2.56.110 --save
+#+end_example
+ + vzctl set CTID --nameserver xx.xx.xx.xx --save (Add name server)
+#+begin_example
+vzctl set 101 --nameserver 10.4.2.222 --save
+#+end_example
+ + vzctl set CTID --userpasswd root:new_password --save (Reset userpassword and rootpassword)
+#+begin_example
+vzctl set 101 --raghu root:xxxx --save
+#+end_example
+ + vzctl destroy CTID (Delete container)
+#+begin_example
+vzctl destroy 101
+#+end_example
+ + vzctl suspend CTID (suspended container)
+#+begin_example
+vzctl suspend 101
+#+end_example
+ + vzctl restart 101 (To Restart container)
+#+begin_example
+vzctl restart 101
+#+end_example
+ + vzyum 101 -y update (Updating system)
+#+begin_example
+vzctl 101 -y update
+#+end_example
+ + vzyum 101 -y install <package> (To intall package)
+#+begin_example
+vzyum 101 -y install firefox
+#+end_example
+ + vzctl set {ctid} --ram {ram} --swap {swap} --save (Set the ram size)
+#+begin_example
+vzctl set 101 --ram 1.2G --swap 10M --save
+#+end_example
+ + vzctl set 101 --diskspace <disksize> --save  (set diskspace)
+#+begin_example
+vzctl set 101 --diskspace 100G --save
+#+end_example
+ + vzctl set CTID --diskspace $SoftLimit$:$HardLimit$ --save
+#+begin_example
+vzctl set 101 --diskspace 10G:20G --save
+#+end_example
+ + vzctl exec 101 command (replace command with the command you need to execute)
+#+begin_example
+vzctl exec 101 df -h (replace command with the command you need to execute)
+#+end_example
+
+
+* 2016-Feb-11 Friday
+** From 9:30 AM TO 01:00 AM:
+- Revised Virtualization Techniques and Types of Virtualization so far whatever I have learned. And clarified various doubts with Sripathi this gave me lot of confidance
+  
+** From 02:00 PM TO 05:30 PM:
+- I have practised all the Openvz commands and created couple of containers in our physical computer.
