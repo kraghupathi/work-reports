@@ -1,6 +1,6 @@
 * 2016-Feb-07-Monday
 ** From 10:00 AM TO 05:00 PM :
- - Revised all the Centos commands and I have learned various package installation commands in =Centos= those are
+ - Revised all the Centos commands so far what I have learned, and I have learned various package installation commands in =Centos= those are
 * Yum (yellowdog updater modified):
  - YUM (Yellowdog Updater Modified) is an open source command-line as well as graphical based package management tool for RPM (RedHat Package Manager)
    based Linux systems. which allows users and system administrator to easily install, update, remove or search software packages on a systems.
@@ -56,7 +56,8 @@ rpm -ivh pidgin-2.7.9-5.el6.2.i686.rpm
 
 * 2016-Feb-08 Tuesday
 ** From 10:00 AM TO 05:00 PM:
- - I read about Virtualization techniques from online tutorials and various articles.Done the assignment as well.
+ As complete VLEAD architecture is running based on =virtualization= concepts. I took next step to learn about =virtualization= concepts especially =OpenVZ=.
+ - I have gone through the Virtualization techniques from online tutorials and various articles and exectued related commands to create virtual machines. Here I documented what I have learned so far about virtualization
 * Virtualization:
  - Virtualization is a technology to run multiple same or different
    Operating System, which is completely isolated from each other.
@@ -84,19 +85,19 @@ rpm -ivh pidgin-2.7.9-5.el6.2.i686.rpm
 
 * 2016-Feb-09 Wednesday
 ** From 9:30 AM TO 01:00 PM :
- - Today I read about =Openvz=. Which is available at [[http://www.unixmen.com/install-and-configure-openvz-on-centos/][here]].And completed the tutorial.
+ - Today I read about =Openvz= virtualization technology. Which is available at [[http://www.unixmen.com/install-and-configure-openvz-on-centos/][here]].And completed the tutorial.
 * Openvz:
  - OpenVZ is a container-based virtualization solution for Linux. We can create ‘n’ number of Virtual machines depending upon the configuration of our physical system.
    Each virtual machine will act like a separate standalone physical system, and doesn’t conflict with one another.
    The virtual machines created using OpenVZ can be rebooted independently.
-** System Requirements:
+** System Requirements for supporting OpenVZ virtualization
   + A Processor Intel or AMD PC
   + Atleast 128MB of RAM
   + Hard drives with atleast 4GB free disk space
-  + Atleast 1NICs
+  + Atleast 1 NIC
   + Internet connection.
 ** From 2:00 AM TO 06:00 PM :
- - I have gone through =Openvz= tutorial and I have installed the *Openvz* using following commands
+ - I have gone through =Openvz= installation steps and successfully installed the *Openvz* using following commands
 ** Install Openvz:
    1. Add OpenVZ Repository
    - Download OpenVZ Repository and put it in /etc/yum.repos.d/ directory.
@@ -152,7 +153,7 @@ yum install vzctl vzquota ploop
 
 * 2016-Feb-10 Thursday
 ** From 9:00 AM TO 01:00 AM:
- - I have gone through install Openvz and Creating Containers from online tutorial which is available at [[http://www.unixmen.com/how-to-create-openvz-container-in-openvz/][here]] .And done the tutorial.Here I have learned about container and creating containers using following commands those are
+ - I learned how tt create, delete, update the container details. I took online help from  [[http://www.unixmen.com/how-to-create-openvz-container-in-openvz/][here]] .  Here I have listed all the commands related to openVZ container.
 * Container:
  - The Virtual machines are known as Containers in OpenVZ.the main advantage of Containers is that they will share the resources of the physical machine dynamically.
    That means, a particular amount of RAM or Disk space will not be allocated to any particular container.
@@ -169,10 +170,10 @@ yum install vzctl vzquota ploop
  + vzctl enter 101 (Entering the container)
 
 ** From 02:00 AM TO 06:00 PM:
- - I read about basic commands of Opnenvz and practiced following commands those are 
+ - I practised the following commands in the second half.
  + vzlist (It is a command, which is used to list the running vpss(virtual private service))
 #+begin_example
-vzlist
+vzlist -a
 #+end_example 
 + vzctl start CTID (which is used to start container)
 #+begin_example
@@ -250,7 +251,7 @@ vzctl exec 101 df -h (replace command with the command you need to execute)
 
 * 2016-Feb-11 Friday
 ** From 9:30 AM TO 01:00 AM:
-- Revised Virtualization Techniques and Types of Virtualization so far whatever I have learned. And clarified various doubts with Sripathi this gave me lot of confidance
+- Revised concepts of all Virtualization Techniques and Types of Virtualization so far whatever I have learned. And clarified various doubts with Sripathi this gave me lot of confidance.
   
 ** From 02:00 PM TO 05:30 PM:
 - I have practised all the Openvz commands and created couple of containers in our physical computer.
