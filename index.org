@@ -3,3 +3,4 @@ This repository contents all the work status reports done by me in weekly wise a
 * Work status reports
 ** [[https://github.com/kraghupathi/work-reports/blob/master/week1-report.org][Week1]]
 ** [[https://github.com/kraghupathi/work-reports/blob/master/week2-report.org][Week2]]
+** [[https://github.com/kraghupathi/work-reports/blob/master/week3-report.org][Week3]]
