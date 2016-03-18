@@ -1,0 +1,371 @@
+* 2016-Feb-14-Monday
+** From 10:30 AM TO 12:30 PM :
+ - I came to attended Prof.Venkatesh meeting about Outreach-Portal
+** From 02:30 AM TO 04:30 PM :
+ - I have attended system meeting about Issues
+** From 04:30 AM TO 05:30 PM :
+ - I gone through =OpenVZ= and practised OpenVZ Commands using created Couple of Containers of our physical system
+
+* 2016-Feb-15 Tuesday
+** From 9:30 AM TO 01:00 PM :
+- I have practised all the Openvz commands and created couple of containers in our physical computer. Following Containers those are
+*** Container-1 (Fedora)
+ + vzctl create 102 --ostemplate fedora-20-x86_64
+ + Next, we have to setup the IP address to the Container.
+ + vzctl set 102 --ipadd 10.2.57.110 --save
+ + vzctl set 102 --nameserver 10.4.12.160 --save
+ + vzctl start 102
+ + vzctl enter 102
+- Here iam using SSH and SCP for remotely worked from Base machine to Virtual machine
+ + Syntax:- ssh <username>@<Domainname>
+#+begin_example
+ssh root@10.2.59.109 (which is used to connect from host machine to container)
+#+end_example
++ Syntax:- scp <username>@<domainname>:<sourcepath> <destinationpathi>
+#+begin_example
+scp root@10.2.59.109:</home/file1.txt> </home/> (which is used to copy from remote machine to local machine) 
+#+end_example
+ + Syntax:- scp <source:path> <username>@<hostname>:<destination> 
+#+begin_example
+scp /home/file.txt root@10.2.59.109:</home/file1.txt> (which is used to copy from hostmachine to remote machine) 
+#+end_example
+
+*** Container-2 (Ubuntu)
+ + vzctl create 103 --ostemplate ubuntu-15.10-x86_64
+ + Next, we have to setup the IP address to the Container.
+ + vzctl set 103 --ipadd 10.2.58.111 --save
+ + vzctl set 103 --nameserver 10.4.12.160 --save
+ + vzctl start 103
+ + vzctl enter 103
+- Here iam using SSH and SCP for remotely worked from Container-1 (i.e Fedora) to Container-2 (i.e Ubuntu)
+ + Syntax:- ssh <username>@<Domainname>
+#+begin_example
+ssh root@10.2.57.110 (which is used to connect from host machine to container)
+#+end_example
+ + Syntax:- scp <username>@<domainname>:<sourcepath> <destinationpathi>
+#+begin_example
+scp root@10.2.57.110:</home/file1.txt> </home/> (which is used to copy from remote machine to local machine) 
+#+end_example
+ + Syntax:- scp <source:path> <username>@<hostname>:<destination> 
+#+begin_example
+scp /home/file.txt root@10.2.57.110:</home/file1.txt> (which is used to copy from hostmachine to remote machine) 
+#+end_example
+
+** From 02:00 PM TO 06:00 PM:
+ - I have gone through the Virtualization techniques from online tutorials and read various articles, To Installed Virtual box in our physical system.
+* Hardware virtualization
+ - Hardware virtualization refers to taking the components of a real machine and making them virtual. This virtual machine works like the real machine and is usually a computer with an operating system.
+   Ex:= VMware ESX, MS Virtual Server, Xen and others.
+* Virtual Box:
+ - A VirtualBox is a software virtualization package that installs on an operating system as an application.
+   VirtualBox allows additional operating systems to be installed on it, as a Guest OS, and run in a virtual environment.
+** To Install VirtualBox using Various Commands
+ - I took online article is available at [[http://www.tecmint.com/install-virtualbox-on-redhat-centos-fedora/][here]].
+ - Add the VirtualBox own repository to install latest VirtualBox 5.0 on following systems.
+#+begin_example
+cd /etc/yum.repos.d/
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+#+end_example
+*** Install Dependency Packages for VirtualBox
+ - VirtualBox uses vboxdrv kernel module to control and allocate physical memory for execution of guest operating systems. Without this module,
+   you can still use the VirtualBox to create and configure virtual machines, but they will not work. So, to make VirtualBox fully functional
+   you will need to update your system first, then install some additional modules like DKMS, kernel-headers and kernel-devel and some dependency packages.
+#+begin_example
+yum update
+yum install binutils qt gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkm
+#+end_example
+*** Install VirtualBox 5.0
+ - Once you’ve installed all the needed dependency packages, you can install latest version of VirtualBox using following command.
+#+begin_example
+yum install VirtualBox-5.0
+#+end_example
+
+* 2016-Feb-16-Wednesday:
+** From 9:30 AM TO 11:00 AM :
+ - Today I have read about VLEAD and Virtual Labs from online is available at [[http://community.virtual-labs.ac.in/w/index.php/What_is_VLEAD%3F][here]] 
+* What is VLEAD?
+ - VLEAD (Virtual Labs Engineering and Architecture Division), based in IIIT-Hyderabad campus, is one of the several teams working on the =Virtual Labs= project.
+ - VLEAD’s mandate is to design and architect the implementation framework for Virtual Labs, providing all kinds of infrastructure support and services to lab 
+   developers.Of the twelve participating institutes of the project which includes IITs of Delhi, Bombay, Kanpur, Kharagpur, Madras, Guwhati, Roorkee, 
+   IIIT Hyderabad, NITK Surathkal, COE Pune, Dayalbagh Institute and Amrita Institute, VLEAD team from IIIT Hyderabad has taken the responsibility of being the 
+   Central Engineering Team in hosting the labs and providing infrastructure service and support to lab developers.
+* What is Virtual Labs project?
+ - Virtual Labs project is an initiative of the Ministry of Human Resource Development (MHRD), a Government of India sponsored project, under the 
+   National Mission on Education through Information and Communication Technology (NMEICT).
+ - The project’s goal is to provide quality Engineering and Science lab experience to all the students of the country with as minimum requirements as a 
+   computer system and an internet connection from the learners. 
+
+** From 11:00 AM TO 01:00 PM :
+ - I have worked with sripathi to explain about BASE1, BASE2, BASE3, BASE4, servers
+ - Base1:= Base1 is a server machine, which is used for staging server, It is used to test software or website. Which we installed Operating System is CentOS and OpenVZ used couple of containers installed of our physical system
+ - Base2:= Base2 is a server machine, Which is used for Production phase (Keep it running or using a websites), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
+ - Base3:=Base3 is a server machine, Which is used for Production phase (Keep it running or using a websites), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
+ - Base4:= Base4 is a server machine, Which is used to testing softwares or websites (i.e catch the errors and correct the errors), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
+ 
+** From 2:30 AM TO 06:00 PM :
+ - Today I gone through about Logwatch and Install Logwatch, configure, and taken articles from online is availble at [[https://devops.profitbricks.com/tutorials/install-and-configure-logwatch/][here]]
+* Logwatch:
+ - Logwatch is a simple log analysis tool provided with most Linux distributions. A daily scheduled cron job parses the various system logs and sends a
+   log summary to the root user or a defined destination email address.
+** Requirements
+ - Red Hat Enterprise Linux (RHEL) or Debian based distributions (CentOS, Fedora, Ubuntu, etc).
+*** Install logwatch:
+ - To install logwatch follow below command 
+#+begin_example
+yum install logwatch
+#+end_example
+*** Configure Logwatch:
+ - The email report will be delivered to the local root user by default. To specify an alternate email address, 
+   create a new file called =/etc/logwatch/conf/logwatch.conf= and add the following line.
+#+begin_example
+MailTo = user@example.com
+#+end_example
+ - The default log summary email will be in standard text format. The email format can be changed to HTML by setting the Format value in the same logwatch.conf file.
+#+begin_example
+Format = html
+#+end_example
+ - The email sender can be changed from Logwatch to another local user or email address by setting the MailFrom value.
+#+begin_example
+MailFrom = user@example.com
+#+end_example
+ - The summary includes a list of services that list can be found in the =/usr/share/logwatch/scripts/services/= directory. 
+   Those services can be excluded from the summary by prepending a hyphen to the Service name value.
+#+begin_example
+Service = All
+Service = "-ftpd-xferlog"
+#+end_example
+ - The service All value can also be replaced by a specific name if only that service log should be analyzed.
+ - Additional customizations to =logwatch.conf= can be found in the default global configuration file.
+#+begin_example
+/usr/share/logwatch/default.conf/logwatch.conf
+#+end_example
+ - The logwatch process can be run manually with a variety of parameters for testing purposes.
+#+begin_example
+/usr/sbin/logwatch --mailto user@example.com --format html --service secure
+#+end_example
+
+* 2016-Feb-17-Thursday:
+** From 9:30 AM TO 01:00 PM :
+ - I have read about KVM Virtual machine and Install, Configure on CentOS. I took various articles from online is availble at [[http://andyhan.linuxdict.com/index.php/sys-adm/item/265-install-and-configure-kvm-on-centos-65][here]]
+* KVM-(Kernel-Based Virtual Machine)
+ - KVM stands for Kernel-based virtual machine, It is a hardware virtualization and  which acts as a Type-II hypervisor that enables, emulates and provides for the
+   creation of virtual machines on operating systems. These machines are built on top of the Linux kernel, using operating systems such as Linux, Ubuntu and Fedora.
+ - It can supports multiple different guest operating system images including Linux Kernel, Windows, BSD and Solaris.
+ - It also allocates separate virtualized computing resources for each virtual machine such as the processor, storage, memory, etc.
+** Advantages of KVM:
+ + KVM is open source software
+ + Which can supports Hardware Virtualization features.
+ + Snapshots
+ + Sound support
+ + PXE boot
+ + Only supports fully virtualized VMs
+
+*** Install and configure KVM on CentOS 6.5
+ + Install KVM
+#+begin_example
+yum groupinstall Virtualization 'Virtualization Client'
+#+end_example
+ + Install Libvirt
+#+begin_example
+yum install libvirt
+service libvirtd start
+#+end_example
+ + Make sure KVM module installed
+#+begin_example
+lsmod | grep kvm
+kvm
+kvm_intel
+#+end_example
+ + Use virt-manager install Guest OS
+#+begin_example
+1). login to GUI
+2). open virt-manager,Add-connection,hypervisor choose QEMU/KVM,click connect。
+3). right click localhost(QEMU) choose New.
+#+end_example
+ + Configure Bridge Network.
+   KVM by default use NAT, your VM can not connect to outside.
+   We need to create a Bridged Network Card on KVM host and then let Virtual Machine use it.
+
+*** Network Address Translation (NAT) with libvirt
+ - One of the most common methods for sharing network connections is to use Network Address Translation (NAT) forwarding (also know as virtual networks).
+ - A NAT (Network Address Translation or Network Address Translator) is the virtualization of Internet Protocol (IP) addresses.
+   NAT helps improve security and decrease the number of IP addresses an organization needs.
+
+* QEMU:
+ - QEMU is a generic and open source machine emulator and virtualizer.
+ - When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC).
+   By using dynamic translation, it achieves very good performance.
+ - When used as a virtualizer, QEMU achieves near native performance by executing the guest code directly on the host CPU. QEMU supports virtualization when 
+   executing under the Xen hypervisor or using the KVM kernel module in Linux. When using KVM, QEMU can virtualize x86, server and embedded PowerPC, and S390 guests. 
+
+** From 02:30 AM TO 06:00 PM :
+ - I gone through KVM with Snapshot article and setup KVM Snapshot taken from online which is available at [[http://www.sbarjatiya.com/notes_wiki/index.php/Creating_KVM_VM_with_qcow2_disk_format_for_supporting_snapshots][here]]
+* KVM-Snapshot:
+ - A KVM Snapshot is a copy of the virtual machine's disk file (VMDK) at a given point in time. Snapshots provide a change log for the virtual disk and are used to
+   restore a VM to a particular point in time when a failure or system error occurs. Snapshots alone do not provide backup.
+ - A snapshot preserves (maintain in the original) the state and data of a virtual machine at a specific point in time.
+ - The state includes the virtual machine’s power state (for example, powered-on, powered-off, suspended).
+ - The data includes all of the files that make up the virtual machine. This includes disks, memory, and other devices, such as virtual network interface cards. 
+ - A virtual machine provides several operations for creating and managing snapshots and snapshot chains. These operations let you create snapshots, revert to any
+   snapshot in the chain, and remove snapshots. You can create extensive snapshot trees.
+
+* Creating KVM VM with qcow2 disk format for supporting snapshots:
+ - To create kvm VM with qcow2 disk format for supporting snapshots use:
+ 1. Create disk image for VM using something like: 
+#+begin_example
+qemu-img create -f qcow2 ubuntu.qcow2 50G
+#+end_example
+ 2. Create new VM with given disk image. Choose option to customize VM before install.
+  + In customization or setting window for Disk 1 change "Storage format" to qcow2. Without this change KVM will treat the file as 250KB raw image file.
+ 3. Install Operating System
+ 4. Shutdown the VM
+ 5. Take snapshot of fresh installation using: 
+ - syntax:= virsh snapshot-create-as <VMname> "Snapshot name" "Explain Snapshot something"
+#+begin_example
+virsh snapshot-create-as Ubuntu_desktop_12.04 "fresh-install" "Just installed ubuntu"
+#+end_example
+ 6. Start VM again. Now it would get started from fresh-install snapshot. To verify this use:
+- syntax:= visrh snapshot-info <VMname> --current  
+#+begin_example
+virsh snapshot-info Ubuntu_desktop_12.04 --current
+#+end_example
+ 7.To get list of all snaphosts use: 
+#+begin_example
+virsh snapshot-list Ubuntu_desktop_12.04
+#+end_example
+ 8. Now change something in running VM such as menu entries and shutdown the VM.
+ 9. Take snapshot of new VM with modified menu entries using: 
+#+begin_example
+virsh snapshot-create-as Ubuntu_desktop_12.04 "changed-menu" "Changed icons pinned to menu on left"
+#+end_example
+ 10. Get list of all snaphosts using: 
+#+begin_example
+virsh snapshot-list Ubuntu_desktop_12.04
+#+end_example
+ 11. Restore earlier snapshot using: 
+#+begin_example
+virsh snapshot-revert Ubuntu_desktop_12.04 fresh-install
+#+end_example
+ 12. Verify by starting VM that the menu entries as same as in case of fresh-install and all modifications done and saved as changed-menu snapshot are not available.
+ 13. Verify that running VM is using fresh-install snapshot using: 
+#+begin_example
+virsh snapshot-info Ubuntu_desktop_12.04 --current
+#+end_example
+ 14.  Note restoring "fresh-install" snapshot does not affects "changed-menu" snapshot which is still available for restoration. You can list all available
+      snapshots using: 
+#+begin_example
+virsh snapshot-list Ubuntu_desktop_12.04
+#+end_example
+ 15. To see snapshots in tree fashion to know relations between them use: 
+#+begin_example
+virsh snapshot-list Ubuntu_desktop_12.04 --tree
+#+end_example
+ 16. To delete an unwanted snapshot use: 
+#+begin_example
+virsh snapshot-delete Ubuntu_desktop_12.04 changed-menu
+#+end_example
+ 17. Again verify using snapshot-list that snapshot got deleted properly.
+ - Note that here we have created and restored all snapshots when VM was stopped. But snapshots can be created while VM is running to store 
+   complete state disk and RAM as part of snapshot. It is however recommended to create disk only snapshot for efficiency and reliability as long as possible. 
+
+* 2016-Feb-18-Friday:
+** From 9:30 AM TO 01:00 PM :
+  - Today I took Various web-servers and read various articles from online. And practised apache server (i.e service stop, start & restart) on CentOS.
+* Web server:
+ - A web server is an information technology that processes requests via HTTP, 
+   the basic network protocol used to distribute information on the World Wide Web.
+ - The server is a processes a request and sends a reply to client
+* Client Server:
+ - Cleint server is a machine in which is request a service from the server.
+* LAMPP:
+ - LAMPP is a free and open source Linux web server package,It consisting mainly of the Apache HTTP Server, 
+   MySQL database, and interpreters for scripts written in the PHP and Perl programming languages.
+ - It is used as a development tool, to allow website designers and programmers to test their work on their own computers without any access to the Internet. .
+* Apache Web server:
+ - Apache Web Server is an open source Web server for creation, deployment and management software.
+ - which is designed to create Web servers that have the ability to host one or more HTTP-based websites.
+ - It is also widely used by Web hosting companies for the purpose of providing shared/virtual hosting, as by default, 
+   Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
+* DNS-Server 
+ - Domain Name System (or Service or Server), an Internet service that translates domain names into IP addresses. Because domain names are alphabetic,
+   they're easier to remember. The Internet however, is really based on IP addresses. Every time you use a domain name, therefore,
+   a DNS service must translate the name into the corresponding IP address.
+#+begin_example
+The domain name www.example.com might translate to 198.105.232.4.
+#+end_example
+* DHCP(Dynamic Host Configuration Protocol):
+ - DHCP is a Network protocol that automatically provides an Internet Protocol (IP) host with its IP address.
+** Advantages of DHCP-Server:
+ - DHCP is useful for automatic configuration of client network interfaces. When configuring the client system, the administrator chooses DHCP instead of
+   specifying an IP address, netmask, gateway, or DNS servers. The client retrieves this information from the DHCP server. 
+ - There is no need to manually configure each client with an IP address.
+ - You don't need to keep a record of the IP addresses that you have assigned.
+ - You can automatically assign a new IP address if you move a client to a different subnet.
+
+** From 02:00 AM TO 06:00 PM :
+ - I took SSH-Server and with generated with key based authentication on linux server. This article taken from online is availble at [[ https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server][here]]
+* SSH-Server:
+ - Secure Shell, is a protocol used to securely log onto remote systems. It is the most common way to access remote Linux and Unix-like servers,
+   such as VPS instances.
+****** Syntax:= The tool on Linux for connecting to a remote system using SSH is called
+#+begin_example
+ssh remote_host
+#+end_example
+ - The remote_host in this example is the IP address or domain name that you are trying to connect to.
+ - This command assumes that your username on the remote system is the same as your username on your local system.
+ - If your username is different on the remote system, you can specify it by using this syntax:
+#+begin_example
+ssh remote_username@remote_host
+#+end_example
+ - Once you have connected to the server, you will probably be asked to verify your identity by providing a password.
+** Type the following yum command to install openssh client and server.
+#+begin_example
+yum -y install openssh-server openssh-clients
+#+end_example
+*** How Does SSH Work?
+ - SSH works by connecting a client program to an ssh server.
+ - In the above commands, ssh is the client program. The ssh server is already running on the remote_host that we specified.
+ - The process needed to start an ssh server depends on the distribution of Linux that you are using.
+ - You can start the ssh server on the VPS by typing:
+#+begin_example
+sudo service ssh start
+#+end_example
+ - That should start the sshd server and you can then log in remotely.
+*** How Does Key-based Authentication Work?
+ - Key-based authentication works by creating a pair of keys: a private key and a public key.
+ - The private key is located on the client machine and is secured and kept secret.
+ - The public key can be given to anyone or placed on any server you wish to access.
+ - When you attempt to connect using a key-pair, the server will use the public key to create a message for the client computer that can only be read with the private key.
+ - The client computer then sends the appropriate response back to the server and the server will know that the client is legitimate.
+ - This entire process is done in the background automatically after you set up keys.
+**** How To Create SSH Keys
+ - SSH keys should be generated on the computer you wish to log in from. This is usually your local computer.
+ - Enter the following into the command line:
+#+begin_example
+ssh-keygen
+#+end_example 
+ - Press enter to accept the defaults. Your keys will be created at ~/.ssh/id_rsa.pub and ~/.ssh/id_rsa.
+ - Change into the .ssh directory by typing:
+#+begin_example
+cd ~/.ssh
+#+end_example
+ - As you can see, the id_rsa file is readable and writable only to the owner. This is how it should be to keep it secret.
+ - The id_rsa.pub file, however, can be shared and has permissions appropriate for this activity.
+***** How To Transfer Your Public Key to the Server
+ - You can copy the public key to the remote server by issuing this command:
+#+begin_example
+ssh-copy-id remote_host
+#+end_example
+ - This will start an SSH session, which you will need to authenticate with your password.
+ - After you enter your password, it will copy your public key to the server's authorized keys file, which will allow you to log in without the password next time.
+
+*** Bridge
+ - A bridge is a device that separates two or more network segments within one logical network (e.g. a single IP-subnet). 
+ - Bridged networking allows the virtual interfaces to connect to the outside network through the physical interface, making them appear as normal
+   hosts to the rest of the network.
+ - It is sometimes useful to divide a network, such as an Ethernet segment, into network segments without having to create IP subnets and use a router to connect
+   the segments together. 
+ - The basic operation of a bridge is to join two or more network segments. There are many reasons to use a host-based bridge instead of networking equipment,
+   such as cabling constraints or firewalling. A bridge can also connect a wireless interface running in hostap mode to a wired network and act as an access point.
+ - A bridge can be used when firewall functionality (Network Security) is needed without routing or Network Address Translation (NAT).
+   
