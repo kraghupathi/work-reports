@@ -1,14 +1,14 @@
 * 2016-Feb-14-Monday
 ** From 10:30 AM TO 12:30 PM :
- - I came to attended Prof.Venkatesh meeting about Outreach-Portal
+ - I attended meeting with vlead staff and with Prof.Venkatesh regarding his visit to Pune. By which I just came to know that how virtual-labs project is carrying out by various people at different institutes (IIT'S and NIT's). And responsibilites of each of them. 
 ** From 02:30 AM TO 04:30 PM :
- - I have attended system meeting about Issues
+ - I have attended to system status meeting with all system team. Everty time when I attend system's meeting I am getting clear idea of using redmine and assiging tasks.
 ** From 04:30 AM TO 05:30 PM :
- - I gone through =OpenVZ= and practised OpenVZ Commands using created Couple of Containers of our physical system
+ - I gone through =OpenVZ= and practised OpenVZ Commands and created Couple of Containers with different flavours of Linux OS's on physical machine.
 
 * 2016-Feb-15 Tuesday
 ** From 9:30 AM TO 01:00 PM :
-- I have practised all the Openvz commands and created couple of containers in our physical computer. Following Containers those are
+- Containers that I have create are follows as
 *** Container-1 (Fedora)
  + vzctl create 102 --ostemplate fedora-20-x86_64
  + Next, we have to setup the IP address to the Container.
@@ -16,8 +16,8 @@
  + vzctl set 102 --nameserver 10.4.12.160 --save
  + vzctl start 102
  + vzctl enter 102
-- Here iam using SSH and SCP for remotely worked from Base machine to Virtual machine
- + Syntax:- ssh <username>@<Domainname>
+- Here for all the containers I have used SSH command to work with the containers from the host machine.
+ + Syntax:- ssh <username>@<Domainname>/<ip>
 #+begin_example
 ssh root@10.2.59.109 (which is used to connect from host machine to container)
 #+end_example
@@ -37,7 +37,7 @@ scp /home/file.txt root@10.2.59.109:</home/file1.txt> (which is used to copy fro
  + vzctl set 103 --nameserver 10.4.12.160 --save
  + vzctl start 103
  + vzctl enter 103
-- Here iam using SSH and SCP for remotely worked from Container-1 (i.e Fedora) to Container-2 (i.e Ubuntu)
+- Here also I have used SSH and SCP for working remotely on containers from base machine.
  + Syntax:- ssh <username>@<Domainname>
 #+begin_example
 ssh root@10.2.57.110 (which is used to connect from host machine to container)
@@ -52,7 +52,7 @@ scp /home/file.txt root@10.2.57.110:</home/file1.txt> (which is used to copy fro
 #+end_example
 
 ** From 02:00 PM TO 06:00 PM:
- - I have gone through the Virtualization techniques from online tutorials and read various articles, To Installed Virtual box in our physical system.
+ - I have gone through the Virtualization techniques from online tutorials and read various articles, To Installed Virtual box in my physical machine.
 * Hardware virtualization
  - Hardware virtualization refers to taking the components of a real machine and making them virtual. This virtual machine works like the real machine and is usually a computer with an operating system.
    Ex:= VMware ESX, MS Virtual Server, Xen and others.
@@ -84,9 +84,9 @@ yum install VirtualBox-5.0
 ** From 9:30 AM TO 11:00 AM :
  - Today I have read about VLEAD and Virtual Labs from online is available at [[http://community.virtual-labs.ac.in/w/index.php/What_is_VLEAD%3F][here]] 
 * What is VLEAD?
- - VLEAD (Virtual Labs Engineering and Architecture Division), based in IIIT-Hyderabad campus, is one of the several teams working on the =Virtual Labs= project.
+ - VLEAD (Virtual Labs Engineering and Architecture Division), is a centralized team which is located at IIIT-Hyderabad campus, which is responsible for giving engineering supoort for all the virtual-labs, this involves maintaining all the labs on servers, and deploying them on cloud...etc.
  - VLEAD’s mandate is to design and architect the implementation framework for Virtual Labs, providing all kinds of infrastructure support and services to lab 
-   developers.Of the twelve participating institutes of the project which includes IITs of Delhi, Bombay, Kanpur, Kharagpur, Madras, Guwhati, Roorkee, 
+   developers.Of the 12 participating institutes of the project which includes IITs of Delhi, Bombay, Kanpur, Kharagpur, Madras, Guwhati, Roorkee, 
    IIIT Hyderabad, NITK Surathkal, COE Pune, Dayalbagh Institute and Amrita Institute, VLEAD team from IIIT Hyderabad has taken the responsibility of being the 
    Central Engineering Team in hosting the labs and providing infrastructure service and support to lab developers.
 * What is Virtual Labs project?
@@ -96,14 +96,14 @@ yum install VirtualBox-5.0
    computer system and an internet connection from the learners. 
 
 ** From 11:00 AM TO 01:00 PM :
- - I have worked with sripathi to explain about BASE1, BASE2, BASE3, BASE4, servers
- - Base1:= Base1 is a server machine, which is used for staging server, It is used to test software or website. Which we installed Operating System is CentOS and OpenVZ used couple of containers installed of our physical system
- - Base2:= Base2 is a server machine, Which is used for Production phase (Keep it running or using a websites), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
- - Base3:=Base3 is a server machine, Which is used for Production phase (Keep it running or using a websites), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
- - Base4:= Base4 is a server machine, Which is used to testing softwares or websites (i.e catch the errors and correct the errors), Which we installed Operating is CentOS and OpenVZ used couple of containers installed of our physical system.
+ - Sripathi explained about VLEAD server and their purposes to me and Ashwin.
+ - Explaination includes about servers such as BASE1, BASE2, BASE3, BASE4 and other servers.
+ - Base1:= Base1 is a server machine, which is used for staging server, It is used to test labs and other websites. In which we installed Operating System is CentOS and configured with OpenVZ and KVM.(IP 10.4.12.21)
+ - Base2 & Base3 := These are the server machines which are configured same as Base1 configuration, Which is used for Production containers like proxy servers DNS Servers...etc.( FOR Base2 IP 10.4.12.22, Base3 IP 10.4.12.23)/
+ - Base4:= Base4 is a server machine, Which is used to testing labs or other websites this is also configured same as Base1..
  
 ** From 2:30 AM TO 06:00 PM :
- - Today I gone through about Logwatch and Install Logwatch, configure, and taken articles from online is availble at [[https://devops.profitbricks.com/tutorials/install-and-configure-logwatch/][here]]
+ - Today I worked with Sripathi and Ashwin Sripathi explained us about Logwatch and it's purpose and Installed the Logwatch, configured, and read articles from online is availble at [[https://devops.profitbricks.com/tutorials/install-and-configure-logwatch/][here]]
 * Logwatch:
  - Logwatch is a simple log analysis tool provided with most Linux distributions. A daily scheduled cron job parses the various system logs and sends a
    log summary to the root user or a defined destination email address.
