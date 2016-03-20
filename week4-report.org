@@ -146,7 +146,7 @@ Service = "-ftpd-xferlog"
 
 * 2016-Feb-17-Thursday:
 ** From 9:30 AM TO 01:00 PM :
- - I have read about KVM Virtual machine and Install, Configure on CentOS. I took various articles from online is availble at [[http://andyhan.linuxdict.com/index.php/sys-adm/item/265-install-and-configure-kvm-on-centos-65][here]]
+ - I have read about KVM Virtual machine and Installed, Configured on CentOS. I took various articles from online is availble at [[http://andyhan.linuxdict.com/index.php/sys-adm/item/265-install-and-configure-kvm-on-centos-65][here]]
 * KVM-(Kernel-Based Virtual Machine)
  - KVM stands for Kernel-based virtual machine, It is a hardware virtualization and  which acts as a Type-II hypervisor that enables, emulates and provides for the
    creation of virtual machines on operating systems. These machines are built on top of the Linux kernel, using operating systems such as Linux, Ubuntu and Fedora.
@@ -309,7 +309,7 @@ The above command will give the ip address associated with =www.example.com= usi
  - You can automatically assign a new IP address if you move a client to a different subnet.
 
 ** From 02:00 AM TO 06:00 PM :
- - I took SSH-Server and with generated with key based authentication on linux server. This article taken from online is availble at [[ https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server][here]]
+ - I learned about basics of SSH-Server and configured with keybased authentication on vaious containers and host machine. This article taken from online which is availble at [[ https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server][here]]
 * SSH-Server:
  - Secure Shell, is a protocol used to securely log onto remote systems. It is the most common way to access remote Linux and Unix-like servers,
    such as VPS instances.
