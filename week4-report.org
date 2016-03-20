@@ -375,3 +375,5 @@ ssh-copy-id remote_host
    such as cabling constraints or firewalling. A bridge can also connect a wireless interface running in hostap mode to a wired network and act as an access point.
  - A bridge can be used when firewall functionality (Network Security) is needed without routing or Network Address Translation (NAT).
    
+* Planning for next week:
+As per your suggestion I will configure each and every above mentioned servers in details.
