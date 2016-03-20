@@ -278,10 +278,10 @@ virsh snapshot-delete Ubuntu_desktop_12.04 changed-menu
  - Cleint is a machine in which request a service from the server.
 * XAMPP:
 XAMPP is available with various distributions depends upon the OS.
-LAMP : For Linux
-WAMP : For Windows
-MAMP  : For MAC OS
- - LAMPP is a free and open source Linux web server tool kit package, It consisting of the Apache HTTP Server, 
+- LAMP : For Linux
+- WAMP : For Windows
+- MAMP  : For MAC OS
+ - LAMP is a free and open source Linux web server tool kit package, It consisting of the Apache HTTP Server, 
    MySQL database, and interpreters for scripts written in the PHP and Perl programming languages.
   
  - It is used as a development tool, to allow website designers and programmers to test their work on their own computers without any access to the Internet. .
