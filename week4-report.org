@@ -155,9 +155,8 @@ Service = "-ftpd-xferlog"
 ** Advantages of KVM:
  + KVM is open source software
  + Which can supports Hardware Virtualization features.
- + Snapshots
- + Sound support
- + PXE boot
+ + Allows us to create Snapshots
+ + It supports support sound and PXE boot
  + Only supports fully virtualized VMs
 
 *** Install and configure KVM on CentOS 6.5
