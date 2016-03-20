@@ -175,15 +175,15 @@ lsmod | grep kvm
 kvm
 kvm_intel
 #+end_example
- + Use virt-manager install Guest OS
+ + Use virt-manager to create Guest OS's
 #+begin_example
-1). login to GUI
-2). open virt-manager,Add-connection,hypervisor choose QEMU/KVM,click connect。
-3). right click localhost(QEMU) choose New.
+virt-manager
 #+end_example
- + Configure Bridge Network.
-   KVM by default use NAT, your VM can not connect to outside.
-   We need to create a Bridged Network Card on KVM host and then let Virtual Machine use it.
++ Use create web interface to create GUEST operation systems.
+
+ + Configure NAT Network.
+   KVM by default use NAT, by which your VM can not be in the same network as host machine. To achieve that 
+   We need to create a Bridged Network Card on KVM host and then our Virtual Machine will be in same network as host machine.
 
 *** Network Address Translation (NAT) with libvirt
  - One of the most common methods for sharing network connections is to use Network Address Translation (NAT) forwarding (also know as virtual networks).
@@ -198,7 +198,7 @@ kvm_intel
    executing under the Xen hypervisor or using the KVM kernel module in Linux. When using KVM, QEMU can virtualize x86, server and embedded PowerPC, and S390 guests. 
 
 ** From 02:30 AM TO 06:00 PM :
- - I gone through KVM with Snapshot article and setup KVM Snapshot taken from online which is available at [[http://www.sbarjatiya.com/notes_wiki/index.php/Creating_KVM_VM_with_qcow2_disk_format_for_supporting_snapshots][here]]
+ - I gone through KVM with Snapshot creation and setup few KVM Snapshots followed article from [[http://www.sbarjatiya.com/notes_wiki/index.php/Creating_KVM_VM_with_qcow2_disk_format_for_supporting_snapshots][here]]
 * KVM-Snapshot:
  - A KVM Snapshot is a copy of the virtual machine's disk file (VMDK) at a given point in time. Snapshots provide a change log for the virtual disk and are used to
    restore a VM to a particular point in time when a failure or system error occurs. Snapshots alone do not provide backup.
@@ -269,31 +269,38 @@ virsh snapshot-delete Ubuntu_desktop_12.04 changed-menu
 
 * 2016-Feb-18-Friday:
 ** From 9:30 AM TO 01:00 PM :
-  - Today I took Various web-servers and read various articles from online. And practised apache server (i.e service stop, start & restart) on CentOS.
-* Web server:
+  - Today I learned about basics of client-server architecture and read about few servers such as Apache (LAMP), DNS and DHCP, 
+* Web Server:
  - A web server is an information technology that processes requests via HTTP, 
    the basic network protocol used to distribute information on the World Wide Web.
- - The server is a processes a request and sends a reply to client
-* Client Server:
- - Cleint server is a machine in which is request a service from the server.
-* LAMPP:
- - LAMPP is a free and open source Linux web server package,It consisting mainly of the Apache HTTP Server, 
+ - The server is machine or programme that process the client request and send back the response.
+* Client:
+ - Cleint is a machine in which request a service from the server.
+* XAMPP:
+XAMPP is available with various distributions depends upon the OS.
+LAMP : For Linux
+WAMP : For Windows
+MAMP  : For MAC OS
+ - LAMPP is a free and open source Linux web server tool kit package, It consisting of the Apache HTTP Server, 
    MySQL database, and interpreters for scripts written in the PHP and Perl programming languages.
+  
  - It is used as a development tool, to allow website designers and programmers to test their work on their own computers without any access to the Internet. .
 * Apache Web server:
- - Apache Web Server is an open source Web server for creation, deployment and management software.
- - which is designed to create Web servers that have the ability to host one or more HTTP-based websites.
- - It is also widely used by Web hosting companies for the purpose of providing shared/virtual hosting, as by default, 
-   Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
+ - Apache Web Server is an open source Web server for creation, deployment and management web applications.
+ - Which is designed to host one or more Web applications,
+ - It is also widely used by Web server many  companies uses this server to host their internal web application by configuring shared/virtual hosting, as by default,    Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
 * DNS-Server 
  - Domain Name System (or Service or Server), an Internet service that translates domain names into IP addresses. Because domain names are alphabetic,
    they're easier to remember. The Internet however, is really based on IP addresses. Every time you use a domain name, therefore,
    a DNS service must translate the name into the corresponding IP address.
+   EX : - 
+   - To find the IP address of www.example.com. We use command as below
 #+begin_example
-The domain name www.example.com might translate to 198.105.232.4.
+nslookup www.example.com
 #+end_example
+The above command will give the ip address associated with =www.example.com= using DNS server.
 * DHCP(Dynamic Host Configuration Protocol):
- - DHCP is a Network protocol that automatically provides an Internet Protocol (IP) host with its IP address.
+ - DHCP is a Network protocol that automatically provides an Internet Protocol (IP), Netmask, Default gateway, DNS entries to the host.
 ** Advantages of DHCP-Server:
  - DHCP is useful for automatic configuration of client network interfaces. When configuring the client system, the administrator chooses DHCP instead of
    specifying an IP address, netmask, gateway, or DNS servers. The client retrieves this information from the DHCP server. 
