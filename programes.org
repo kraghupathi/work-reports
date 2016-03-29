@@ -1,0 +1,70 @@
+Check even or odd
+
+import java.util.Scanner;
+
+class OddOrEven
+{
+   public static void main(String args[])
+   {
+      int x;
+      System.out.println("Enter an integer to check if it is odd or even ");
+      Scanner in = new Scanner(System.in);
+      x = in.nextInt();
+
+      if ( x % 2 == 0 )
+         System.out.println("You entered an even number.");
+      else
+         System.out.println("You entered an odd number.");
+   }
+}
+
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter a: ");
+    scanf("%d", &a);
+    /* logic */
+    
+    if (a % 2 == 0) {
+        printf("The given number is EVEN
+        ");
+    }
+    else {
+        printf("The given number is ODD
+                ");
+    }
+    return 0;
+}
+
+LOOP:
+
+for (var i=0; i <= 9; i++){
+     document.write(i);
+
+  for (var m=0; m <= 9; m++){
+     document.write(i);
+    }
+}
+
+Prime Number:
+
+#include <stdio.h>  
+    main() {
+    
+      int n, i, c = 0;
+      printf("Enter any number n:");
+      scanf("%d", &n);
+      /*logic*/
+      for (i = 1; i <= n; i++) {
+          if (n % i == 0) {
+             c++;
+          }
+      }
+      if (c == 2) {
+        printf("n is a Prime number");
+      }
+      else {
+         printf("n is not a Prime number");
+      }
+      return 0;    
+    }  
