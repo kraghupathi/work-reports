@@ -1,4 +1,4 @@
-* 2016-Feb-21-Monday
+* 2016-March-21-Monday
 ** From 10:00 AM TO 05:30 PM :
 - Today I gone through basics of networking concepts and various protocols, I read about protocols from online taken various articles.
 * Network Topology:
@@ -90,7 +90,7 @@ ping www.google.com
 + DNS - 53
 + DHCP - 67
 
-* 2016-Feb-22-Tuesday
+* 2016-March-22-Tuesday
 ** From 09:30 AM TO 05:30 PM :
 - Today I learned about basics of client-server architecture and read about few servers such as Apache (LAMP), DNS, DHCP, SSH and Bridge. 
 * Server:
@@ -320,12 +320,12 @@ Ex:=     DEVICE=eth0
 - Note: Hardware address will be only available after adding the configuration files. The process is to first add the configuration without the hardware address,
   restart the service and later update it.
 
-* 2016-Feb-23-Wednesday
+* 2016-March-23-Wednesday
 ** From 09:30 AM TO 05:30 PM :
 - Today I gone through Bridge networking and Configured bridge on containers in OpenVZ. I have practised bridge networking concepts, created couple of containers
   and installed bridge and configured container using bridge.
 
-* 2016-Feb-25-Friday
+* 2016-March-25-Friday
 ** From 09:30 AM TO 05:30 PM :
 - Revised concepts of variuos web-servers such as Apache and SSH servers on CentOS. 
 * Apache Web server:
@@ -416,6 +416,6 @@ ssh-copy-id remote_host
  - This will start an SSH session, which you will need to authenticate with your password.
  - After you enter your password, it will copy your public key to the server's authorized keys file, which will allow you to log in without the password next time.
 
-* 2016-Feb-26-Satarday
+* 2016-March-26-Satarday
 ** From 10:30 AM TO 04:30 PM :
 - Revised concepts of all Virtualization Techniques and Various web-servers so far whatever I have learned.
