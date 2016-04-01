@@ -64,7 +64,7 @@ sed -e 's/aple/apple/g' filename (s indicates source, 'g' option after the last 
 sed -e 's/ornge*/orange/g' filename (* it indicates the all the charecters edit at once)
 #+end_example
  
-* 2016-Feb-01-Tuesday
+* 2016-March-01-Tuesday
 ** From 9:30 AM TO 12:30 PM :
   - I started taking online tutorials on FIND,TAIL and SORT Commands. And completed 3
     online tutorials and done the assignment as well. Through which I came to learn following commands
@@ -123,7 +123,7 @@ cat filename | sort (which is used to see the contents in a file and sorting lin
 cat filename | wc -l (which is used to see the contents in a file and count lines in a file)
 cat filename | grep [a-z] (which is used to search word or number in a file)
 #+end_example
-* 2016-Feb-02-Wednesday
+* 2016-March-02-Wednesday
 ** From 9:30 AM TO 12:30 PM :
  - I started taking online course on File Permissions. And completed 2
     video lectures and done the assignment as well. Through which I came to learn following commands
@@ -191,7 +191,7 @@ Syntax:- rsync [options] source:path user@host:destination:path (copy from local
  - Difference between two files in a directory, it copies the two files from source to destination, but next time,
    it copies only the changed files to the desination
 
-* 2016-Feb-03 Thursday
+* 2016-March-03 Thursday
 ** From 9:30 AM TO 11:30 AM:
 Worked with Yogesh and Sripathi about resolving issue which is related to the creating google drive shared and common folders in admin@vlabs.ac.in account. Through which I came to know few things
 - Use of redmine tool to solve the issues
@@ -205,7 +205,8 @@ Read various online articles about shell script. And also completed 6 video lect
  + for loop
  + while loop
  + Command line aruguments using $?, $#, $1,$2 variables
-* 2016-Feb-04 Friday
+ 
+* 2016-March-04 Friday
 ** From 9:30 AM TO 10:00 AM:
  I worked with Sripathi to configure git on Priya's laptop. 
 ** From 10:00 AM TO 12:30 AM:
@@ -219,10 +220,7 @@ Read various online articles about shell script. And also completed 6 video lect
 ** From 02:00 PM TO 05:30 PM:
  - Revised all the commands and concepts so far whatever I have learned. And clarified various doubts with Sripathi this gave me lot of confidance
  
- 
-
-
-* 2016-Feb-05-Satarday
+* 2016-March-05-Satarday
 ** From 9:30 AM TO 05:00 PM :
  - I have practised shell commands and wrote a simple shell
    script that will update and install php, httpd, mysql-server and
