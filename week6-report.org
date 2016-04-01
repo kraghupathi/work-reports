@@ -237,11 +237,7 @@ NETMASK=255.255.255.0
  + Python contains advanced programming features such as generators and list comprehensions.
  + Python's automatic memory management frees you from having to manually allocate and free memory in your code.
 * Why should you learn to write programs?
-- Writing programs (or programming) is a very creative and rewarding activity. You can write programs for many reasons, ranging from making your living to solving
-  a difficult, data analysis problem to having fun to helping someone else solve a problem. This book assumes that everyone needs to know how to program, and
-  that once you know how to program you will figure out what you want to do with your newfound skills.
-- We are surrounded in our daily lives with computers ranging from laptops to cell phones. We can think of these computers as our “personal assistants” who can take
-  care of many things on our behalf. 
+- Writing programs (or programming) is a very creative and rewarding activity. You can write programs for many reasons, ranging from making your living to solving a difficult, data analysis problem to having fun to helping someone else solve a problem. 
 * What is Program?:
 - The definition of a program at its most basic is a sequence of Python statements, that have been crafted to do something. Even our simple hello.py script is a pro-
   gram. It is a one-line program and is not particularly useful, but in the strictest definition, it is a Python program. It might be easiest to understand what a program is by thinking about a problem that a program might be built to solve,
