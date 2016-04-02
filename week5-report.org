@@ -125,7 +125,6 @@ XAMPP is available with various distributions depends upon the OS.
  * Ex := Ubuntu/Debian.
 #+begin_example
 sudo apt-get install apache2
-yum install httpd
 #+end_example
  * Ex := RHEL/CENTOS
 #+begin_example
@@ -369,7 +368,6 @@ NETMASK=255.0.0.0
  * Ex := Ubuntu/Debian.
 #+begin_example
 sudo apt-get install apache2
-yum install httpd
 #+end_example
  * Ex := RHEL/CENTOS
 #+begin_example
