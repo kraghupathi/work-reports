@@ -4,97 +4,100 @@
 * Network Topology:
 - Network topology is the arrangement of the various elements (links, nodes, etc.) of a computer network. 
   Essentially, it is the topological structure of a network and may be depicted physically or logically.
+ * EX := Bus Topology, Tree Topology, Ring, Topology, Star Topology.
 * Network:
-- Network can be defined as a group of computers and other services connected together to exchangble data.
+- Network can be defined as a group of computers and other services connected together to exchange data.
+ * Ex := LAN, WAN etc.
+* LAN(Local Area Network):
+- A LAN is a type of computer network in which networking facility is available in a small physical area (mostly in meters but very rarely in kilometers) probably in an office building, home and 
+  school etc. Each computer or device connected to the network is called a node.
+** Uses of LAN:
+-  LAN is useful for sharing resources like files, printers, games or other applications.
+** Examples of LAN:
+- A local area network may serve as few as two or three users (for example, in a home network) or as many hundreds of users. =Ethernet= and =Wi-Fi= are the two most commonly used LAN technologies.
+* WAN(Wired Area Network):
+- A wide area network, or WAN, occupies a very large area, such as an entire country or the entire world. A WAN can contain multiple smaller networks, such as LANs or MANs. 
+ * Ex := The Internet is the best-known example of a public WAN.
 * Protocol:
-- which is a rules and govern the communication between two computers connected by the network.
-  IP address port range from 0-255
+- A Protocol is a set of rules and govern the communication between two computers connected by the network.
+ * Ex := TCP/IP, HTTP and FTP etc.
 * Internet Protocol (IP):
-- IP address is a number, which is used to indicate the location of a computer.
+- Internet Protocol is a address, which is used to indicate the location of a computer or other device on a network using TCP/IP.
+- IP address port range from 0-255
 * IPV4:
 - IPv4 stands for Internet Protocol Version 4. which is 32-bit addressing space used as TCP/IP host addressing mechanism. 
+ * Ex := 69.72.169.241
+- The above ip-address is in the dotted decimal number format. An ip address is in the format of 4 sets of decimal numbers separated by dots. The decimal number in each and every set is in the range 0 to 255. 
+  Each and every set is called octet. So, there are 4 octets in an ip address.
 * IPV6:
-- IPv4 stands for Internet Protocol Version 4.which is 128-bit addressing space.
-* Public IP:
-- A public IP address is an IP address that can be accessed over the Internet. Like postal address used to deliver a postal mail to your home.
-- A public IP address is the globally unique IP address assigned to a computing device.
-** Public Addresses
-| 1.0.0.0      | 9.255.255.255   |
-| 11.x.x.x     | 126.255.255.255 |
-| 129.0.0.0    | 169.253.255.255 |
-| 169.255.0.0  | 172.15.255.255  |
-| 172.32.0.0   | 191.0.1.255     |
-| 192.0.3.0    | 192.88.98.255   |
-| 192.88.100.0 | 192.167.255.255 |
-| 192.169.0.0  | 198.17.255.255  |
-| 198.20.0.0   | 223.255.255.255 |
-
-* Private IP:
-- A private IP address is the address space allocated by InterNIC to allow organizations to create their own private network.
-* Private IP Range:
-+ CLASS A: from 10.0.0.0    to 10.255.255.255   
-+ CLASS B: from 172.16.0.0  to 172.31.255.255   
-+ CLASS C: from 192.168.0.0 to 192.168.255.255
-* Static IP:
-- Static IP is a fixed ip,it will not change
-* Dynamic IP:
-- Dynamic IP address is temporary and it will change over time.
+- IPv6 stands for Internet Protocol Version 6. which is 128-bit addressing space and IPV6 denoted by eight groups of hexadecimal quartets separated by colons in between them.
+ * Ex := 2001:cdba:0000:0000:0000:0000:3257:9652
+* IP address classes:
+- With an IPv4 IP address there are five classes of available IP ranges: Class A, Class B, Class C, Class D and Class E, while only A, B, and C are commonly used.
+  Each class allows for a range of valid IP addresses, shown in the following table.
+* Network Classes:
+| CLASS A |   1.0.0.1-126.255.255.254 |  For Internet communication          |
+| CLASS B | 128.1.0.1-191.255.255.254 |              ""                      |
+| CLASS C | 192.0.1.1-223.255.254.254 |              ""                      |
+| CLASS D | 224.0.0.0-239.255.255.255 | Reserved for Multicasting            |
+| CLASS E | 240.0.0.0-254.255.255.254 | used for researching and experiments |
 * FTP(File Transfer Protocol):
-- FTP is standard internet protocol, which is used to exchange files on the internet.
+- The File Transfer Protocol (FTP) is a standard network protocol, which is used to transfer computer files between a client and server on a computer network.
 * HTTP:
-- HTTP protocol for communication between web browsers and servers.
+- HTTP stands for Hypertext Transfer Protocol. It's the network protocol used to deliver virtually all files and other data (collectively called resources) on the World Wide Web.
+ * Ex := A browser is an HTTP client because it sends requests to an HTTP server (Web server), which then sends responses back to the client.
+   The standard (and default) port for HTTP servers to listen on is 80, though they can use any port. 
 * SMTP(Simple Mail Transfer Protocol):
 - SMTP stands for Simple Mail Transfer Protocol, which is generally used to send messages from a mail client to a mail server. 
 * URL(Uniform Resource Locator):
 - URL stands for Uniform Resource Locator, which is used to specify addresses on the World Wide Web.
+#+begin_example
+http://www.google.com
+#+end_example
 * TCP/IP (Transmission Control Protocol):
 - TCP/IP is the basic communication language or protocol of the Internet. 
 - It can also be used as a communications protocol in a private network
 * VPN(Virtual Private Network):
 - A Virtual Private Network (VPN) is a network technology that creates a secure network connection over a public network such as the Internet or a 
   private network owned by a service provider. And VPN can connect multiple sites over a large distance just like a Wide Area Network (WAN).
+* Gateway:
+- A gateway is a hardware device that acts as a "gate" between two networks. It may be a router, firewall, server, or other device that enables traffic to flow in and out of the network.
+- A router is an example of a gateway device. A router is a device that does routing, deciding where packets are sent to based on its IP address.
+* Netmask:
+- A netmask is a 32-bit number,that mask is used to divide an IP address into subnets and specify the network's available hosts.
+| CLASS A |     255.0.0.0 |
+| CLASS B |   255.255.0.0 |
+| CLASS C | 255.255.255.0 |
+* Public IP:
+- A public IP address is an IP address that can be accessed over the Internet. Like postal address used to deliver a postal mail to your home.
+- A public IP address is the globally unique IP address assigned to a computing device.
+ * Ex := 175.101.8.162
+* Private IP:
+- A private IP address is the address space allocated by InterNIC to allow organizations to create their own private network.
+ * Ex := 10.2.59.109
+* Static IP:
+- Static IP is a fixed ip,it will not change
+* Dynamic IP:
+- Dynamic IP address is temporary and it will change over time.
 * PING:
 - Ping is a networking utility program. Which is used for verification of IP connectivity.
 #+begin_example
 ping www.google.com
 #+end_example
-* Network Classes:
-+ CLASS A: from 0 to 127 for internet communication
-+ CLASS B: from 128 to 191 ""
-+ CLASS C: from 192 to 223 ""
-+ CLASS D: from 224 to 239 Reserved for Multicasting
-+ CLASS E: from 240 to 254 used for researching and experiments
-* LAN(Local Area Network):
-- LAN is a Local Area Network it covers buildings and or a set of closely related buildings.
-+ Ex:= Ethernet.
-* WAN(Wired Area Network):
-- WAN is a Wired Area Network it covers cities, towns and countries.
-+ Ex: ATM
-* Gateway:
-- A gateway is a data communication device, that joins together two different networks. In the most scenario an internal network with the internet.
-- A router is an example of a gateway device. A router is a device that does routing, deciding where packets are sent to based on its IP address.
-* Netmask:
-- A netmask is a 32-bit number,that mask is used to divide an IP address into subnets and specify the network's available hosts.
-+ CLASS A:255.0.0.0
-+ CLASS B:255.255.0.0
-+ CLASS C:255.255.255.0
 * Port:
 - which specifies the process in the machine
 - Port values range from 0-65535
 * Port Numbers for given following Protocols:
-+ SSH - 22
-+ HTTP - 80
-+ HTTPS- 443
-+ FTP - 20(for data) 21(for control)
-+ SMTP - 25
-+ DNS - 53
-+ DHCP - 67
-
+| SSH   |    22 |
+| HTTP  |    80 |
+| HTTPS |   443 |
+| FTP   | 20/21 |
+| SMTP  |    25 |
+| DNS   |    53 |
+| DHCP  |    67 |
 * 2016-March-22-Tuesday
 ** From 09:30 AM TO 05:30 PM :
 - Today I learned about basics of client-server architecture and read about few servers such as Apache (LAMP), DNS, DHCP, SSH and Bridge. 
-* Server:
-- server is a computer program that provides services to other computer programs (and their users) in the same or other computers.
 * Router:
 - Router is a device which is used to connect to the different network elements.
 * Switch:
