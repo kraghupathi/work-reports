@@ -184,6 +184,8 @@ The above command will give the ip address associated with =www.example.com= usi
 - Today I have practised bridge network, connected couple of containers interfaces and bridge, Setting Up Bridge for Private Network.
   And I have completed various articles from online which is available at [[https://github.com/vlead/ovpl/blob/master/docs/bridge-setup.org][here]]
 * Setting Up Bridge for Private Network
+- Seen below is the diagram of bridged network along with containers.
+https://github.com/kraghupathi/work-reports/blob/master/Bridge2.jpg
 ** Creating a bridge: 
 - Bridge is basically a file configured with essential settings which mentions the bridge name, boot protocol, on boot settings, type and if it is to be network manager controlled. Move to the network-scripts directory in /etc/sysconfig by following command:
 #+begin_example
