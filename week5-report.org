@@ -57,6 +57,17 @@
 | CLASS C | 192.0.1.1-223.255.254.254 |              Same as class A         |
 | CLASS D | 224.0.0.0-239.255.255.255 | Reserved for Multicasting            |
 | CLASS E | 240.0.0.0-254.255.255.254 | used for researching and experiments |
++ CLASS A 
+ - First 8 bits indicates Network
+ - Laster 24 bits indicates Host Address
++ CLASS B 
+ - First 16 bits indicates Network
+ - Laster 16 bits indicates Host Address
++ CLASS C 
+ - First 24 bits indicates Network
+ - Laster 8 bits indicates Host Addres
+
+
 * IPV6:
 - IPv6 stands for Internet Protocol Version 6. which uses 128-bits for address space and IPV6 denoted by eight groups of hexadecimal quartets separated by colons in between them.
  * Ex := 2001:cdba:0000:0000:0000:0000:3257:9652
