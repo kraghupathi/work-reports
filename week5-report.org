@@ -194,6 +194,7 @@ service httpd stop
 * Router:
 - Router is a device which is used to connect different network elements.
 Note :  I will implement router in coming week.
+* 2016-March-23-Wednesday
 * Setting Up Bridge to form a sample network.
 ** Introduction:
 - Here I explained about how to create a bridge on CentOS and how to form a sample network
