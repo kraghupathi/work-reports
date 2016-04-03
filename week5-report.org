@@ -124,12 +124,9 @@ ping www.google.com
 #+end_example
 * 2016-March-22-Tuesday
 ** From 09:30 AM TO 05:30 PM :
-- Today I have learned about client-server architecture and read about few
-  servers such as Apache (LAMP), DNS, DHCP, SSH and how software bridge works. 
-* Router:
-- Router is a device which is used to connect different network elements.
-* Switch:
-- Switch is a device which is used to connect the same network elements.
+- Today I have learned about hosting a website on apache server and various
+  network elements and also i learned setting up bridge network using openvz
+  containers.
 * Apache Web server:
 - Apache Web Server is an open source Web server for creation, deployment and management web applications.
 - Which is designed to host one or more Web applications,
@@ -182,6 +179,12 @@ service apache2 stop
 #+begin_example
 service httpd stop
 #+end_example
+* Router:
+- Router is a device which is used to connect different network elements.
+Note :  I will implement router in coming week.
+* Switch:
+- Switch is a device which is used to connect the same network elements.
+- Below Diagram explains simple network using switch.
 * Bridge:
 - Bridge is a device that connects two LANs and controls data flow between them.
 - Especially bridge is a store & forward device. During the connection of different LANs, it receives the frame from one LAN and transfer the same
