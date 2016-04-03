@@ -60,6 +60,17 @@
 * IPV6:
 - IPv6 stands for Internet Protocol Version 6. which uses 128-bits for address space and IPV6 denoted by eight groups of hexadecimal quartets separated by colons in between them.
  * Ex := 2001:cdba:0000:0000:0000:0000:3257:9652
+* Port:
+- which specifies the process in the machine
+- Port values range from 0-65535
+* Port Numbers for given following Protocols:
+| SSH   |    22 |
+| HTTP  |    80 |
+| HTTPS |   443 |
+| FTP   | 20/21 |
+| SMTP  |    25 |
+| DNS   |    53 |
+| DHCP  |    67 |
 * Protocol:
 - A Protocol is a set of rules which governs the communication between two
   computers which are connected by the network.
@@ -90,169 +101,87 @@
 - A Virtual Private Network (VPN) is a network technology that creates a secure network connection over a public network such as the Internet or a 
   private network owned by a service provider. And VPN can connect multiple sites over a large distance just like a Wide Area Network (WAN).
 * Gateway:
-- A gateway is a hardware device that acts as a "gate" between two networks. It may be a router, firewall, server, or other device that enables traffic to flow in and out of the network.
-- A router is an example of a gateway device. A router is a device that does routing, deciding where packets are sent to based on its IP address.
+- A gateway is a hardware device that acts as a "gate" between two networks. It
+  may be a router, firewall, server, or other device that enables traffic to
+  flow in and out of the network.
+- A router is an example of a gateway device. A router is a device that does
+  routing and decides where packets are sent to based on its IP address.
 * Netmask:
-- A netmask is a 32-bit number,that mask is used to divide an IP address into subnets and specify the network's available hosts.
+- A netmask is a 32-bit number which is used to define how many bit of an IP
+  address are related to hosts and network
+- Netmask is used to define subnets and specify the network's available hosts.
+- Netmask is used to identify the network address using binary operation with
+  an ip and netmask.
 | CLASS A |     255.0.0.0 |
 | CLASS B |   255.255.0.0 |
 | CLASS C | 255.255.255.0 |
 * PING:
-- Ping is a networking utility program. Which is used for verification of IP connectivity.
+- Ping is a networking utility program. Which is used for verification of IP
+  connectivity to the remote machine. This uses ICMP packets.
+- To check connection between your machine to google.com server we use below command.
 #+begin_example
 ping www.google.com
 #+end_example
-* Port:
-- which specifies the process in the machine
-- Port values range from 0-65535
-* Port Numbers for given following Protocols:
-| SSH   |    22 |
-| HTTP  |    80 |
-| HTTPS |   443 |
-| FTP   | 20/21 |
-| SMTP  |    25 |
-| DNS   |    53 |
-| DHCP  |    67 |
 * 2016-March-22-Tuesday
 ** From 09:30 AM TO 05:30 PM :
-- Today I learned about basics of client-server architecture and read about few servers such as Apache (LAMP), DNS, DHCP, SSH and Bridge. 
+- Today I have learned about client-server architecture and read about few
+  servers such as Apache (LAMP), DNS, DHCP, SSH and how software bridge works. 
 * Router:
-- Router is a device which is used to connect to the different network elements.
+- Router is a device which is used to connect different network elements.
 * Switch:
-- switch is a device which is used to connect the same network elements.
-* Web Server:
- - A web server is an information technology that processes requests via HTTP, 
-   the basic network protocol used to distribute information on the World Wide Web.
- - The server is machine or programme that process the client request and send back the response.
-* Client:
- - Cleint is a machine in which request a service from the server.
-* XAMPP:
-XAMPP is available with various distributions depends upon the OS.
-- LAMP : For Linux
-- WAMP : For Windows
-- MAMP  : For MAC OS
-- LAMP is a free and open source Linux web server tool kit package, It consisting of the Apache HTTP Server, 
-   MySQL database, and interpreters for scripts written in the PHP and Perl programming languages.
-- It is used as a development tool, to allow website designers and programmers to test their work on their own computers without any access to the Internet. .
+- Switch is a device which is used to connect the same network elements.
 * Apache Web server:
 - Apache Web Server is an open source Web server for creation, deployment and management web applications.
 - Which is designed to host one or more Web applications,
 - It is also widely used by Web server many companies uses this server to host their internal web applications by configuring shared/virtual hosting,
   as by default, Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
 + To install Apache-server on Linux, use the following command
- * Ex := Ubuntu/Debian.
+ * On Ubuntu/Debian.
 #+begin_example
 sudo apt-get install apache2
 #+end_example
- * Ex := RHEL/CENTOS
+ * On RHEL/CENTOS
 #+begin_example
 yum install httpd
 #+end_example
-** How to host a website?:
+** How to host a website on Apache Server?:
 1) To start the apache server, use the following command:
- * Ex := Ubuntu/Debian.
+ * On Ubuntu/Debian.
 #+begin_example
 service apache2 start
 #+end_example
- * Ex := RHEL/CENTOS
+ * On RHEL/CENTOS
 #+begin_example
 service httpd start
 #+end_example
-2) open browser and type =localhost= or =127.0.0.1= then, browser displays the default apache page. If the default page is not found, then restart the apache server by using the following command.
- * Ex := Ubuntu/Debian.
+2) To restart the server
+ * On Ubuntu/Debian.
 #+begin_example
 service apache2 restart
 #+end_example
- * Ex := RHEL/CENTOS
+ * On RHEL/CENTOS
 #+begin_example
 service httpd restart
 #+end_example
-3) create a sample html, js and css files and place them in a folder. 
-4) move the contents of the folder to  =/var/www/html= or =/var/www/=
-5) open browser and type =localhost/<file name> or 127.0.0.1/<file name>.
+3) Open web browser and type =localhost= or =127.0.0.1= then, browser displays
+   the default apache page. 
+4) Create a sample html, js and css files and place them in a folder.
+ 
+5) Move the contents of the folder to  =/var/www/html= or =/var/www/=. This is
+   the default web host server for apache server.
+6) Open browser and type =localhost/<file name> or 127.0.0.1/<file name>.
 #+begin_example
 localhost/example.html
 #+end_example
-6) To stop the apache server, use the following command:
- * Ex := Ubuntu/Debian.
+7) To stop the apache server, use the following command:
+ * On Ubuntu/Debian.
 #+begin_example
 service apache2 stop
 #+end_example
- * Ex := RHEL/CENTOS
+ * On RHEL/CENTOS
 #+begin_example
 service httpd stop
 #+end_example
-* DNS-Server 
- - Domain Name System (or Service or Server), an Internet service that translates domain names into IP addresses. Because domain names are alphabetic,
-   they're easier to remember. The Internet however, is really based on IP addresses. Every time you use a domain name, therefore,
-   a DNS service must translate the name into the corresponding IP address.
-   EX : - To find the IP address of www.example.com. We use command as below
-#+begin_example
-nslookup www.example.com
-#+end_example
-The above command will give the ip address associated with =www.example.com= using DNS server.
-* DHCP(Dynamic Host Configuration Protocol):
- - DHCP is a Network protocol that automatically provides an Internet Protocol (IP), Netmask, Default gateway, DNS entries to the host.
-** Advantages of DHCP-Server:
- - DHCP is useful for automatic configuration of client network interfaces. When configuring the client system, the administrator chooses DHCP instead of
-   specifying an IP address, netmask, gateway, or DNS servers. The client retrieves this information from the DHCP server. 
- - There is no need to manually configure each client with an IP address.
- - You don't need to keep a record of the IP addresses that you have assigned.
- - You can automatically assign a new IP address if you move a client to a different subnet.
-* SSH-Server:
- - Secure Shell, is a protocol used to securely log onto remote systems. It is the most common way to access remote Linux and Unix-like servers,
-   such as VPS instances.
-****** Syntax:= The tool on Linux for connecting to a remote system using SSH is called
-#+begin_example
-ssh remote_host
-#+end_example
- - The remote_host in this example is the IP address or domain name that you are trying to connect to.
- - This command assumes that your username on the remote system is the same as your username on your local system.
- - If your username is different on the remote system, you can specify it by using this syntax:
-#+begin_example
-ssh remote_username@remote_host
-#+end_example
- - Once you have connected to the server, you will probably be asked to verify your identity by providing a password.
-** Type the following yum command to install openssh client and server.
-#+begin_example
-yum -y install openssh-server openssh-clients
-#+end_example
-*** How Does SSH Work?
- - SSH works by connecting a client program to an ssh server.
- - In the above commands, ssh is the client program. The ssh server is already running on the remote_host that we specified.
- - The process needed to start an ssh server depends on the distribution of Linux that you are using.
- - You can start the ssh server on the VPS by typing:
-#+begin_example
-sudo service ssh start
-#+end_example
- - That should start the sshd server and you can then log in remotely.
-*** How Does Key-based Authentication Work?
- - Key-based authentication works by creating a pair of keys: a private key and a public key.
- - The private key is located on the client machine and is secured and kept secret.
- - The public key can be given to anyone or placed on any server you wish to access.
- - When you attempt to connect using a key-pair, the server will use the public key to create a message for the client computer that can only be read with the private key.
- - The client computer then sends the appropriate response back to the server and the server will know that the client is legitimate.
- - This entire process is done in the background automatically after you set up keys.
-**** How To Create SSH Keys
- - SSH keys should be generated on the computer you wish to log in from. This is usually your local computer.
- - Enter the following into the command line:
-#+begin_example
-ssh-keygen
-#+end_example 
- - Press enter to accept the defaults. Your keys will be created at ~/.ssh/id_rsa.pub and ~/.ssh/id_rsa.
- - Change into the .ssh directory by typing:
-#+begin_example
-cd ~/.ssh
-#+end_example
- - As you can see, the id_rsa file is readable and writable only to the owner. This is how it should be to keep it secret.
- - The id_rsa.pub file, however, can be shared and has permissions appropriate for this activity.
-***** How To Transfer Your Public Key to the Server
- - You can copy the public key to the remote server by issuing this command:
-#+begin_example
-ssh-copy-id remote_host
-#+end_example
- - This will start an SSH session, which you will need to authenticate with your password.
- - After you enter your password, it will copy your public key to the server's authorized keys file, which will allow you to log in without the password next time.
 * Bridge:
 - Bridge is a device that connects two LANs and controls data flow between them.
 - Especially bridge is a store & forward device. During the connection of different LANs, it receives the frame from one LAN and transfer the same
@@ -425,61 +354,6 @@ service apache2 stop
 #+begin_example
 service httpd stop
 #+end_example
-* SSH-Server:
- - Secure Shell, is a protocol used to securely log onto remote systems. It is the most common way to access remote Linux and Unix-like servers,
-   such as VPS instances.
-****** Syntax:= The tool on Linux for connecting to a remote system using SSH is called
-#+begin_example
-ssh remote_host
-#+end_example
- - The remote_host in this example is the IP address or domain name that you are trying to connect to.
- - This command assumes that your username on the remote system is the same as your username on your local system.
- - If your username is different on the remote system, you can specify it by using this syntax:
-#+begin_example
-ssh remote_username@remote_host
-#+end_example
- - Once you have connected to the server, you will probably be asked to verify your identity by providing a password.
-** Type the following yum command to install openssh client and server.
-#+begin_example
-yum -y install openssh-server openssh-clients
-#+end_example
-*** How Does SSH Work?
- - SSH works by connecting a client program to an ssh server.
- - In the above commands, ssh is the client program. The ssh server is already running on the remote_host that we specified.
- - The process needed to start an ssh server depends on the distribution of Linux that you are using.
- - You can start the ssh server on the VPS by typing:
-#+begin_example
-sudo service ssh start
-#+end_example
- - That should start the sshd server and you can then log in remotely.
-*** How Does Key-based Authentication Work?
- - Key-based authentication works by creating a pair of keys: a private key and a public key.
- - The private key is located on the client machine and is secured and kept secret.
- - The public key can be given to anyone or placed on any server you wish to access.
- - When you attempt to connect using a key-pair, the server will use the public key to create a message for the client computer that can only be read with the private key.
- - The client computer then sends the appropriate response back to the server and the server will know that the client is legitimate.
- - This entire process is done in the background automatically after you set up keys.
-**** How To Create SSH Keys
- - SSH keys should be generated on the computer you wish to log in from. This is usually your local computer.
- - Enter the following into the command line:
-#+begin_example
-ssh-keygen
-#+end_example 
- - Press enter to accept the defaults. Your keys will be created at ~/.ssh/id_rsa.pub and ~/.ssh/id_rsa.
- - Change into the .ssh directory by typing:
-#+begin_example
-cd ~/.ssh
-#+end_example
- - As you can see, the id_rsa file is readable and writable only to the owner. This is how it should be to keep it secret.
- - The id_rsa.pub file, however, can be shared and has permissions appropriate for this activity.
-***** How To Transfer Your Public Key to the Server
- - You can copy the public key to the remote server by issuing this command:
-#+begin_example
-ssh-copy-id remote_host
-#+end_example
- - This will start an SSH session, which you will need to authenticate with your password.
- - After you enter your password, it will copy your public key to the server's authorized keys file, which will allow you to log in without the password next time.
-
 * 2016-March-26-Satarday
 ** From 10:30 AM TO 04:30 PM :
 - Revised concepts of all Virtualization Techniques and Various web-servers so far whatever I have learned.
