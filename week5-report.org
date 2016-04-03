@@ -265,17 +265,15 @@ vzctl start 102
 vzctl start 103
 #+end_example
 * Configuring Containers:
-- Enter the contianers
+- Enter into the container
 #+begin_example
 vzctl enter 101
-vzctl enter 102
-vzctl enter 103
 #+end_example
-- eth0,eth1 and eth2 interfaces of the containers needs to be configured to connect to the bridge. The configuration can set in the directory network-scripts for the files ifcfg-eth0, ifcfg-eth1 and ifcfg-eth2.
+Change directory
 #+begin_example
 cd /etc/sysconfig/network-scripts
 #+end_example
- * ifcfg-eth0 file should contain the following settings:
+ifcfg-eth0 file should contain the following settings:
 #+begin_example
 DEVICE=eth0
 HWADDR=00:18:51:9A:D8:E5
@@ -285,7 +283,9 @@ NM_CONTROLLED=no
 IPADDR=10.2.59.101
 NETMASK=255.255.255.0
 #+end_example
- * ifcfg-eth1 file should contain the following settings:
+vzctl enter 102
+#+end_example
+ifcfg-eth1 file should contain the following settings:
 #+begin_example
 DEVICE=eth1
 HWADDR=00:18:51:97:0D:0C
@@ -295,7 +295,10 @@ NM_CONTROLLED=no
 IPADDR=10.2.59.102
 NETMASK=255.255.255.0
 #+end_example
- * ifcfg-eth2 file should contain the following settings:
+#+begin_example
+vzctl enter 103
+#+end_example
+- ifcfg-eth2 file should contain the following settings:
 #+begin_example
 DEVICE=eth2
 HWADDR=00:18:51:86:A8:F3
@@ -310,14 +313,3 @@ NETMASK=255.255.255.0
 - *Note*: Hardware address will be only available after adding the configuration files. The process is to first add the configuration without the hardware address,
   restart the service and later update it.
 
-* 2016-March-23-Wednesday
-** From 09:30 AM TO 05:30 PM :
-- Today I gone through Bridge networking and Configured bridge on containers in OpenVZ. I have practised bridge networking concepts, created couple of containers
-  and installed bridge and configured container using bridge.
-
-* 2016-March-25-Friday
-** From 09:30 AM TO 05:30 PM :
-- Revised concepts of variuos web-servers such as Apache and SSH servers on CentOS. 
-* 2016-March-26-Satarday
-** From 10:30 AM TO 04:30 PM :
-- Revised concepts of all Virtualization Techniques and Various web-servers so far whatever I have learned.
