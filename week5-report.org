@@ -194,17 +194,24 @@ service httpd stop
 * Router:
 - Router is a device which is used to connect different network elements.
 Note :  I will implement router in coming week.
-* Setting Up Bridge for Private Network
+* Setting Up Bridge to form a sample network.
 ** Introduction:
-- This page explains about creating a bridge and setting up of a bridge network on base machine.
-- The document further explains the step by step creation of this network.
-
+- Here I explained about how to create a bridge on CentOS and how to form a sample network
+  using bridge by connecting OpenVZ container.
 ** Creating a bridge: 
-- Bridge is basically a file configured with essential settings which mentions the bridge name, boot protocol, on boot settings, type and if it is to be network manager controlled. Move to the network-scripts directory in /etc/sysconfig by following command:
+- Bridge is basically a file configured with essential settings which mentions
+  the bridge name, boot protocol, on boot settings, type and if it is to be
+  network manager controlled. 
+- Change directory to network-scripts directory
 #+begin_example
 cd /etc/sysconfig/network-scripts/
 #+end_example
-- We next step set up a bridge in our private network. Let us call it as br1. To create the bridge, create a file with name ifcfg-br1 in the current directory including the following settings:
+- To create the bridge, create a file with name ifcfg-br1 in the current
+  directory including the following settings:
+#+begin_example
+touch ifcfg-br1
+#+end_example
+- Add the following configurations
 #+begin_example
 DEVICE=br1
 TYPE=Bridge
@@ -216,7 +223,8 @@ BOOTPROTO=none
 #+begin_example
 service network restrat
 #+end_example
- * Following command can be issued to list all the bridges created and the interfaces they are connected to.
+ * Following command can be issued to list all the bridges created and the
+   interfaces they are connected to.
 #+begin_example
 brctl show
 #+end_example
@@ -227,6 +235,7 @@ bridge name	bridge id		STP enabled	interfaces
 br1		8000.000000000000	no	         
 #+end_example
 ** Diagram
+- I have implemented a sample network which satisfied below diagrame
 [[./Bridge2.jpg]]
 
 ** Creating private subnet:
