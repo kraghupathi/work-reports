@@ -179,12 +179,6 @@ service apache2 stop
 #+begin_example
 service httpd stop
 #+end_example
-* Router:
-- Router is a device which is used to connect different network elements.
-Note :  I will implement router in coming week.
-* Switch:
-- Switch is a device which is used to connect the same network elements.
-- Below Diagram explains simple network using switch.
 * Bridge:
 - Bridge is a device that connects two LANs and controls data flow between them.
 - Especially bridge is a store & forward device. During the connection of different LANs, it receives the frame from one LAN and transfer the same
@@ -194,114 +188,119 @@ Note :  I will implement router in coming week.
 -  Bridge are software based and switch is a hardware based.
 -  Bridge can have upto 16 ports while switch can handle many ports.
 -  Bridge is rarely used. Switches are frequently used. 
-* Setting Up Bridge Network
-** Diagram
-[[./Bridge2.jpg]]
+* Switch:
+- Switch is a device which is used to connect the same network elements.
+- Below Diagram explains simple network using switch.
+* Router:
+- Router is a device which is used to connect different network elements.
+Note :  I will implement router in coming week.
+* Setting Up Bridge for Private Network
 ** Introduction:
 - This page explains about creating a bridge and setting up of a bridge network on base machine.
 - The document further explains the step by step creation of this network.
 
-** Setting Up Bridge Network:
-- The first task is to create a bridge, let us call it br0 (br0=bridgename). Bridge is basically a file configured with essential
-  settings which mentions the bridge name, boot protocol, on boot settings, type and if it is to be network manager controlled.
-  Move to the network-scripts directory in =/etc/sysconfig= by following command
+** Creating a bridge: 
+- Bridge is basically a file configured with essential settings which mentions the bridge name, boot protocol, on boot settings, type and if it is to be network manager controlled. Move to the network-scripts directory in /etc/sysconfig by following command:
 #+begin_example
 cd /etc/sysconfig/network-scripts/
 #+end_example
-- And create a file with name =ifcfg-br0= and write the following settings:
+- We next step set up a bridge in our private network. Let us call it as br1. To create the bridge, create a file with name ifcfg-br1 in the current directory including the following settings:
 #+begin_example
-DEVICE=br0
+DEVICE=br1
 TYPE=Bridge
 ONBOOT=yes
 NM_CONTROLLED=no
 BOOTPROTO=none
 #+end_example
-- Restart network service to effect the changes.
+ * Restart network service to effect the changes.
 #+begin_example
 service network restrat
 #+end_example
-- Following command can be issued to list all the bridges created and the interfaces they are connected to.
+ * Following command can be issued to list all the bridges created and the interfaces they are connected to.
 #+begin_example
 brctl show
 #+end_example
-- The output has to bridge and any other bridges previously created with connected interfaces.
-- With current configuration used, a sample output can be seen below:
+- The output has to contain the created bridge and any other bridges previously created with connected interfaces.
+  With current configuration used, a sample output can be seen below:
 #+begin_example
 bridge name	bridge id		STP enabled	interfaces
-br0		8000.5cf9dd75d1f8	no		
+br1		8000.000000000000	no	         
 #+end_example
-*** Creating Container:
-- We next move ahead in creation of a container with following settings:
- * Syntax := 
+** Diagram
+[[./Bridge2.jpg]]
+
+** Creating private subnet:
+- To test the settings we can create our own private subnet with three test containers.
 #+begin_example
-vzctl create <CT-ID> --ostemplate <template> --hostname <host-name>
+vzctl create 101 --ostemplate centos-6-x86_64 --hostname centos-1
+vzctl create 102 --ostemplate centos-6-x86_64 --hostname centos-2
+vzctl create 103 --ostemplate centos-6-x86_64 --hostname centos-3
 #+end_example
- * Ex := 
+- Note that ip address is not set for creating the containers.
+- set the netfilter to full for the containers.
 #+begin_example
-vzctl create 201 --ostemplate centos-6-x86_64-minimal --hostname centos
+vzctl set 101 --netfilter full --save
+vzctl set 102 --netfilter full --save
+vzctl set 103 --netfilter full --save
 #+end_example
-- set the netfilter to full for the container.
- * Syntax := 
+- The containers needs to be connected to the bridge br0.This is achieved by connecting with the respective interfaces. This is done by the following commands:
 #+begin_example
-vzctl set <CT-ID> --netfilter full --save
+vzctl set 101 --netif_add eth0,,,,br1 --save
+vzctl set 102 --netif_add eth1,,,,br1 --save
+vzctl set 103 --netif_add eth2,,,,br1 --save
 #+end_example
- * Ex := 
+- Start the containers and set its status to running.
 #+begin_example
-vzctl set 201 --netfliter full --save
+vzctl start 101
+vzctl start 102
+vzctl start 103
 #+end_example
-- The Container need to be connected to the bridge br0 and this is achieved by connecting with the respective interface. This is done by the following commands
- * Syntax := 
+* Configuring Containers:
+- Enter the contianers
 #+begin_example
-vzctl set <CT-ID> --netif_add eth0,,,,br0 --save
+vzctl enter 101
+vzctl enter 102
+vzctl enter 103
 #+end_example
- * Ex := 
+- eth0,eth1 and eth2 interfaces of the containers needs to be configured to connect to the bridge. The configuration can set in the directory network-scripts for the files ifcfg-eth0, ifcfg-eth1 and ifcfg-eth2.
 #+begin_example
-vzctl set 201 --netif_add eth0,,,,br0 --save
+cd /etc/sysconfig/network-scripts
 #+end_example
-- Start the container and set its status to running.
- * Syntax := 
-#+begin_example
-vzctl start <CT-ID>
-#+end_example
- * Ex := 
-#+begin_example
-vzctl start 201
-#+end_example
-*** Configuring Container:
-- Enter the contianer
- * Syntax := 
-#+begin_example
-vzctl enter <CT-ID>
-#+end_example
- * Ex := 
-#+begin_example
-vzctl enter 201
-#+end_example
-- The ifcfg-eth0 file present in =/etc/sysconfig/network-script= directory for the container need to be configured with following settings
- * Syntax := 
+ * ifcfg-eth0 file should contain the following settings:
 #+begin_example
 DEVICE=eth0
-HWADDR=<<Hardware address of eth0>>
+HWADDR=00:18:51:9A:D8:E5
 BOOTPROTO=static
 ONBOOT=yes
 NM_CONTROLLED=no
-IPADDR=<<IP address of container>>
-NETMASK=<<IP address of netmask>>
+IPADDR=10.2.59.101
+NETMASK=255.255.255.0
 #+end_example
- * Ex := 
+ * ifcfg-eth1 file should contain the following settings:
 #+begin_example
-DEVICE=eth0
-HWADDR=00:18:51:20:58:72
+DEVICE=eth1
+HWADDR=00:18:51:97:0D:0C
 BOOTPROTO=static
 ONBOOT=yes
 NM_CONTROLLED=no
-IPADDR=10.11.12.1
-NETMASK=255.0.0.0
+IPADDR=10.2.59.102
+NETMASK=255.255.255.0
 #+end_example
-- Restart the network service and check if the eth0 is assigned to ip-address or not (ifconfig command)
+ * ifcfg-eth2 file should contain the following settings:
+#+begin_example
+DEVICE=eth2
+HWADDR=00:18:51:86:A8:F3
+BOOTPROTO=static
+ONBOOT=yes
+NM_CONTROLLED=no
+IPADDR=10.2.59.103
+NETMASK=255.255.255.0
+#+end_example
+- Restart the network service and check if the eth0, eth1 and eth2 are assigned to ip-address or not (ifconfig command).
 - The hardware address can be known by the command ifconfig -a.
-- Note: Hardware address will be only available after adding the configuration files. The process is to first add the configuration without the hardware address,
+- *Note*: Hardware address will be only available after adding the configuration files. The process is to first add the configuration without the hardware address,
   restart the service and later update it.
+
 * 2016-March-23-Wednesday
 ** From 09:30 AM TO 05:30 PM :
 - Today I gone through Bridge networking and Configured bridge on containers in OpenVZ. I have practised bridge networking concepts, created couple of containers
@@ -310,54 +309,6 @@ NETMASK=255.0.0.0
 * 2016-March-25-Friday
 ** From 09:30 AM TO 05:30 PM :
 - Revised concepts of variuos web-servers such as Apache and SSH servers on CentOS. 
-* Apache Web server:
-- Apache Web Server is an open source Web server for creation, deployment and management web applications.
-- Which is designed to host one or more Web applications,
-- It is also widely used by Web server many companies uses this server to host their internal web applications by configuring shared/virtual hosting,
-  as by default, Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
-+ To install Apache-server on Linux, use the following command
- * Ex := Ubuntu/Debian.
-#+begin_example
-sudo apt-get install apache2
-#+end_example
- * Ex := RHEL/CENTOS
-#+begin_example
-yum install httpd
-#+end_example
-** How to host a website?:
-1) To start the apache server, use the following command:
- * Ex := Ubuntu/Debian.
-#+begin_example
-service apache2 start
-#+end_example
- * Ex := RHEL/CENTOS
-#+begin_example
-service httpd start
-#+end_example
-2) open browser and type =localhost= or =127.0.0.1= then, browser displays the default apache page. If the default page is not found, then restart the apache server by using the following command.
- * Ex := Ubuntu/Debian.
-#+begin_example
-service apache2 restart
-#+end_example
- * Ex := RHEL/CENTOS
-#+begin_example
-service httpd restart
-#+end_example
-3) create a sample html, js and css files and place them in a folder. 
-4) move the contents of the folder to  =/var/www/html= or =/var/www/=
-5) open browser and type =localhost/<file name> or 127.0.0.1/<file name>.
-#+begin_example
-localhost/example.html
-#+end_example
-6) To stop the apache server, use the following command:
- * Ex := Ubuntu/Debian.
-#+begin_example
-service apache2 stop
-#+end_example
- * Ex := RHEL/CENTOS
-#+begin_example
-service httpd stop
-#+end_example
 * 2016-March-26-Satarday
 ** From 10:30 AM TO 04:30 PM :
 - Revised concepts of all Virtualization Techniques and Various web-servers so far whatever I have learned.
