@@ -265,7 +265,7 @@ vzctl start 102
 vzctl start 103
 #+end_example
 * Configuring Containers:
-- Enter into the container
+- Enter into the container 101
 #+begin_example
 vzctl enter 101
 #+end_example
@@ -283,6 +283,8 @@ NM_CONTROLLED=no
 IPADDR=10.2.59.101
 NETMASK=255.255.255.0
 #+end_example
+- Enter into the container 102
+#+begin_example
 vzctl enter 102
 #+end_example
 ifcfg-eth1 file should contain the following settings:
@@ -295,6 +297,7 @@ NM_CONTROLLED=no
 IPADDR=10.2.59.102
 NETMASK=255.255.255.0
 #+end_example
+- Enter into the container 103
 #+begin_example
 vzctl enter 103
 #+end_example
@@ -308,8 +311,26 @@ NM_CONTROLLED=no
 IPADDR=10.2.59.103
 NETMASK=255.255.255.0
 #+end_example
-- Restart the network service and check if the eth0, eth1 and eth2 are assigned to ip-address or not (ifconfig command).
-- The hardware address can be known by the command ifconfig -a.
-- *Note*: Hardware address will be only available after adding the configuration files. The process is to first add the configuration without the hardware address,
-  restart the service and later update it.
+- Restart the network services in all above containers 101,102 and 103 using
+  below command  and check if the eth0, eth1 and eth2 are assigned to
+  ip-address or not (ifconfig command).
+
+#+begin_example
+service networking restart
+#+end_example
+*Note :-* The hardware address can be known by the command =ifconfig -a=.
+* Testing ping command among each container
+- Now try to ping each container with one another if we are able ping each
+  other then our network is formed successfully.
+- ping 102 container from 103 container
+#+begin_example
+ping 10.2.59.102
+#+end_example
+- ping 101 container from 103
+#+begin_example
+ping 10.2.59.101
+#+end_example
+*Conclusion* I am able to ping above ip's 
+
+
 
