@@ -20,11 +20,11 @@
 * 2016-Apr-01-Friday:
 ** From 9:30 AM TO 06:00 PM :
 - To be updated
-*Note :-* I have implemented source code for all python exercises planning convert
-  them to literate programming and I will paste here the same code
+*Note :-* I have implemented source code for all python exercises and planning to convert
+  them to literate programming and then I will paste here the same code
 * 2016-Apr-02-Saturday:
 ** From 9:30 AM TO 05:30 PM :
-- I tried to Setup DHCP server on CentOS. Before that I have read about DHCP server and taken various articles from online is available at [[http://www.krizna.com/centos/install-configure-dhcp-server-centos-6/][here]]
+- I tried to Setup DHCP server on CentOS container. Before that I have read about DHCP server and taken various articles from online is available at [[http://www.krizna.com/centos/install-configure-dhcp-server-centos-6/][here]]
 * DHCP(Dynamic Host Configuration Protocol):
  - Dynamic Host Configuration Protocol (DHCP) is a network protocol that automatically assigns TCP/IP information to client machines.
    Each DHCP client connects to the centrally located DHCP server, which returns the network configuration (including the IP address, gateway, and DNS servers)
