@@ -201,7 +201,6 @@ service httpd stop
 -  Bridge is rarely used. Switches are frequently used. 
 * Switch:
 - Switch is a device which is used to connect the same network elements.
-- Below Diagram explains simple network using switch.
 * Router:
 - Router is a device which is used to connect different network elements.
 Note :  I will implement router in coming week.
