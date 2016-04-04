@@ -195,7 +195,7 @@ service httpd stop
 - Especially bridge is a store & forward device. During the connection of different LANs, it receives the frame from one LAN and transfer the same
   frame without encapsulating or without modification to other LAN. By using local and remote bridge, a network administrator can easily extend the network distance.
 ** The difference between switch and bridge
--  Bridge is is device which divides a network into two. Switch connects multiple networks.
+-  Bridge is device which divides a network into two and Switch connects multiple networks.
 -  Bridge are software based and switch is a hardware based.
 -  Bridge can have upto 16 ports while switch can handle many ports.
 -  Bridge is rarely used. Switches are frequently used. 
