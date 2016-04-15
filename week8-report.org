@@ -1,0 +1,42 @@
+* 2016-Apr-11-Monday:
+- I have learned about Linux Lab and took online from [[http://cse09-iiith.virtual-labs.ac.in/][here]]. I have read all experiments
+  and done the given following experiments.
+1.File Management
+2.Text Editor
+3.File Content
+4.File Permissions
+5.Archival and Compression
+6.Obtaining System Information
+7.Pipes and Redirection
+8.Searching
+9.Basic Networking 
+
+* 2016-Apr-12-Tuesday:
+- I have Practised and revised KVM Virtualization Technique, installed windows, Ubuntu OS's and Created snapshots.
+
+* 2016-Apr-13-Wednesday:
+- I have gone through AWS(Amazon Web Services) and read online tutorial which is available at [[https://aws.amazon.com/what-is-cloud-computing/?nc2=h_l2_cc][here]].
+  And done the following articles.
+* What is AWS?
+* What is Cloud Computing?, How does it works?, Types of Cloud Computing and Advantages of Cloud Computing.
+
+* 2016-Apr-14-Thursday:
+- Today Ashay his given to me a task. That is To install Dual Operating System and install require packages as per *RAVI* sir machine.
+- I took a very first step to install an Dual Operating System on *Ravi* machine.
+- I choose Windows7 64 bit as first machine and Ubuntu14.04 64 bit as second OS.
+- I have installed OS through USB, it worked well.
+- After successful installation of both the OS’s. I restarted my machine to check whether grub entries are there or not.
+- I couldn’t see the grub entries for Windows OS. 
+  Then I logged into the Ubuntu machine and updated the grub using command “grub-update”.
+- Then I could see both OS’s grub entries.
+
+* 2016-Apr-15-Friday:
+- I resumed my work on *RAVI* machine and I installed couple of packages on Ubuntu14.04 OS, done the given following below packages
+ * Git
+ * Emacs
+ * Skype
+ * Thunderbird Mail
+ * Google-Chrome
+ * Hex Chat
+ * Sublime Text Editor
+ * VirtualBox
