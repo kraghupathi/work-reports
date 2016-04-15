@@ -1,15 +1,15 @@
 * 2016-Apr-11-Monday:
 - I have learned about Linux Lab and took online from [[http://cse09-iiith.virtual-labs.ac.in/][here]]. I have read all experiments
   and done the given following experiments.
- # File Management
- # Text Editor
- 3.File Content
- 4.File Permissions
- 5.Archival and Compression
- 6.Obtaining System Information
-7.Pipes and Redirection
-8.Searching
-9.Basic Networking 
+  * File Management
+  * Text Editor
+  * File Content
+  * File Permissions
+  * Archival and Compression
+  * Obtaining System Information
+  * Pipes and Redirection
+  * Searching
+  * Basic Networking 
 
 * 2016-Apr-12-Tuesday:
 - I have Practised and revised KVM Virtualization Technique, installed windows, Ubuntu OS's and Created snapshots.
