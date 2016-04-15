@@ -1,8 +1,8 @@
 * 2016-Apr-11-Monday:
 - I have learned about Linux Lab and took online from [[http://cse09-iiith.virtual-labs.ac.in/][here]]. I have read all experiments
   and done the given following experiments.
- 1.File Management
- 2.Text Editor
+# File Management
+# Text Editor
  3.File Content
  4.File Permissions
  5.Archival and Compression
