@@ -1,6 +1,5 @@
 * 2016-Apr-11-Monday:
-- I have learned about Linux Lab and took online from [[http://cse09-iiith.virtual-labs.ac.in/][here]]. I have read all experiments
-  and done the given following experiments.
+- I have learned about Linux Lab and I have taken from Vlabs.ac.in which is available at [[http://cse09-iiith.virtual-labs.ac.in/][here]]. And done the given following experiments.
   * File Management
   * Text Editor
   * File Content
@@ -12,10 +11,10 @@
   * Basic Networking 
 
 * 2016-Apr-12-Tuesday:
-- I have Practised and revised KVM Virtualization Technique, installed windows, Ubuntu OS's and Created snapshots.
+- I have Practised and revised KVM Virtualization Technique, in that I installed windows OS, Ubuntu OS and Created snapshots.
 
 * 2016-Apr-13-Wednesday:
-- I have gone through AWS(Amazon Web Services) and read online tutorial which is available at [[https://aws.amazon.com/what-is-cloud-computing/?nc2=h_l2_cc][here]].
+- I have gone through AWS(Amazon Web Services) and I read various articles from online which is available at [[https://aws.amazon.com/what-is-cloud-computing/?nc2=h_l2_cc][here]].
   And done the following articles.
  * What is AWS?
  * What is Cloud Computing?, How does it works?, Types of Cloud Computing and Advantages of Cloud Computing.
