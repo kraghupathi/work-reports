@@ -39,7 +39,7 @@
  * Hex Chat
  * Sublime Text Editor
  * VirtualBox
- * proxy setting permanently using given path
+ * proxy setting permanently using given following path
 #+begin_example
 $ vi ~/.bashrc
 #+end_example
