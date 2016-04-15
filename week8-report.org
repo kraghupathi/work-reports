@@ -1,5 +1,5 @@
 * 2016-Apr-11-Monday:
-- I have learned about Linux Lab and I have taken from Vlabs.ac.in which is available at [[http://cse09-iiith.virtual-labs.ac.in/][here]]. And done the given following experiments.
+- I have learned about Linux Lab and I have taken from *Vlabs.ac.in* which is available at [[http://cse09-iiith.virtual-labs.ac.in/][here]]. And done the given following experiments.
   * File Management
   * Text Editor
   * File Content
