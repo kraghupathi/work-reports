@@ -1,0 +1,14 @@
+* Day1
+- I have practised and Revised all Networking concepts, web-servers, SSH-Server and DHCP-Servers.
+* Day2
+- I have gone through bridge networking, install bridge, setup bridge and configures containers.
+* Day3
+- Today I took Python Programming Language and  I took a python book written by US author for my complete reference.
+- After I finished reading complete chapter. I am solving all the problem related to that chapter.
+- Here I have listed all the exercise that i have done so far.
+** Exersice1.
+- Iterations, for and while loops.
+- Strings, string sequences, string with loop, string comparison and string methods.
+** Exersice2.
+- what is lists?, list of sequense, list operations, list methods, list arguments and list with functions.
+- what is tuples?, comparing tuples and sequenses of strings,lists and tuples.
