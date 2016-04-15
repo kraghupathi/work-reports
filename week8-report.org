@@ -21,7 +21,7 @@
  * What is Cloud Computing?, How does it works?, Types of Cloud Computing and Advantages of Cloud Computing.
 
 * 2016-Apr-14-Thursday:
-- Today Ashay his given to me a task. That is To install Dual Operating System and install require packages as per *RAVI* sir machine.
+- Today Ashay his given to me a task. That is To install Dual Operating System and install require packages as per *RAVI* machine.
 - I took a very first step to install an Dual Operating System on *Ravi* machine.
 - I choose Windows7 64 bit as first machine and Ubuntu14.04 64 bit as second OS.
 - I have installed OS through USB, it worked well.
