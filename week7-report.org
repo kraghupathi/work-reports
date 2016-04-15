@@ -12,3 +12,8 @@
 ** Exersice2.
 - what is lists?, list of sequense, list operations, list methods, list arguments and list with functions.
 - what is tuples?, comparing tuples and sequenses of strings,lists and tuples.
+* 2016-Apr-07-Thursday:
+- I resumed my work on Python Programming Language.
+** Exersice1.
+- To be updated
+*Note* :- I have implemented source code for all python exercises and planning to convert them to literate programming and then I will paste here the same code
