@@ -68,3 +68,43 @@ for x in xrange(10):
         continue
     print x
 #+end_example
+
+* Script-2
+- Executed the script using command
+#+begin_example
+chmod +x string.py
+./install.py
+#+end_example
+- Script has the following code
+#+begin_example
+#!/usr/bin/python
+# Assign three string charecters to a, b and c variables. And we print them to console.
+a = "raghu"
+b = "pathi"
+c = "kammari"
+print a
+print b
+print c
+
+# Finding the length of a string 
+# The len() method calculates the number of characters in a string.
+a = "1234"
+b = "raghu"
+c = "welcome"
+print len(a)
+print len(b)
+print len(c)
+
+
+# Finding Comparingg two strings
+print "aa" == "aa"
+print "ab" == "aa"
+print "12" == "12"
+print "120" == "1123"
+
+
+# Print three columns of numbers.
+
+for x in range(1,11):
+    print '%d %d %d' % (x, x*x, x*x*x)
+#+end_example
