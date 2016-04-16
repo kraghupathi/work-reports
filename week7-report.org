@@ -31,7 +31,6 @@ chmod +x loop.py
 for i in '123':
         print "Welcome",i,"times"
 
-
 # Iterating python for loop using range() function
 # Python for loop using range()
  
@@ -43,14 +42,11 @@ print "*** Generates a list of 3 values starting from 1 ***"
 for i in range(1,4):
         print "Welcome",i,"times."
 
-
-
 # Prints out 0,1,2,3,4 using while loop
 count = 0
 while count < 5:
     print count
     count = count + 1 
-
 
 # Prints out 0,1,2,3,4 using break statement.
 count = 0
@@ -94,20 +90,17 @@ print len(a)
 print len(b)
 print len(c)
 
-
 # Finding Comparingg two strings
 print "aa" == "aa"
 print "ab" == "aa"
 print "12" == "12"
 print "120" == "1123"
 
-
 # Print three columns of numbers.
 
 for x in range(1,11):
     print '%d %d %d' % (x, x*x, x*x*x)
 #+end_example
-
 
 * Script-3
 - Executed the script using command
@@ -135,8 +128,6 @@ print x * 3
 print 2 in x
 print 2 in x
 
-
-
 # Finding length, max, mina and sum of given values using sequence functions
 
 n = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -145,4 +136,15 @@ print "There are %d items" % len(n)
 print "Maximum is %d" % max(n)
 print "Minimum is %d" % min(n)
 print "The sum of values is %d" % sum(n)
+
+# Print two variables to access values in tuples.
+tup1 = ('welcome', 'python', 20, 300);
+tup2 = (1, 2, 3, 4, 5, 6, 7 );
+
+# Creating a new tuple as following
+tup3 = tup1 + tup2;
+
+print "tup1[0]: ", tup1[0]
+print "tup2[1:5]: ", tup2[1:5]
+print "tup3:", tup3
 #+end_example
