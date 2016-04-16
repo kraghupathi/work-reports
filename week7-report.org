@@ -15,7 +15,7 @@
 ** Exercise4.
 - what is tuples?, comparing tuples and sequenses of strings,lists and tuples.
 * 2016-Apr-07-Thursday:
-- - I have practised Python Programs and wrote a python scripts that will looping concepts, strings, listst and tuples.
+- I have practised Python Programs and wrote a python scripts that will looping concepts, strings, listst and tuples.
 ** Exersice5.
 - I have implemented source code for Looping concepts, string, lists and tuples.
 * Script-1
