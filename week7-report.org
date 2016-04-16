@@ -17,8 +17,6 @@
 * 2016-Apr-07-Thursday:
 - I resumed my work on Python Programming Language.
 ** Exersice5.
-- I have practised python programs and wrote a simple python scripts that will looping concepts, strings, lists and tuples.
-
 - I have implemented source code for Looping concepts, string, lists and tuples.
 * Script-1
 - Executed the script using command
