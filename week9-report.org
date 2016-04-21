@@ -70,16 +70,3 @@ keysweek.sort()
 for k in keysweek:
     print ": ".join((k, str(week1[k])))
 #+END_EXAMPLE
-
-* 2016-Apr-21-Thursday:
-** From 9:30 AM TO 06:00 PM:
-
-* Exercise-1.
- -  What are Files in Python?, Standard I/O, Redirection and Open() function.
-** Script-2:
--  This scrpit is about to creating 
--  Executed the script using command
-#+BEGIN_EXAMPLE
-chmod +x filename.py
-./install.py
-#+END_EXAMPLE
