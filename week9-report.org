@@ -1,1 +1,85 @@
+* 2016-Apr-18-Monday:
+** From 9:30 AM TO 11:00 AM :
+- I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work.
+** From 11:00 AM TO 05:00 PM :
+- Sanchita his task assigned to me, Which is *Planning for Summer Internship/RAship-2016*. This would track all the
+  efforts in the planning of the workshop for the interns/RAs in terms of documents and other resources.
+- Here Iam working on the Task of going through each candidate resume and fill out the required info in the excel sheet to be shared with Sanchita.
+  And I shared the sheet for the info of 14 candidates applied from jobs@vlabs.ac.in.
 
+* 2016-Apr-19-Tuesday:
+** From 9:30 AM TO 05:00 AM :
+- I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work. 
+- *Priya* his task assigned to me, Which is convert docx to org-mode as per given documents.
+- Here Iam working on the Task of Converted docx to org-mode and I shared with Priya, Lalit, Ravi Shankar and Sripathi.
+
+* 2016-Apr-20-Wednesday:
+** From 9:30 AM TO 06:00 PM:
+ -  Today I learned about Dictionaries in Python. After I finished reading complete chapter. 
+ -  And I have implemented source code for dictionaries.
+ -  Here I have listed all the exercise that I have done so far.
+* Exercise-1.
+ -  What are Dictionaries in Python?, Creating dictionary, Keys and Values, Looping, Sorting, built-in functions and Methods.
+** Script-1:
+-  This scrpit is about to creating dictionary, updating and deleting dictionaries.
+-  Executed the script using command
+#+BEGIN_EXAMPLE
+chmod +x filename.py
+./install.py
+#+END_EXAMPLE
+#+BEGIN_EXAMPLE
+#!/usr/bin/python
+# Creating a dictionary and access dictionary elements it  using variable to which it is assigned.
+week = {"sun": "sunday", "mon": "monday", "tus": "tuesday", "wed": "wednesday", "thur": "thursday", "fri": "friday", "sat": "monday"}
+print "week['sun']: ", week['sun']
+print "week['mon']: ", week['mon']
+print "week['tus']: ", week['tus']
+print "week['wed']: ", week['wed']
+print "week['thur']: ", week['thur']
+print "week['fir']: ", week['fri']
+print "week['sat']: ", week['sat']
+
+# Modifying dictionary values are accessed using keys.
+week["sat"] = "saterday"
+print "week['sat']: ", week['sat']
+
+# Here is an remove an element from dictionary
+del week["sat"]
+print week
+
+# Print keys and values in given dictionary
+print week.keys()
+print week.values()
+print week.items()
+
+# Week dictionary to print the keys, values and both keys and values of the dictionary using for loop. 
+for key in week:
+    print key
+    
+for k in week:
+    print week[k]
+    
+for k, v in week.items():
+    print ": ".join((k, v))
+
+# Print sorting order week dictionary
+week1 = {"sun": 1, "mon": 3, "tus": 4, "wed": 2, "thur": 5, "fri": 7, "sat": 6}
+keysweek = week1.keys()
+keysweek.sort()
+
+for k in keysweek:
+    print ": ".join((k, str(week1[k])))
+#+END_EXAMPLE
+
+* 2016-Apr-21-Thursday:
+** From 9:30 AM TO 06:00 PM:
+
+* Exercise-1.
+ -  What are Files in Python?, Standard I/O, Redirection and Open() function.
+** Script-2:
+-  This scrpit is about to creating 
+-  Executed the script using command
+#+BEGIN_EXAMPLE
+chmod +x filename.py
+./install.py
+#+END_EXAMPLE
