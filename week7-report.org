@@ -1,7 +1,7 @@
 * 2016-Apr-04-Monday:
-- I have practised and Revised all baisics of Networking concepts and SSH-Server.
+- I have practised and Revised all baisics of Networking concepts.
 * 2016-Apr-05-Tuesday:
-- I have gone through bridge networking, I installed bridge, setup bridge and configured containers.
+- Revised and practised bridge networking and created couple of containers in our physical system.
 * 2016-Apr-06-Wednesday:
 - Today I took Python Programming Language and I have read about lists, tuples and string concepts.
 - After I finished reading complete chapters. I am solving all the problem related to that chapter.
