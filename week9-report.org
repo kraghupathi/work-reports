@@ -2,7 +2,7 @@
 ** From 9:30 AM TO 11:00 AM :
 - I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work.
 ** From 11:00 AM TO 05:00 PM :
-- Sanchita his task assigned to me, Which is *Planning for Summer Internship/RAship-2016*. This would track all the
+- Sanchita is task assigned to me, Which is *Planning for Summer Internship/RAship-2016*. This would track all the
   efforts in the planning of the workshop for the interns/RAs in terms of documents and other resources.
 - Here Iam working on the Task of going through each candidate resume and fill out the required info in the excel sheet to be shared with Sanchita.
   And I shared the sheet for the info of 14 candidates applied from jobs@vlabs.ac.in.
@@ -10,7 +10,7 @@
 * 2016-Apr-19-Tuesday:
 ** From 9:30 AM TO 05:00 AM :
 - I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work. 
-- *Priya* his task assigned to me, Which is convert docx to org-mode as per given documents.
+- *Priya* is task assigned to me, Which is convert docx to org-mode as per given documents.
 - Here Iam working on the Task of Converted docx to org-mode and I shared with Priya, Lalit, Ravi Shankar and Sripathi.
 
 * 2016-Apr-20-Wednesday:
