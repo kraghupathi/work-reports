@@ -1,26 +1,25 @@
 * 2016-Apr-25-Monday:
 ** From 10:00 AM TO 06:00 PM:
-- Today *Madhavi* has assigned to me a task, the task is about *Restructuring of Vlabs landing page* Project. Here I have given task to convert all the required documents to org-mode format as per Ma.
-- I have helped to *Aswin* for installing =virtual box= and =KVM virtualization= on desktop machine. And also I installed windows xp on virtualbox.
+- Today *Madhavi* has assigned to me a task, the task is about *Restructuring of Vlabs landing page* Project. Here I have given task to convert all the required documents to org-mode format as per Madhavi's requirement.
+- I have helped *Aswin* in installing =virtual box= and =KVM virtualization= on his desktop machine. And also I helped him in how to install windows xp on virtualbox.
 
 * 2016-Apr-26-Tuesday:
 ** From 10:00 AM TO 06:00 PM:
-- Today *Lalit* is assigned to me a task, which is converting and changes required files.
-- Here iam working on given task is converted given documents to org-mode format.
-- I made all suggested changes to the *vlead-outreach.org* file  And then I pushed into Git repositry. And also I sent a pull request to Sripathi.
+- Today *Lalit* has assigned to me a task, the task is to convert all =docx= files to =org-mode= using emacs.
+- I converted all suggested files to =org-mode=  And then I pushed to my forked repository on github. Then I made a pull request to actual =outreach-portal= repository unders =vlead= organization (This is because I don't have access to =vlead= organization).
 
 * 2016-Apr-27-Wednesday:
 ** From 10:00 AM TO 01:00 PM:
-- Today *Ashay* is assigned to me a task, which is install Ubuntu 12.04 on local machine for setting up edX in standalone machine.
+- Today *Ashay* has assigned to me a task, the task is to install Ubuntu 12.04 on local machine for setting up edX in standalone machine.
 - I have installed Ubuntu 12.04 64bit OS through bootable pendrive.
 
 ** From 02:00 PM TO 05:30 PM:
-- I have installed ubuntu 14.04 64bit OS on *RAVI* machine. But machine is properly not working, why because Hardware inconsistency issue.
+- I have installed ubuntu 14.04 64 bit OS on *RAVI's* machine as previously installed OS is crashed I tried to install two more times but after I had discussion with system team I came to that there is an issues the system =hardware= itself.
 
 * 2016-Apr-28-Thursday:
 ** From 10:00 AM TO 05:00 PM:
-- Today I discussed with team for assiging task, then they are assigned me a task, which is install ubuntu 14.04 64bit OS on Prof. Choppella's new Dell machine.
-- I have installed Ubuntu 14.04 64bit OS through bootable pendrive.
+- Today I discussed with team for getting a task, then they are assigned me a task, which is to install ubuntu 14.04 64bit OS on Prof. Choppella's new Dell machine.
+- I have installed Ubuntu 14.04 64bit LTS OS through bootable pendrive.
 - After successfull installation of ubuntu OS. I restarted machine and it worked well.
 - After reboot machine, I have installed all the necessary packages. Below I have listed all the installed packages.
 1. Ubuntu 14.04 64 bit (Beside Windows OS)
@@ -28,17 +27,17 @@
 3. Setting up proxy in =.bashrc= file
 4. Setting up proxy in =/etc/apt/apt.conf= file for apt to work via proxy
 5. Google chrome
-6. Skype
-7. Git
+6. Skype 4.3
+7. Git 1.7.2
 8. Hex Chat
 
 *Note:-*
-- But machine is properly not working, why because Hardware inconsistency issue.
+- But some times machine is not booting properly , due to hardware inconsistancey.
 
 * 2016-Apr-29-Friday:
 ** From 09:00 AM TO 05:30 PM:
- - I have gone through Literate Programming and I installed latest
-   version emacs24.5 with org-mode8.3.4 version on my machine. And also I followed by given below procedure for literate programming.
+ - I have gone through Literate Programming and installed latest
+   version of emacs24.5 with org-mode8.3.4 on my machine. And also I followed below procedure for literate programming.
 * Literate porgramming:
 A Literate program generally consists of explanation of the code in a
 natural language such as English, interspersed with snippets of code
