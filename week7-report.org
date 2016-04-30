@@ -1,15 +1,15 @@
 * 2016-Apr-04-Monday:
-- I have practised and Revised all baisics of Networking concepts.
+- I have revised all baisic concepts of Networking, Virtualization techniques which includes SSH, Apache, DNS, DHCP, OpenVZ, KVM (link)
 * 2016-Apr-05-Tuesday:
-- Revised and practised bridge networking and created couple of containers in our physical system.
+- Created small network using bridge setup by connecting openvz containers as nodes.(link)
 * 2016-Apr-06-Wednesday:
-- Today I took Python Programming Language and I have read about lists, tuples and string concepts.
-- After I finished reading complete chapters. I am solving all the problem related to that chapter.
-- Here I have listed all the exercise that I have done so far.
+- I have learned about python's datastructures like =lists=, =tuples= and also string concepts.
+- After I finished leaning above data sturcture concepts. I have solved all the problem related to concepts.
+- Here I have listed all the exercises that I have done so far.
 ** Exercise1.
-- Iterations, for and while loops.
+- Iterations using for and while loops.
 ** Exercise2.
-- Strings, string sequences, string with loop, string comparison and string methods.
+- Strings, string sequences, string with loop, string comparison and all string methods.
 ** Exercise3.
 - what is lists?, list of sequense, list operations, list methods, list arguments and list with functions.
 ** Exercise4.
