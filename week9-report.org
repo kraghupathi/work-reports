@@ -1,28 +1,27 @@
 * 2016-Apr-18-Monday:
 ** From 9:30 AM TO 11:00 AM :
-- I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work.
+- I have attended meeting with Vlead staff and with Prof.Venkatesh regarding status of projects.
 ** From 11:00 AM TO 05:00 PM :
-- Sanchita is task assigned to me, Which is *Planning for Summer Internship/RAship-2016*. This would track all the
-  efforts in the planning of the workshop for the interns/RAs in terms of documents and other resources.
-- Here Iam working on the Task of going through each candidate resume and fill out the required info in the excel sheet to be shared with Sanchita.
-  And I shared the sheet for the info of 14 candidates applied from jobs@vlabs.ac.in.
+- Sanchita assigned to me a task, the task is to create individual excel sheet document for all the applied interns. Here is the more explanation about the task
+  + Fetching all the interns details from google drive (from jobs@vlabs.ac.in)and putting into appropriate excell sheet with filename as internname.odt 
+  + And i have shared all 14 interns excell sheet with team.
 
 * 2016-Apr-19-Tuesday:
 ** From 9:30 AM TO 05:00 AM :
-- I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of work. 
-- *Priya* is task assigned to me, Which is convert docx to org-mode as per given documents.
-- Here Iam working on the Task of Converted docx to org-mode and I shared with Priya, Lalit, Ravi Shankar and Sripathi.
+- I attended meeting with Vlead staff and with Prof.Venkatesh regarding status of projects. 
+- *Priya Ma'm* assigned a task to me, the task is to convert all =docx= files of =outreach-portal's= project to =org-mode= files using emacs.
+- And I shared all the converted =org= files with Priya, Lalit, Ravi Shankar and Sripathi.
 
 * 2016-Apr-20-Wednesday:
 ** From 9:30 AM TO 06:00 PM:
  -  Today I learned about Dictionaries in Python. After I finished reading complete chapter. 
- -  And I have implemented source code for dictionaries.
- -  Here I have listed all the exercise that I have done so far.
+ -  I have implemented source code for all the exercises related to dictionaries.
+ -  Here I have listed all the exercises that I have done so far.
 * Exercise-1.
  -  What are Dictionaries in Python?, Creating dictionary, Keys and Values, Looping, Sorting, built-in functions and Methods.
 ** Script-1:
--  This scrpit is about to creating dictionary, updating and deleting dictionaries.
--  Executed the script using command
+-  I have implemented python script which explains about how to create dictionaries, updating and deleting dictionaries.
+-  And Executed the python script using below command
 #+BEGIN_EXAMPLE
 chmod +x filename.py
 ./install.py
