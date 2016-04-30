@@ -1,7 +1,6 @@
 * 2016-Apr-25-Monday:
 ** From 10:00 AM TO 06:00 PM:
-- Today *Madhavi* is assigned to me a task, which is *Restructuring of Vlabs landing page* with the planning details.
-- Here iam working on given task is converted required documents to org-mode format.
+- Today *Madhavi* has assigned to me a task, the task is about *Restructuring of Vlabs landing page* Project. Here I have given task to convert all the required documents to org-mode format as per Ma.
 - I have helped to *Aswin* for installing =virtual box= and =KVM virtualization= on desktop machine. And also I installed windows xp on virtualbox.
 
 * 2016-Apr-26-Tuesday:
