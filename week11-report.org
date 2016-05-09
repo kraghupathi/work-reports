@@ -1,0 +1,96 @@
+* 2016-May-02-Monday:
+** From 10:30 AM TO 01:00 PM:
+ -  I have attended meeting with Vlead staff and with Prof.Venkatesh regarding status of projects.
+ -  Today I discussed with team for getting a task, then they are assigned me a task, which is to install Git and configure git (Windows 64bit OS) on *Ravi's* machine.
+
+** From 02:00 PM TO 05:30 PM:
+ -  *Ashay* has assigned to me a task, the task is to configured Open-edx *Theming-customization* file.
+ -  I have configured theming-customization, changed theme-name and registration links in open-edx.
+ 
+ * 2016-May-03-Tuesday:
+** From 10:30 AM TO 01:00 PM:
+ -  I have learned about *rsnapshot* and installed, configured rsnapshot in our physical machine. I followed article about *rsnapshot*  available from [[http://www.tecmint.com/rsnapshot-a-file-system-backup-utility-for-linux/][here]].
+** rsnapshot:
+rsnapshot is an open source local / remote filesystem backup utility
+was written in Perl language that advantage the power of Rsync and SSH
+program to create, scheduled incremental backups of Linux/Unix
+filesystems, while only taking up the space of one single full backup
+plus differences and keep those backups on local drive to different
+hard drive, an external USB stick, an NFS mounted drive or simply over
+the network to another machine via SSH.
+*** Installing Rsnapshot Backup in Linux
+**** On Debian/Ubuntu/Linux Mint:
+rsnapshot install on debian based systems using below command.
+#+BEGIN_EXAMPLE
+# apt-get install rsnapshot
+#+END_EXAMPLE
+** From 02:00 PM TO 05:30 PM:
+ -  *Ashay* has assigned to me a task, the task is to configured Open-edx *Theming-customization* file.
+ -  I have configured theming-customization below list of files.
+ * Document to apply theming and customization in open-edX platform 
+ * Changing theme in dogwood0
+ * Changing account activation notification to a registered user
+ * Customization using configuration files
+ * Changing platform name in edX LMS and CMS
+ * Changing site name(fixing the activation email link which comes with http://localhost*)
+ * Adding/attaching external websites with edX
+ * Changing default example.com emails in edX
+    
+* 2016-May-05-Thursday:
+** From 09:30 AM TO 06:00 PM:
+ -  Today I discussed with team for getting a task, then they are assigned me a tasks.
+*** Task1:
+ -  The task is to setup machine and emacs with org-mode on *Rekha* machine.
+ -  I have setting up machine and installed *emacs24.4* with *org-mode7.9.10* version
+*** Task2:
+ -  The task is to setup *php-timeclock* on *base4* machine.
+ -  I have installed and configured followed below procedure for *php-timeclock*.
+
+PHP-timeclock is a open source web based tool for managing attendence(in/out) time, and generating related reports.
+
+We can use it for managing attendence for interns during Summer internship 2016.
+
+Installation details are given below -
+
+1). Created Container(CentOS 6.5 64 bit) on *BASE4* machine.
+
+2). Installed *mysql5*, *php5* and *httpd2* packeges on CentOS.
+
+3). Downloaded php-timeclock from https://sourceforge.net/projects/timeclock/files/PHP%20Timeclock/PHP%20Timeclock%201.04/.
+
+4). Unpacked the distribution into your webserver's root directory.
+#+BEGIN_EXAMPLE
+unzip timeclock-1.04.zip
+#+END_EXAMPLE
+5). Created a database name called *timeclock* using below command
+#+BEGIN_EXAMPLE
+create database timeclock;
+#+END_EXAMPLE
+6). Created a mysql user called *timeclock* with strong password using below command. 
+#+BEGIN_EXAMPLE
+create user 'timeclock'@'localhost' identified by 'password';
+#+END_EXAMPLE
+Provided all privileges(SELECT, UPDATE, INSERT, DELETE, ALTER, and CREATE) to the user for  database timeclock.
+#+BEGIN_EXAMPLE
+grant all privileges on * . * to 'timeclock'@'localhost';
+#+END_EXAMPLE
+7). Importedhe database using the *create_tables.sql* script which can be found on below directory.
+#+BEGIN_EXAMPLE
+cd /root/home/timeclock-1.04
+#+END_EXAMPLE
+8). Importedhe tables using *create_tables.sql* script included in the distribution using below statement.
+#+BEGIN_EXAMPLE
+mysql -u timeclock -p timeclock < /home/timeclock-1.04/create_tables.sql
+#+END_EXAMPLE
+9). Edit *config.inc.php* using below path
+#+BEGIN_EXAMPLE
+vim /root/home/timeclock-1.04/config.inc.php
+#+END_EXAMPLE
+
+* 2016-May-06-Friday:
+** From 09:30 AM TO 06:00 PM:
+ -  I have gone through the *Redmine web application* software and read about various articles from online which can be found [[http://www.cs.usask.ca/~spiteri/CMPT898/notes/redmine.pdf][here]].
+    +  what is redmine ?
+    +  Features of redmine and how to use it?
+    +  How to create projects and issues?
+    +  Specific actions for issues include such as (update, logtime and watch)
