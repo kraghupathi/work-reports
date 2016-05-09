@@ -56,7 +56,7 @@ Installation details are given below -
 
 2). Installed *mysql5*, *php5* and *httpd2* packeges on CentOS.
 
-3). Downloaded php-timeclock from https://sourceforge.net/projects/timeclock/files/PHP%20Timeclock/PHP%20Timeclock%201.04/.
+3). Downloaded php-timeclock from [[https://sourceforge.net/projects/timeclock/files/PHP%20Timeclock/PHP%20Timeclock%201.04/.][here]]
 
 4). Unpacked the distribution into your webserver's root directory.
 #+BEGIN_EXAMPLE
