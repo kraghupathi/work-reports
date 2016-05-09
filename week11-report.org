@@ -7,7 +7,7 @@
  -  *Ashay* has assigned to me a task, the task is to configured Open-edx *Theming-customization* file.
  -  I have configured theming-customization, changed theme-name and registration links in open-edx.
  
- * 2016-May-03-Tuesday:
+* 2016-May-03-Tuesday:
 ** From 10:30 AM TO 01:00 PM:
  -  I have learned about *rsnapshot* and installed, configured rsnapshot in our physical machine. I followed article about *rsnapshot*  available from [[http://www.tecmint.com/rsnapshot-a-file-system-backup-utility-for-linux/][here]].
 ** rsnapshot:
