@@ -89,9 +89,6 @@ vim /root/home/timeclock-1.04/config.inc.php
 
 * 2016-May-06-Friday:
 ** From 09:30 AM TO 06:00 PM:
- -  I have gone through the *Redmine web application* software and read about various articles from online.
-* 2016-May-06-Friday:
-** From 09:30 AM TO 06:00 PM:
  -  I have gone through the *Redmine web application* package and read about various articles from online.
 * Redmine:
 Redmine is a project management web application.
