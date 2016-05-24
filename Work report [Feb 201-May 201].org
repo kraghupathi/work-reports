@@ -1,0 +1,146 @@
+#+AUTHOR: Raghupathi Kammari
+#+TITLE: Work Report of Raghupathi from [Feb 2016-May 2016]
+* Introduction
+This document summarizes the works carried out in VLEAD since the date of
+joining (25th Feb 2016). The document further divided into the following
+section:
+* Work Log
+This sections presents the month wise tasks and activities since the date of
+joining.
+* February 2016
+** Week1
+ - Joining date 25th-February-2016
+   + Setting up machine
+   + Installed Dual OS on Desktop machine
+   + I have learned Linux and shell commands from
+     [[http://cse09-iiith.virtual-labs.ac.in/][Linux-Lab]]
+   + Installed and Configured git
+** Week2
+   + I have learned about git and git commands
+   + Installed emacs24.5 with org-mode 8.3.4 version
+   + Regular Expressions and using grep, sed commands.
+* March 2016
+** Week2
+   + Tail, head, redirecting I/O, Pipes, File permissions
+   + SSH, SCP, RSYNC and difference between scp and rsync
+   + Worked with Yogesh and Sripathi about resolving issue which is related to the creating google drive shared and common folders in admin@vlabs.ac.in account.
+   + Creating various shell scripts to automate the tasks. That will update and install php, httpd, mysql-server and emacs. 
+   + I worked with Sripathi to configure git on Priya¡¯s laptop.
+   + Package installations commands both CentOS and Debian
+** Week3
+   + Installation various packages for CentOS using YUM command.
+   + As complete VLEAD architecture is running based on virtualization
+     concepts. 
+   + Virtuallization techniques
+   + OS level - Openvz
+   + H/W level - KVM and Virtualbox
+   + Created couple of containers on local machine
+   + Version Control System and Types of VCS.
+** Week4
+ - I attended meeting with vlead staff and with Prof.Venkatesh regarding his
+   visit to Pune. By which I just came to know that how virtual-labs project is
+   carrying out by various people at different institutes (IIT¡¯S and
+   NIT¡¯s). And responsibilites of each of them.
+ - I have attended to system status meeting with all system team. Everty time
+   when I attend system¡¯s meeting I am getting clear idea of using redmine and
+   assiging tasks.
+  + Learnt OpenVZ commands
+  + Installed and setting up Virtualbox
+  + Installed and configured Logwatch on CentOS 
+  + Installed and Configured KVM virtulization on CentOS.
+  + Creating KVM snapshots on CentOS.
+  + Basics of client-server architecture and read about few servers such as Apache (LAMP), DNS and DHCP,
+** Week5
+  + Basics of networking concepts and learned about various protocols.
+  + I choose Cisco Packet Tracer tool developed by Cisco Organization to understand more about networking formation, packet simulation and server configuration.
+  + Installed Apache and How to host a website on CentOS.
+  + Bridge, switch and Router
+  + Setting Up Bridge to form a sample network.
+** Week6
+  - Side by side I am also concentrating on learning python Programming Language. I took a python book written by US author for my complete reference.
+  + I have implemented source code for all python exercises
+* April 2016
+** Week6
+  + DHCP server and why use DHCP-server, Installed and Configured DHCP-server
+    on CentOS.
+** Week7
+  + Created small network using bridge setup by connecting openvz containers as nodes.
+  + I have learned about python¡¯s datastructures like lists, tuples and also string concepts.
+  + I have implemented source code for above concepts.
+** Week8
+  + Gone through the Linux-lab and done all the experiments
+  + Practised and revised KVM Virtualization Technique by Creating and deleting Snapshots, in that I installed windows OS, Ubuntu OS and Created snapshots too.
+  + AWS(Amazon Web Services) EC2 Cloud technique
+  + Created my own AWS account to practice EC2.
+  + Created multiple AWS EC2 VMs which are =free-tier=.
+  + Ashay assigned me a task. The task is to install Dual Operating System (Windows7 & Ubuntu 14.04 LTS 64 bit) and install all the required packages as per RAVI¡¯s requirement.
+  + I have installed all the required packages on *RAVI*'s machine
+** Week9
+  + I have attended meeting with Vlead staff and with Prof.Venkatesh regarding status of projects.
+  + Sanchita assigned to me a task, the task is to create individual excel
+    sheet document for all the applied interns. Here is the more explanation
+    about the task
+    + Fetching all the interns details from google drive (from jobs@vlabs.ac.in)and putting into appropriate excell sheet with filename as internname.odt
+    + And I have shared all 14 interns excell sheet with team.
+  + Priya Ma¡¯m assigned a task to me, the task is to convert all =docx= files of =outreach-portal='s project to =org-mode= files using emacs.
+  + And I shared all the converted =org= files with Priya, Lalit, Ravi Shankar and Sripathi.
+  + I learned about Dictionaries in Python.
+  + I have implemented source code for all the exercises related to dictionaries.
+** Week10
+ - *Madhavi* has assigned to me a task, the task is about *Restructuring of Vlabs*
+   landing page Project.
+ + Here I have given task to convert all the required documents to org-mode format as per Madhavi¡¯s requirement.
+ + I have helped *Aswin* in installing *virtual box* and *KVM virtualization*
+   on his desktop machine. And also I helped him in how to install windows xp
+   on virtualbox.
+ + *Lalit* has assigned to me a task, the task is to convert all *docx* files
+   to *org-mode* using emacs.
+ + I converted all suggested files to *org-mode* And then I pushed to my forked repository on github. Then I made a pull request to actual *outreach-portal* repository unders *vlead* organization.
+ + Installed Ubuntu 12.04 64bit OS through bootable pendrive on local machine
+   for setting up edX in standalone machine.
+ + Installed Ubuntu 14.04 64bit LTS OS through bootable pendrive on
+   *Prof.Venkatesh* machine.
+ + Installed all the necessary packages on *Prof.Venakatesh* machine.
+ + Learnt literate programming and installed *org-mode* 8.3.4 version on local machine 
+* May 2016
+** Week11
+ + Installed Git and Configure Git (Windows7 pro OS) on *RAVI*'S machine.
+ + Configured theming-customization, changed theme-name and registration links in open-edx.
+ + Installed *Rsnapshot* and Configured *Rsnapshop* on CentOS.
+ + Setting up machine and installed *emacs24.5* with *org-mode*7.9.10 version
+   on *Rekha*'s machine
+ + Installed and configured php-timeclock on *BASE4* machine.
+ + Installed *Redmine* and Configure *Redmine* on local machine
+** Week12
+ + Installed *iverilog*9.7.1 on Ubuntu 12.04.
+ - I helped *Rekha* in Explained emacs commands and org-mode on her desktop machine. And
+   also I her in how to export require format (.pdf and html).
+ + Installed drivers(Windows7 64bit OS) as per required on *RAVI*'s machine. 
+ + Installed *Redmine* and configure *Redmine* tool on local machine.
+ + Testing *emacs IDE setup scripts* on Ubuntu 14.04_64 bit.
+ + Installed *LDAP* server and configured *ldap* on local machine.
+ + Installed dual OS and setting up and Installed required packages on
+   *Rekha*'s machine.
+** Week13
+ - Attending for 2016 summer internship helped in following ways:
+   + Setting up machines
+   + Installed Git and Configured Git
+   + Installed *emacs* 24.5 and *org-mode* 8.3.4 version
+ - Learnt what is data model for building a web application
+ - Structure of a web application
+ - Sets and cardinality types
+ - Entity relationship notation
+ - Learnt about type structure
+ - System state
+ - Operations
+ - Discussed about Object Oriented Programming.
+ - Conflicts arising with data
+ - Got familier with Constructors, getters, setters and invarients
+ - Finishing the test cases and objects in the given template, with specific focus on the session.
+ - All the objects and methods were done. Debugging and testing the test case codes were not completed.
+ - Test cases and object creation. Familiarization with ORM was also expected
+ - The system object was created and subsequent classes were modified to
+   include the user and session lists as pertaining to the system. System
+   methods were created along with some static methods and their respective
+   methods.
+
