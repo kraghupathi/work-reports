@@ -10,39 +10,41 @@ joining.
 * February 2016
 ** Week1
  - Joining date 25th-February-2016
-   + Setting up machine
-   + Installed Dual OS on Desktop machine
-   + I have learned Linux and shell commands from
-     [[http://cse09-iiith.virtual-labs.ac.in/][Linux-Lab]]
-   + Installed and Configured git
+   + Setting up desktop machine with Dual operating system (Linux and Windows7)
+   + Learned about GRUB boot loader and resolved issues with GRUB after installing dual OS
+   + Gone through the Linux lab avaialble in virtual-labs website at
+     [[http://cse09-iiith.virtual-labs.ac.in/][Linux-Lab]]. And learned about basic of linux and shell commands and done all the experiments.
+   + Installed and Configured version control tool =GIT=
 ** Week2
-   + I have learned about git and git commands
-   + Installed emacs24.5 with org-mode 8.3.4 version
-   + Regular Expressions and using grep, sed commands.
+   + Started learning and using =Git= version control tool commands by creating sample project on my local machine.
+   + Learned all the basic git commands like push, pull, commit, add , status, fetch,..etc
+   + Read about GNU Emacs editor and Installed =emacs24.5= with =org-mode 8.3.4= version on my machine.
+   + Learned about Regular Expressions and applied the same on linux shell command for searching files using grep, sed commands.
 * March 2016
 ** Week2
-   + Tail, head, redirecting I/O, Pipes, File permissions
-   + SSH, SCP, RSYNC and difference between scp and rsync
+   + Learned about Tail, head, redirecting I/O, Pipes, File permissions concepts in linux.
+   + Learned about SSH, SCP, RSYNC and difference between =scp= and =rsync= remote tools.
+   + Applied all ssh, rsync commands to work with remote machines.
    + Worked with Yogesh and Sripathi about resolving issue which is related to the creating google drive shared and common folders in admin@vlabs.ac.in account.
-   + Creating various shell scripts to automate the tasks. That will update and install php, httpd, mysql-server and emacs. 
-   + I worked with Sripathi to configure git on Priya¡¯s laptop.
-   + Package installations commands both CentOS and Debian
+   + Learned writing shell script using various commands
+   + Created various shell scripts to automate the tasks like update the system and install php, httpd, mysql-server and emacs packages on  ubuntu machine 
+   + I worked with Sripathi to configure git on Priya ma'm windows machine.
+   + Learned about package management(install,configure and remove) commands both on CentOS and Debian
 ** Week3
-   + Installation various packages for CentOS using YUM command.
+   + Installed various packages for CentOS using =YUM= command.
    + As complete VLEAD architecture is running based on virtualization
-     concepts. 
-   + Virtuallization techniques
+     concepts. I started learning about virtualization.
+   + Virtuallization techniques like
    + OS level - Openvz
    + H/W level - KVM and Virtualbox
    + Created couple of containers on local machine
-   + Version Control System and Types of VCS.
 ** Week4
  - I attended meeting with vlead staff and with Prof.Venkatesh regarding his
    visit to Pune. By which I just came to know that how virtual-labs project is
-   carrying out by various people at different institutes (IIT¡¯S and
-   NIT¡¯s). And responsibilites of each of them.
+   carrying out by various people at different institutes (IITTS and
+   NIT's). And responsibilites of each of them.
  - I have attended to system status meeting with all system team. Everty time
-   when I attend system¡¯s meeting I am getting clear idea of using redmine and
+   when I attend system's meeting I am getting clear idea of using redmine and
    assiging tasks.
   + Learnt OpenVZ commands
   + Installed and setting up Virtualbox
@@ -51,21 +53,21 @@ joining.
   + Creating KVM snapshots on CentOS.
   + Basics of client-server architecture and read about few servers such as Apache (LAMP), DNS and DHCP,
 ** Week5
-  + Basics of networking concepts and learned about various protocols.
+  + Learned about basics of networking concepts and various newtwork protocols.
   + I choose Cisco Packet Tracer tool developed by Cisco Organization to understand more about networking formation, packet simulation and server configuration.
   + Installed Apache and How to host a website on CentOS.
-  + Bridge, switch and Router
-  + Setting Up Bridge to form a sample network.
+  + Read about network devices like =Bridge=, =switch= and =Router=
+  + I setup sample network using network device =Bridge=.
 ** Week6
-  - Side by side I am also concentrating on learning python Programming Language. I took a python book written by US author for my complete reference.
+  - Side by side I learned OOPS in python Programming Language. I took a python book written by US author for my complete reference.
   + I have implemented source code for all python exercises
 * April 2016
 ** Week6
-  + DHCP server and why use DHCP-server, Installed and Configured DHCP-server
-    on CentOS.
+  + Learned about DHCP server then I Installed and Configured DHCP-server
+    on CentOS
 ** Week7
   + Created small network using bridge setup by connecting openvz containers as nodes.
-  + I have learned about python¡¯s datastructures like lists, tuples and also string concepts.
+  + I have learned about python's datastructures like lists, tuples and also string concepts.
   + I have implemented source code for above concepts.
 ** Week8
   + Gone through the Linux-lab and done all the experiments
@@ -73,7 +75,7 @@ joining.
   + AWS(Amazon Web Services) EC2 Cloud technique
   + Created my own AWS account to practice EC2.
   + Created multiple AWS EC2 VMs which are =free-tier=.
-  + Ashay assigned me a task. The task is to install Dual Operating System (Windows7 & Ubuntu 14.04 LTS 64 bit) and install all the required packages as per RAVI¡¯s requirement.
+  + Ashay assigned me a task. The task is to install Dual Operating System (Windows7 & Ubuntu 14.04 LTS 64 bit) and install all the required packages as per RAVIÂ¡Â¯s requirement.
   + I have installed all the required packages on *RAVI*'s machine
 ** Week9
   + I have attended meeting with Vlead staff and with Prof.Venkatesh regarding status of projects.
@@ -82,14 +84,14 @@ joining.
     about the task
     + Fetching all the interns details from google drive (from jobs@vlabs.ac.in)and putting into appropriate excell sheet with filename as internname.odt
     + And I have shared all 14 interns excell sheet with team.
-  + Priya Ma¡¯m assigned a task to me, the task is to convert all =docx= files of =outreach-portal='s project to =org-mode= files using emacs.
+  + Priya Ma'm assigned a task to me, the task is to convert all =docx= files of =outreach-portal='s project to =org-mode= files using emacs.
   + And I shared all the converted =org= files with Priya, Lalit, Ravi Shankar and Sripathi.
   + I learned about Dictionaries in Python.
   + I have implemented source code for all the exercises related to dictionaries.
 ** Week10
  - *Madhavi* has assigned to me a task, the task is about *Restructuring of Vlabs*
    landing page Project.
- + Here I have given task to convert all the required documents to org-mode format as per Madhavi¡¯s requirement.
+ + Here I have given task to convert all the required documents to org-mode format as per MadhaviÂ¡Â¯s requirement.
  + I have helped *Aswin* in installing *virtual box* and *KVM virtualization*
    on his desktop machine. And also I helped him in how to install windows xp
    on virtualbox.
@@ -110,11 +112,11 @@ joining.
  + Setting up machine and installed *emacs24.5* with *org-mode*7.9.10 version
    on *Rekha*'s machine
  + Installed and configured php-timeclock on *BASE4* machine.
- + Installed *Redmine* and Configure *Redmine* on local machine
+
 ** Week12
- + Installed *iverilog*9.7.1 on Ubuntu 12.04.
+ + Helped integration engineer in Installing *iverilog*9.7.1 on Ubuntu 12.04.
  - I helped *Rekha* in Explained emacs commands and org-mode on her desktop machine. And
-   also I her in how to export require format (.pdf and html).
+   also I helped her in how to exporting docs in required format (.pdf and html).
  + Installed drivers(Windows7 64bit OS) as per required on *RAVI*'s machine. 
  + Installed *Redmine* and configure *Redmine* tool on local machine.
  + Testing *emacs IDE setup scripts* on Ubuntu 14.04_64 bit.
@@ -122,7 +124,7 @@ joining.
  + Installed dual OS and setting up and Installed required packages on
    *Rekha*'s machine.
 ** Week13
- - Attending for 2016 summer internship helped in following ways:
+ - Attended for 2016 summer internship helped in following ways:
    + Setting up machines
    + Installed Git and Configured Git
    + Installed *emacs* 24.5 and *org-mode* 8.3.4 version
