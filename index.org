@@ -9,3 +9,5 @@ This repository contents all the work status reports done by me in weekly wise a
 ** [[https://github.com/kraghupathi/work-reports/blob/master/week6-report.org][Week6]]
 ** [[https://github.com/kraghupathi/work-reports/blob/master/week7-8-9-10.org][Week7-8-9-10]]
 ** [[https://github.com/kraghupathi/work-reports/blob/master/week11-report.org][Week11]]
+** [[https://github.com/kraghupathi/work-reports/blob/master/week12-report.org][Week12]]
+** [[https://github.com/kraghupathi/work-reports/blob/master/week13-report.org][Week13]]
