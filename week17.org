@@ -1,0 +1,41 @@
+** (2016-06-06 Mon)
+     + Learnt basic networking concepts like IP Address, MAC address, Hub &
+       switch, OSI model,and also about public IP and private IP addresses.
+     + Also learnt about basic networking in Linux.
+        - ifconfig
+        - route
+        - ssh
+        - scp
+        - rsync  
+
+** (2016-06-07 Tue)
+     + Learnt about the characteristics of Virtual machine and Container
+     + Installed OpenVZ and configured it.
+     + Learnt to create containers and some basic operations on it
+     + We got an assignment where we have to
+       - Create containers
+       - Set ip and proxy
+       - Create user with password
+       - enable remote login in both the container
+       - use scp to copy files from each other.   
+
+** (2016-06-08 Wed)
+     + Understood the functionality of Apache server,Public & Private  DNS server, Reverse
+       proxy, STPI router,Ansible and Nagios  
+     + Learnt about the VLEAD network infrastructure
+     + Learnt about AWS infrastructure which I found to be similar to VLEAD
+       infrastructure with some additional features
+     + Understood how a Virtual Machine(VM) is created in AWS cloud
+
+** (2016-06-09 Thu)
+     + Started with Docker introduction and installation
+     + Learnt how to create containers and use them
+     + Learnt some basic commands in Docker like
+        - Creating container
+        - Display all active and non-active containers
+        - logs,start,stop,restart,inspect etc...
+        - Creating an image
+** (2016-06-10 Fri)
+     + Continued exploring docker
+     + Learnt many new commands or operations in docker
+     + Simultaneously documented it

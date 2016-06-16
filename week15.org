@@ -1,0 +1,22 @@
+** (2016-05-23 Mon)
+     + We discussed some more concepts about Object relational model.
+     + Tried to implement ORM in our user directory application.
+** (2016-05-24 Tue)
+     + Continued implementing ORM in the user directory application
+** (2016-05-25 Wed)
+     + Implemented ORM
+     + Learnt about REST API
+     + Tried to implemrnt REST API in the usr directory application  
+** (2016-05-26 Thu)
+     + Continued implementing REST API in the user directory application
+** (2016-05-27 Fri)
+     + Today we learnt about the development of Front-End of the application
+     + Learnt about MVC arhitecture and its advantages
+     + Started implementing Front-End of the user directory application
+** Weekly  Summary
+     + What are the insights gained?
+       + concepts of object relational model
+       + REST API
+       + Concepts of Front-End and learnt about MVC architecture.   
+   + What is my footprint in the realization of the project?
+      + I understood how to relate the data base with the object model and also got familiar with the concepts of Front_End

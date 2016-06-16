@@ -1,0 +1,44 @@
+* Month of May
+* Attending 2016-Summer Internship
+** (2016-05-16 Mon)
+   + What is the task I was assigned today?
+       + configured git
+       + learnt to create repository	 
+       + configured emacs 
+   
+** (2016-05-17 Tue)
+     + configured some more of emacs like exporting
+     + Learnt what is data model for building a web application
+     + structure of a web application
+     + sets and cardinality types
+     + entity relationship notation
+     + learnt about type structure
+     + system state 
+     + operations
+ 
+** (2016-05-18 Wed)
+    + Discussed about Object Oriented Programming.
+    + Conflicts arising with data
+    + Got familier with Constructors, getters, setters and invarients 
+    We were assigned with an exercise to implement a user directory
+    application.  
+** (2016-05-19 Thu)
+   + Finishing the test cases and objects in the given template, with specific
+     focus on the session.
+   + All the objects and methods were done. Debugging and testing the test case
+     codes were not completed. 
+** (2016-05-20 Fri)
+   + Test cases and object creation. Familiarization with ORM was also expected
+   + The system object was created and subsequent classes were modified to
+     include the user and session lists as pertaining to the system. System
+     methods were created along with some static methods and their respective
+     methods. ORM was not completed. (SQLAlchemy Framework)
+** Weekly  Summary
+     + What are the insights gained?
+       + Learnt to use git and emacs.
+       + learnt about data model, object model and ORM
+       + started working in groups to implement user directory application and
+         in the process learnt many new concepts
+    
+     + What is my footprint in the realization of the project?
+       + Understood the basics of developing a web application 
