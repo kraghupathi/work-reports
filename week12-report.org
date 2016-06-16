@@ -1,0 +1,10 @@
+** Week12
+ + Helped integration engineer in Installing *iverilog*9.7.1 on Ubuntu 12.04.
+ - I helped *Rekha* in Explained emacs commands and org-mode on her desktop machine. And
+   also I helped her in how to exporting docs in required format (.pdf and html).
+ + Installed drivers(Windows7 64bit OS) as per required on *RAVI*'s machine. 
+ + Installed *Redmine* and configure *Redmine* tool on local machine.
+ + Testing *emacs IDE setup scripts* on Ubuntu 14.04_64 bit.
+ + Installed *LDAP* server and configured *ldap* on local machine.
+ + Installed dual OS and setting up and Installed required packages on
+   *Rekha*'s machine.
