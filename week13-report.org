@@ -1,0 +1,22 @@
+ - Attended for 2016 summer internship helped in following ways:
+   + Setting up machines
+   + Installed Git and Configured Git
+   + Installed *emacs* 24.5 and *org-mode* 8.3.4 version
+ - Learnt what is data model for building a web application
+ - Structure of a web application
+ - Sets and cardinality types
+ - Entity relationship notation
+ - Learnt about type structure
+ - System state
+ - Operations
+ - Discussed about Object Oriented Programming.
+ - Conflicts arising with data
+ - Got familier with Constructors, getters, setters and invarients
+ - Finishing the test cases and objects in the given template, with specific focus on the session.
+ - All the objects and methods were done. Debugging and testing the test case codes were not completed.
+ - Test cases and object creation. Familiarization with ORM was also expected
+ - The system object was created and subsequent classes were modified to
+   include the user and session lists as pertaining to the system. System
+   methods were created along with some static methods and their respective
+   methods.
+
