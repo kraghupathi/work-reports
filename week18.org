@@ -1,17 +1,6 @@
 ** (2016-06-13 Mon)
-     + Learnt few more operations in docker
-     + Fixed some errors in the containers
-     + Explored more of Docker
 ** (2016-06-14 Tue)
-     + Explored few more operations in docker
-     + Tried to understand Docker Hub
-     + Applied basic commands and played around with docker images and containers
-
 ** (2016-06-15 Wed)
-     + Hosted a simple html page in docker container using apache 
-     + Tried few more commands in docker 
-     + Prepared Documentation on Docker
-
 ** (2016-06-16 Thursday) 
 *** Backups for all base machines
   + Created a document containing the backup status of all base machines
