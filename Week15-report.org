@@ -14,9 +14,9 @@
      + Learnt about MVC arhitecture and its advantages
      + Started implementing Front-End of the user directory application
 ** Weekly  Summary
-     + What are the insights gained?
-       + concepts of object relational model
-       + REST API
-       + Concepts of Front-End and learnt about MVC architecture.   
-   + What is my footprint in the realization of the project?
-      + I understood how to relate the data base with the object model and also got familiar with the concepts of Front_End
+  + What are the insights gained?
+  + concepts of object relational model
+  + REST API
+  + Concepts of Front-End and learnt about MVC architecture.   
+  + What is my footprint in the realization of the project?
+  + I understood how to relate the data base with the object model and also got familiar with the concepts of Front_End
