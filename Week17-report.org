@@ -1,0 +1,63 @@
+** (2016-06-06 Monday and Tuesday)
+   + I helped to Summer Internship about OpenVZ and Creating Containers listed below
+   + Installation steps for OpenVZ and Configure it
+   + Creating containers, set IP and Proxy
+   + Creating user with password
+   + Enable remote login in both the container.
+   + Using SCP to copy files or directories each other. 
+** (2016-06-08 Wed)
+     + Understood the functionality of Apache server,Public & Private  DNS server, Reverse
+       proxy, STPI router,Ansible and Nagios  
+     + Learnt about the VLEAD network infrastructure
+     + Learnt about AWS infrastructure which I found to be similar to VLEAD
+       infrastructure with some additional features
+     + Understood how a Virtual Machine(VM) is created in AWS cloud
+** (2016-06-09 Thu)
+     + Started with Docker introduction and installation
+     + Learnt how to create containers and use them
+     + Learnt some basic commands in Docker like
+        - Creating container
+        - Display all active and non-active containers
+        - logs,start,stop,restart,inspect etc...
+        - Creating an image
+** (2016-06-10 Fri)
+     + Continued exploring docker
+     + Learnt many new commands or operations in docker
+     + Simultaneously documented it
+     + Learnt few more operations in docker
+     + Fixed some errors in the containers
+     + Explored more of Docker
+     + Explored few more operations in docker
+     + Tried to understand Docker Hub
+     + Applied basic commands and played around with docker images and containers
+     + Hosted a simple html page in docker container using apache 
+     + Tried few more commands in docker 
+     + Prepared Documentation on Docker
+** Weekly Report
+  + I helped to Summer Internship about OpenVZ and Installation OpenVZ
+  + Creating containers, set IP and Proxy, Creating user with password, Enable remote login in both the container.
+  + Using SCP to copy files or directories each other. 
+  + Understood the functionality of Apache server,Public & Private  DNS server, Reverse
+       proxy, STPI router,Ansible and Nagios  
+  + Learnt about the VLEAD network infrastructure
+  + Learnt about AWS infrastructure which I found to be similar to VLEAD
+     infrastructure with some additional features
+  + Understood how a Virtual Machine(VM) is created in AWS cloud
+  + Started with Docker introduction and installation
+  + Learnt how to create containers and use them
+  + Learnt some basic commands in Docker like
+        - Creating container
+        - Display all active and non-active containers
+        - logs,start,stop,restart,inspect etc...
+        - Creating an image
+   + Learnt many new commands or operations in docker
+   + Simultaneously documented it
+   + Learnt few more operations in docker
+   + Fixed some errors in the containers
+   + Explored more of Docker
+   + Explored few more operations in docker
+   + Tried to understand Docker Hub
+   + Applied basic commands and played around with docker images and containers
+   + Hosted a simple html page in docker container using apache 
+   + Tried few more commands in docker 
+   + Prepared Documentation on Docker
