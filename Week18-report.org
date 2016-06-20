@@ -1,7 +1,4 @@
-** (2016-06-13 Mon)
-** (2016-06-14 Tue)
-** (2016-06-15 Wed)
-** (2016-06-16 Thursday) 
+** (2016-06-15 Monday and Tuesday) 
 *** Backups for all base machines
   + Created a document containing the backup status of all base machines
   + A document is to be created containing all the information related to containers/entities which are getting backed up in base machines.
@@ -15,19 +12,18 @@
 3. Path of the directory where all the backups are saved ?
 4. How frequently backups are taken ?
 
-** (2016-06-17 Friday) 
+** (2016-06-16 Wednesday and Thursday) 
 The backup status of all the containers in Base1 including cluster
-servers and 3 other containers have been described in the document :
-https://bitbucket.org/vlead/backups/src/46647917b33b7af5852d988c525bf85dc8f39ac1/current-status-of-backup.org?fileviewer=file-view-default
+servers and 3 other containers have been described in the document : at [[https://bitbucket.org/vlead/backups/src/46647917b33b7af5852d988c525bf85dc8f39ac1/current-status-of-backup.org?fileviewer=file-view-default][here]]
 
 Other than the cluster servers, only 3 containers are being backed up
-namely : ca.virual-labs.ac.in, issues.virtual-labs.ac.in and
-qa.virtual-labs.ac.in
+namely : *ca.virual-labs.ac.in*, *issues.virtual-labs.ac.in* and
+*qa.virtual-labs.ac.in*
 
-Out of these 3 , we can decommission qa.virtual-labs.ac.in as this was
+Out of these 3 , we can decommission *qa.virtual-labs.ac.in* as this was
 created for redmine issues for QA testing team and now they have
-left. ca.virtual-labs.ac.in is backed up
-partially. issues.virtual-labs.ac.in is now backed up completely.
+left. *ca.virtual-labs.ac.in* is backed up
+partially. *issues.virtual-labs.ac.in* is now backed up completely.
 
 The rsnapshot-server residing in the Base1 cluster along with other
 cluster servers is also configured to take backup of cluster servers
@@ -97,28 +93,21 @@ c. /etc/vz/conf/CTID.conf
 4. Check for a free CTID in Base4 for the below step if no container is created. If a container is already created where we want to restore, give its CTID for the below step.
 5. Copy these files as mentioned below :
 a. copy /vz/private/CTID/* (base1) /vz/private/CTID/(base4)
-
- #scp -r /vz/private/CTID/*(of backed up container) root@10.4.12.24:/vz/private/CTID(identified free CTID in Base4 or created Base4 container's CTID) 
-
-
+#+BEGIN_EXAMPLE
+scp -r /vz/private/CTID/*(of backed up container) root@10.4.12.24:/vz/private/CTID(identified free CTID in Base4 or created Base4 container's CTID) 
+#+END_EXAMPLE
 b. copy /vz/root/CTID/* (base1) /vz/root/CTID/(base4)
-
- #scp -r /vz/root/CTID/*(of backed up container) root@10.4.12.24:/vz/root/CTID(identified free CTID or created Base4 container's CTID) 
-
-
+#+BEGIN_EXAMPLE
+scp -r /vz/root/CTID/*(of backed up container) root@10.4.12.24:/vz/root/CTID(identified free CTID or created Base4 container's CTID) 
+#+END_EXAMPLE
 c. copy /etc/vz/conf/CTID.conf (base1) /etc/vz/conf/CTID.conf(base4)
-
- #scp -r /etc/vz/conf/CTID.conf(of backed up container) root@10.4.12.24:/etc/vz/conf/CTID.conf(identified free CTID or created Base4 container's CTID)  
-
-
+#+BEGIN_EXAMPLE
+scp -r /etc/vz/conf/CTID.conf(of backed up container) root@10.4.12.24:/etc/vz/conf/CTID.conf(identified free CTID or created Base4 container's CTID)  
+#+END_EXAMPLE
 6. Instead of scp, we can also use rsync to copy the same files. The only difference would be
-
-#rsync -ar 
-
-in place of
-
-#scp -r 
-
+#+BEGIN_EXAMPLE
+rsync -ar  in place of scp -r 
+#+END_EXAMPLE
 and the rest would remain the same.
 7. After copying all the above files into the new container in Base4, log in into Base4 and modify 2 fields in the /etc/vz/conf/CTID.conf file,
 existing hostname should be modified to backed up container's hostname and existing IP should be modified to backed up container's IP (IP of issues.virtual-labs.ac.in container in Base1).
@@ -128,3 +117,16 @@ We have successfully restored the ca.virtual-labs.ac.in container in
 Base1 following the above mentioned steps. The newly restored
 container (in Base4) is containing all the required files which
 original container had.
+
+** Weekly Report
+  + I took backup all base machines(BASE1, BASE2 and BASE3)
+  + I created document for backedup containers (=ca.vlabs.ac.in=, =qa.vlabs.ac.in= and =issues.vlabs.ac.in=) using *Rsnapshot*, which is available at  [[https://bitbucket.org/vlead/backups/src/46647917b33b7af5852d988c525bf85dc8f39ac1/current-status-of-backup.org?fileviewer=file-view-default][here]]
+  + I have created a container on Base4 machine for taking backup from base1
+  + I understood cron jobs and successfuly backed up all containers.
+  + I have prepared a document for all containers in Base1 machine
+  + I tred manual restoration files on Base4 machine using *Rsync* and *scp*.
+  + Successfuly restored all files in container for testing couple of files.
+  + I Created container on Base4 machine for restoration all backups
+  + Restoration of containers backed up in Base1 machine, which is (*ca.vlabs.ac.in* and *issues.vlabs.ac.in*) 
+  + I have succefuly restored the all containers in Base1. The newly restored container(Base4) is containing all the required files which original container had.
+ 
