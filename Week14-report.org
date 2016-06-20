@@ -5,7 +5,6 @@
        + configured git
        + learnt to create repository	 
        + configured emacs 
-   
 ** (2016-05-17 Tue)
      + configured some more of emacs like exporting
      + Learnt what is data model for building a web application
@@ -15,7 +14,6 @@
      + learnt about type structure
      + system state 
      + operations
- 
 ** (2016-05-18 Wed)
     + Discussed about Object Oriented Programming.
     + Conflicts arising with data
@@ -35,10 +33,9 @@
      methods. ORM was not completed. (SQLAlchemy Framework)
 ** Weekly  Summary
      + What are the insights gained?
-       + Learnt to use git and emacs.
-       + learnt about data model, object model and ORM
-       + started working in groups to implement user directory application and
-         in the process learnt many new concepts
-    
+     + Learnt to use git and emacs.
+     + learnt about data model, object model and ORM
+     + started working in groups to implement user directory
+       application and in the process learnt many new concepts
      + What is my footprint in the realization of the project?
-       + Understood the basics of developing a web application 
+     + Understood the basics of developing a web application 
