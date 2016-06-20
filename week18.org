@@ -11,3 +11,131 @@
      + Hosted a simple html page in docker container using apache 
      + Tried few more commands in docker 
      + Prepared Documentation on Docker
+
+** (2016-06-16 Thursday) 
+*** Backups for all base machines
+  + Created a document containing the backup status of all base machines
+  + A document is to be created containing all the information related to containers/entities which are getting backed up in base machines.
+  + Created a document reflecting the current status of backups in
+    base machines. Document should be divided into sections where each
+    section will reflect the status of individual base
+    machines. Document prepared should have the information related to
+    the following -
+1. What all containers are being backed up ?
+2. Which directories of those containers are getting backed up ?
+3. Path of the directory where all the backups are saved ?
+4. How frequently backups are taken ?
+
+** (2016-06-17 Friday) 
+The backup status of all the containers in Base1 including cluster
+servers and 3 other containers have been described in the document :
+https://bitbucket.org/vlead/backups/src/46647917b33b7af5852d988c525bf85dc8f39ac1/current-status-of-backup.org?fileviewer=file-view-default
+
+Other than the cluster servers, only 3 containers are being backed up
+namely : ca.virual-labs.ac.in, issues.virtual-labs.ac.in and
+qa.virtual-labs.ac.in
+
+Out of these 3 , we can decommission qa.virtual-labs.ac.in as this was
+created for redmine issues for QA testing team and now they have
+left. ca.virtual-labs.ac.in is backed up
+partially. issues.virtual-labs.ac.in is now backed up completely.
+
+The rsnapshot-server residing in the Base1 cluster along with other
+cluster servers is also configured to take backup of cluster servers
+of Base1. As per discussion and comments by Shiva, this Base1 cluster
+backup was configured for testing purposes as the same setup is
+running in production as well. If in future, these cluster servers are
+affected and we have to recreate the entire Base1 cluster, instead of
+restoring each cluster server, better idea would be to follow
+bootstrapping and create a new Base1 cluster.
+
+We can conclude from above scenarios that in Base1 machine, if
+restoration needs to happen for any container, we would require to do
+complete container restoration for issues.virtual-labs.ac.in and
+partial restoration of ca.virtual-labs.ac.in container.
+
+** (2016-06-17 Friday) 
+Listing out the manual steps for the Restoration of containers on base machines
+* Steps to manual restoration of containers on base4 machine
+ - Log into the base4 machine
+ - Create a container, set Ip-address, hostname and root password.
+ - Enter into container and create below directories
+ - mkdir /root/.snapshots
+ - mkdir /root/.snapshots/hourly.0
+ - mkdir /root/.snapshots/hourly.0/outreach-portal
+ - Exit from container
+* Suppose we want to take restore the backup of outreach-portal
+ - Enter into rsnapshots container on base4 machine
+ - cd /.snapshots/hourly.0/outreach-portal/
+ - rsync -avr var root@10.4.15.247:/root/.snapshots/hourly.0/outreach-portal
+ - OR use the scp command to copy files in /outreach-portal:
+ - scp var root@10.4.15.247:/root/.snapshots/hourly.0/outreach-portal
+
+* Restoration of containers in base machines
+    For restoring completely backed up container. Just modified the two CTID so that we do not result in overwriting and existing container.
+
+    1. Take back up of 
+       a. /vz/private/CTID
+       b. /vz/root/CTID
+       c. /etc/vz/conf/CTID.conf
+    2. Create new container on base4 to restore the backed up files 
+    3. Copy these files into 
+       a. copy /vz/private/OLD-CTID/* (base1) /vz/private/NEW-CTID/(base4)
+       b. copy /vz/root/OLD-CTID/* (base1) /vz/root/NEW-CTID/(base4)
+       c. copy /etc/vz/conf/OLD-CTID.conf (base1) /etc/vz/conf/NEW-CTID.conf(base4)
+    4 restart the container
+
+    Steps given below, does not need to create a new container
+
+    1. Copy directory containing complete-backup of a container to a folder in the machine you want to restore. Example:
+       scp -r root@10.4.12.21:/mnt/das1/snapshots/issues.vlabs.ac.in/complete-backup /root/restore-them
+    2. Check for a free container ID in base 4 machine 
+    3. cp /root/restore-them/vz/private/BACKUP-CTID /vz/private/RESTORE_CTID
+    4. cp /root/restore-them/vz/root/BACKUP-CTID /vz/root/RESTORE-CTID
+    5. cp /root/restore-them/etc/vz/conf/BACKUP-CTID.conf /etc/vz/conf/RESTORE-CTID.conf 
+    6. List you container. You should get it with CTID = RESTORE-CTID
+
+
+* Base1 : Restoration of containers of Base1 machine
+We tried the complete restoration of issues.virtual-labs.ac.in container with the below mentioned steps. The restoration was successful in terms of entire redmine application with the existing projects running. Steps followed were :
+
+1. Take back up of
+a. /vz/private/CTID
+b. /vz/root/CTID
+c. /etc/vz/conf/CTID.conf
+2. No need to create a new container on base4 to restore the backed up files. If a new container is being created on Base4, stop this container.
+3. Log in into Base1 machine.
+4. Check for a free CTID in Base4 for the below step if no container is created. If a container is already created where we want to restore, give its CTID for the below step.
+5. Copy these files as mentioned below :
+a. copy /vz/private/CTID/* (base1) /vz/private/CTID/(base4)
+
+ #scp -r /vz/private/CTID/*(of backed up container) root@10.4.12.24:/vz/private/CTID(identified free CTID in Base4 or created Base4 container's CTID) 
+
+
+b. copy /vz/root/CTID/* (base1) /vz/root/CTID/(base4)
+
+ #scp -r /vz/root/CTID/*(of backed up container) root@10.4.12.24:/vz/root/CTID(identified free CTID or created Base4 container's CTID) 
+
+
+c. copy /etc/vz/conf/CTID.conf (base1) /etc/vz/conf/CTID.conf(base4)
+
+ #scp -r /etc/vz/conf/CTID.conf(of backed up container) root@10.4.12.24:/etc/vz/conf/CTID.conf(identified free CTID or created Base4 container's CTID)  
+
+
+6. Instead of scp, we can also use rsync to copy the same files. The only difference would be
+
+#rsync -ar 
+
+in place of
+
+#scp -r 
+
+and the rest would remain the same.
+7. After copying all the above files into the new container in Base4, log in into Base4 and modify 2 fields in the /etc/vz/conf/CTID.conf file,
+existing hostname should be modified to backed up container's hostname and existing IP should be modified to backed up container's IP (IP of issues.virtual-labs.ac.in container in Base1).
+8. Access the new restored container from the browser using the IP.
+
+We have successfully restored the ca.virtual-labs.ac.in container in
+Base1 following the above mentioned steps. The newly restored
+container (in Base4) is containing all the required files which
+original container had.
