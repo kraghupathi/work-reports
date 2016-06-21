@@ -1,0 +1,9 @@
+** (2016-06-20 Monday) 
+  + I read about *Fork bomb* and configured *Fork bomb* on local machine
+  + Understanding fork() bomb and I tried to configure on local machine
+  + Installed *Redmine* web application in container (which is *Base4*).
+  + Installed web servers such as, Apache and mysql-server.
+  + Configured redmine, setting up users and admin credentials.
+  + Succefuly working redmine at [[http://10.4.15.230:3000/][here]]
+** (2016-06-21 Tuesday) 
+
