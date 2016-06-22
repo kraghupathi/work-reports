@@ -8,6 +8,6 @@
 ** (2016-06-21 Tuesday) 
   + I have learned about *ADS* service and understood how it works background.
   + Deploy the couple of labs on *Base4* machine
-** (2016-06-21 Wednesday) 
+** (2016-06-22 Wednesday) 
   + I read about *Bandwidth* and *BandwidthD* and Installed, configured on container, which is available at (*Base4* machine)
   + I have gone through *Nagios*, Installed and Configured on container, which is available at (*Base4* machine)
