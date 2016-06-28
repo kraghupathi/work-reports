@@ -1,0 +1,5 @@
+** (2016-06-28 Monday) 
+  * Today I have learned about *Ansible* tutorial, which is taken from [[http://www.tecmint.com/install-and-configure-ansible-automation-tool-in-linux/][here]].
+  * Installed and Configured *Ansible* on local machine.
+  * Learnt about *Leave Management System* and *Jorani*, which is taken from [[http://jorani.org/][here]]
+  * Installed and Configured *Jorani* on container (*Base4* machine)
