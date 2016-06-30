@@ -1,5 +1,34 @@
-** (2016-06-28 Monday) 
+** (2016-06-28 Tuesday) 
   * Today I have learned about *Ansible* tutorial, which is taken from [[http://www.tecmint.com/install-and-configure-ansible-automation-tool-in-linux/][here]].
   * Installed and Configured *Ansible* on local machine.
   * Learnt about *Leave Management System* and *Jorani*, which is taken from [[http://jorani.org/][here]]
   * Installed and Configured *Jorani* on container (*Base4* machine)
+** (2016-06-29 Wednesday) 
+  * Created container on *Base* machine for setting up *HR-leave management system*
+  * Installed mysql, apache, php, xampp and phpmyadmin on container.
+  * Installed and configured below links on container.
+  * *Sentrifugo* [[http://www.sentrifugo.com/installation-guide]]
+  * *Orangehrm*  [[https://www.orangehrm.com/OrangeHRM_Installation]]  and [[http://linuxpitstop.com/install-orangehrm-on-ubuntu-15-04/]]
+  * Successfully installed and configured using above links.
+** (2016-06-30 Thursday) 
+  * Installed and Configured on container (CTID-16291), which is available on *Base4* machine
+  * Installation steps for *Icehrm* HR-Management System
+  * Downloaded *Icehrm* from [[https://sourceforge.net/projects/icehrm/]]
+  * Copied *icehrm-16.1.OS.zip* file to =/var/www/= directory and extract zip file using below commands
+#+BEGIN_EXAMPLE
+cp icehrm-16.1.OS.zip /var/www/
+cd /var/www/
+unzip icehrm-16.1.OS.zip
+#+END_EXAMPLE
+  * Created mysql DB for icehrm using below command
+#+BEGIN_EXAMPLE
+create database icehrm_db;
+grant all on icehrm_db.* to 'icehrm_user'@'localhost' identified by 'icehrm_user_pwd';
+#+END_EXAMPLE
+  * Provide permissions to required folders 
+#+BEGIN_EXAMPLE
+sudo chmod 777 icehrm-16.1.OS
+#+END_EXAMPLE
+  * Status of *Attendance and Leave Management System* tool, which is *Orangehrm*.
+  * After installation is done I have tested operations like creating users, user login, changing user password, applying leave, attendance, setting up leave types and job categories.
+  * Successfully its working for both attendance and leave management system. But Email notifications are yet to be done.
