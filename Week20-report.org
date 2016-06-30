@@ -31,4 +31,4 @@ sudo chmod 777 icehrm-16.1.OS
 #+END_EXAMPLE
   * Status of *Attendance and Leave Management System* tool, which is *Orangehrm*.
   * After installation is done I have tested operations like creating users, user login, changing user password, applying leave, attendance, setting up leave types and job categories.
-  * Successfully its working for both attendance and leave management system. But Email notifications are yet to be done.
+  * Successfully its working for both attendance and leave management system.
