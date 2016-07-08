@@ -7,7 +7,7 @@
 ** (2016-07-05 Tuesday) 
   - Today I discussed with Priya about HR-Leave Management System tool and given a Demo.
   - After peer review with Priya Following are the changes to be made on the portal.
- * Job Title
+ - Job Title
  + Program Head
  + HR/Admin
  + Sr.Program Manager
@@ -17,7 +17,7 @@
  + Jr.Project Engineer
  + L1 Trainee
  + RA/Intern
- * Job Categorie
+ - Job Categorie
  + Finance
  + HR/Admin
  + Engineering
@@ -28,7 +28,7 @@
  + Part Time-Employee
  + Full Time-Intern
  + Part Time-Intern  
- * Supervisor
+ - Supervisor
  + Priya
  + Lalit
  + Thirumal
