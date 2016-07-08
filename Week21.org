@@ -1,0 +1,45 @@
+** (2016-07-04 Monday) 
+  -  Configured and tested HR-Leave Management System tool using Follow the below steps.
+  +  Adding Compensatory Casual Leave, Casual Leave and Service Leave.
+  +  Email notifications
+  +  Changing vlabs logo
+  +  Adding couple of employees and tested it (whether getting email notifications or not).
+** (2016-07-05 Tuesday) 
+  - Today I discussed with Priya about HR-Leave Management System tool and given a Demo.
+  - After peer review with Priya Following are the changes to be made on the portal.
+ * Job Title
+ + Program Head
+ + HR/Admin
+ + Sr.Program Manager
+ + Program Manager
+ + Technical Manager
+ + Project Engineer
+ + Jr.Project Engineer
+ + L1 Trainee
+ + RA/Intern
+ * Job Categorie
+ + Finance
+ + HR/Admin
+ + Engineering
+ * Employment Status 
+ + Full Time-Consultant
+ + Part Time-Consultant
+ + Full Time-Employee
+ + Part Time-Employee
+ + Full Time-Intern
+ + Part Time-Intern  
+ * Supervisor
+ + Priya
+ + Lalit
+ + Thirumal
+ + Ravi  
+ * All notifications go to HR-Admin (hr-admin@vlabs.ac.in)
+ * Exporting to CSV
+ * Integration with LDAP authentication
+ * Include the link in automated mail
+** (2016-07-07 Thursday) 
+  - Configured and tested email notifications, supervisors, job categories, job title and email subscriptions.
+** (2016-07-08 Friday) 
+  - Customized landing page of Orangehrm. I changed vlabs logo, login page and vlead logo.
+ 
+
