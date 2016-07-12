@@ -1,0 +1,8 @@
+* (2016-07-11 Monday)
+  - Learnt indetail the model of the systems cluster at VLEAD. The
+    tools, systems, configurations, setup files and related
+    discussions are all part of the model.
+  - Read about Base1, Base4 and AWS clusters.
+* (2016-07-12 Tuesday)
+  - Customizing the OrangeHR-Management portal and tested whether attendance, email notifications and leave management is working or not.
+  - I read about DNS servers and Reverse proxy server. 
