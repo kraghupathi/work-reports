@@ -6,3 +6,19 @@
 * (2016-07-12 Tuesday)
   - Customizing the OrangeHR-Management portal and tested whether attendance, email notifications and leave management is working or not.
   - I read about DNS servers and Reverse proxy server. 
+* (2016-07-15 Thursday)
+  - Read about Nagios, rsyslog_server and router.
+  - Working Operation monitoring 
+* (2016-07-15 Thursday)
+  - Generated employee attendance daily and month wise reports for Orangehrm portal using below process.
+1). Use database
+2). listing punch in/out for all the users time.
+3). listing all employee numbers and employee username.
+4). Joining two tables, why because emp_number and employee_id common on both tables. by doing this we can get user_name and emp-number.
+Generating employee attendance reports is done successfully
+* (2016-07-15 Friday)
+  - Implemantation of  automation script for generating employee attendance.
+  - It will generate the following reports with in-time and out-time details for each employee.
+1. day wise reports and
+2. Monthly wise reports
+ 
