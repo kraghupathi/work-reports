@@ -6,10 +6,10 @@
 * (2016-07-12 Tuesday)
   - Customizing the OrangeHR-Management portal and tested whether attendance, email notifications and leave management is working or not.
   - I read about DNS servers and Reverse proxy server. 
-* (2016-07-15 Thursday)
+* (2016-07-13 Wednesday)
   - Read about Nagios, rsyslog_server and router.
-  - Working Operation monitoring 
-* (2016-07-15 Thursday)
+  - Checking alerts for VLEAD
+* (2016-07-14 Thursday)
   - Generated employee attendance daily and month wise reports for Orangehrm portal using below process.
 1). Use database
 2). listing punch in/out for all the users time.
