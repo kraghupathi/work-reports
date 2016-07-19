@@ -9,6 +9,12 @@
 * (2016-07-13 Wednesday)
   - Read about Nagios, rsyslog_server and router.
   - Checking alerts for VLEAD
+  Monitoring the services using nagios webpage.  I will be
+getting alerts also from nagios if any service is in critical state or
+if any service went down/stopped running.
+
+Especially, I am checking disk space of Outreach portal VM everyday
+as well as all the lab VMs and  disk space
 * (2016-07-14 Thursday)
   - Generated employee attendance daily and month wise reports for Orangehrm portal using below process.
 1). Use database
