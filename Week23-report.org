@@ -3,3 +3,11 @@
   - Checking disk space of Outreach portal VM everyday as well as all the lab VMs.
 
   - I have removed all the 2016-interns related data from the attendance portal at (http://attendance.vlabs.ac.in). And before doing this I have taken database backup and tested back with restoring the same on base4 container (16298).
+* (2016-07-19 Tuesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I and ashay created vlabs email-id for PVS Maruthi Rao and we shared credentials with him.
+* (2016-07-20 Wednesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I and ashay created LDAP account  for PVS Maruthi Rao and we shared credentials with him.
+  - Removed LDAP accounts for all  2016-summer interns. 
+
