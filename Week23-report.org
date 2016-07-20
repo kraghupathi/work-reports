@@ -10,6 +10,6 @@
   - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
   - I and ashay created LDAP account  for PVS Maruthi Rao and we shared credentials with him.
   - Removed LDAP accounts for all  2016-summer interns. 
-  - Exported couple of labs from [[http://edx-courses.vlabs.ac.in:18010][edx-cources]] to [[http://lms.vlabs.ac.in:18010][lms.vlabs.ac.in]].
+  - Exported couple of labs from [[http://edx-courses.vlabs.ac.in:18010][edx-cources]] into [[http://lms.vlabs.ac.in:18010][lms.vlabs.ac.in]].
   - Wrote a schell script for generating employee attendance daily wise, monthly wise reports with in-time and out-time for each employee.
 
