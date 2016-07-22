@@ -12,4 +12,11 @@
   - Removed LDAP accounts for all  2016-summer interns. 
   - Exported couple of labs from [[http://edx-courses.vlabs.ac.in:18010][edx-cources]] into [[http://lms.vlabs.ac.in:18010][lms.vlabs.ac.in]].
   - Wrote a schell script for generating employee attendance daily wise, monthly wise reports with in-time and out-time for each employee.
-
+* (2016-07-21 Thursday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+* (2016-07-22 Friday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Generating the monthly wise employee attendance reports with in/out time details of each employee.
+  - I have hosted couple of labs on base1 machine.
+  
