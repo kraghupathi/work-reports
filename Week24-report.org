@@ -1,0 +1,13 @@
+* (2016-07-25 Monday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - Created a Vlabs email account for Mr. Manmohan
+* (2016-07-26 Tuesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - Configuring OpenEdx analytics on local machine
+* (2016-07-27 Wednesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - Configuring OpenEdx analytics and LMS on local machine
+
