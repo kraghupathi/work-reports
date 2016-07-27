@@ -10,4 +10,5 @@
   - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
   - I have hosted couple of labs on base1 machine.
   - Configuring OpenEdx analytics and LMS on local machine
+  - Installed ipython notebook and supervisord on local machine
 
