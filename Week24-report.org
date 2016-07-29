@@ -10,5 +10,11 @@
   - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
   - I have hosted couple of labs on base1 machine.
   - Configuring OpenEdx analytics and LMS on local machine
-  - Installed ipython notebook and supervisord on local machine
-
+* (2016-07-28 Thursday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - Read about ipython and jupyterhub
+* (2016-07-29 Friday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - Installed ipython, supervisord, ipython-notebook, jupyter and jupyter-notebook on our local machine.
