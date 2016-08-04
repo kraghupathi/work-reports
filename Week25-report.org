@@ -1,0 +1,15 @@
+* (2016-08-02 Tuesday)
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+* (2016-08-03 Wednesday)
+  - I have hosted couple of labs on base1 machine.
+  - pvs-maruthi-rao is added as a member in vlead and openedx-team organizations on github.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-04 Thursday)
+  - I have hosted couple of labs on base1 machine.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
