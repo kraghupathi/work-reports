@@ -13,3 +13,10 @@
 1. AWS instance​s and their graphs
 2. AWS billing
   - Creared couple of notebooks on Ipython-notebook server
+* (2016-08-05 Friday)
+  - I have hosted couple of labs on base1 machine.
+  - Installed and setting up Ipython-notebook on container on base4 machine
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
