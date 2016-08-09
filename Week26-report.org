@@ -1,0 +1,11 @@
+* (2016-08-08 Monday)
+  - I have hosted couple of labs on base1 machine.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
+* (2016-08-09 Tuesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
