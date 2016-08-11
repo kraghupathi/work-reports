@@ -9,3 +9,17 @@
   - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
 1. AWS instance​s and their graphs
 2. AWS billing
+* (2016-08-10 Wednesday)
+  - Installed and configured ipython-notebook and jupyterhub in container on base4.
+  - Created couple of notebooks, inserted images, hyperlinks and videos.
+  - After creating notebook and did couple of simulation of labs.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-11 Thursday)
+  - Read about the model of the systems cluster at VLEAD. The tools, systems, configurations, setup files and related discussions are all part of the model. 
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
