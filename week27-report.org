@@ -1,0 +1,28 @@
+* (2016-08-16 Tuesday)
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
+* (2016-08-17 Wednesday)
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-18 Thursday)
+  - I have read about elk stack(Elasticsearch, logstash and kibana).
+  - Installed and configured elk stack in container on base4 machine.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-19 Friday)
+  - Read about the Porting Virtual Labs to Open edX Platform document.
+  - Created Problem solving lab in Openedx studio.
+  - Created section, subsections and units in problem sloving lab
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+
+
+

@@ -1,0 +1,9 @@
+* (2016-08-22 Monday)
+  - Created couple of experiments on Problem solving lab
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-23 Tuesday)
+  - Generated monthly attendance reports for all in/out time details of each employee
+  - Created couple of experiments on Problem solving lab
