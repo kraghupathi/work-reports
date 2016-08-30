@@ -1,0 +1,12 @@
+* (2016-08-29 Monday)
+  - Read about ELK stack, Installed and Configured in container on Base4 machine.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-08-30 Tuesday)
+  - Wrote automaiton script for porting labs on OpenEdx.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
