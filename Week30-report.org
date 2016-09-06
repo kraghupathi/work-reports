@@ -1,5 +1,5 @@
 * (2016-09-06 Tuesday)
-  -  Hosted on couple of labs on staging environment.
+  -  Hosted couple of labs on staging environment.
   -  Lab performance testing for CPU and RAM usage an each lab. And created excel
      sheet for each lab information such as concurrent users,
      transaction rate, CPU and RAM.
