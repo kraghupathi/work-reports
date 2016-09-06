@@ -10,3 +10,17 @@
   - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
 1. AWS instance​s and their graphs
 2. AWS billing
+* (2016-09-01 Thursday)
+ - Hosted couple of labs on staging environment.
+ - Checking cumulative analytics of virtual-labs
+ - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-09-02 Friday)
+ - Installed elk-stack and configurd nginx server in container on base1 machine.
+ - Checking cumulative analytics of virtual-labs
+ - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
