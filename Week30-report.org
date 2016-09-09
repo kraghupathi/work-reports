@@ -17,3 +17,20 @@
   - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
 1. AWS instance​s and their graphs
 2. AWS billing
+* (2016-09-08 Thursday)
+  -  Lab performance testing for CPU and RAM usage an each lab. And created excel
+     sheet for each lab information such as concurrent users,
+     transaction rate, CPU and RAM.
+  -  Preparing json files for automation script for porting of labs on openedx.   
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+* (2016-09-09 Friday)
+  - Preparing json files for automation script for porting of labs on openedx. 
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
