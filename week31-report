@@ -1,0 +1,10 @@
+* 2016-09-19 to 23-09-2016
+  - Couple of labs porting on OpenedX studio.
+  - Installed and configured Elk-stack on our physical machine.
+  - Prepared Lab spec files for 50 labs
+  - Couple of labs hosted on staging environment
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
