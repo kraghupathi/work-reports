@@ -1,0 +1,10 @@
+* 2016-10-13 to 16-10-2016
+  - Imported and exported couple of labs on OpenedX
+  - Created disk images (using clonezilla software) on portable media.
+  - Prepared slides for OpnedX benchmarking performance and Lab performance load test.
+  - Changed hostnames of 70 labs on Portable media
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
