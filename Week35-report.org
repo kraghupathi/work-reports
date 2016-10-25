@@ -1,0 +1,8 @@
+* 2016-10-13 to 16-10-2016
+  - Created disk images (using dd command) on portable media.
+  - Tested couple of labs and fixed bugs on OpenedX
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
