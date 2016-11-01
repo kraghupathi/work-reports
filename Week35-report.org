@@ -1,4 +1,4 @@
-* 2016-10-13 to 16-10-2016
+* 2016-10-17 to 21-10-2016
   - Created disk images (using dd command) on portable media.
   - Tested couple of labs and fixed bugs on OpenedX
   - Checking cumulative analytics of virtual-labs.
