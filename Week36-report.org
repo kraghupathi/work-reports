@@ -1,0 +1,10 @@
+* 2016-10-24 to 27-10-2016
+  - Created disk images (using dd command) on portable media.
+  - Tested couple of labs and fixed bugs on OpenedX
+  - Re-ported Industrial elctrical drives lab on OpenedX and tested it
+  - Prepared VLEAD-Employee attendance monthly report.
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
