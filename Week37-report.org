@@ -1,0 +1,7 @@
+* 2016-11-01 to 04-11-2016
+  - Implemented the cluster setup on portable-media and followed document from [[https://github.com/openedx-vlead/portable-media/blob/master/src/index.org][here]]
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
