@@ -1,0 +1,6 @@
+* 2016-11-14 to 18-11-2016
+  - Hosted couple of labs on portable-media.
+  - Settingup OpenedX platform on portable-media
+  - Created couple of labs and imported sources from git into openedx studio.
+  - Configured wireless router and setting up portable-media.
+
