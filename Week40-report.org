@@ -1,0 +1,8 @@
+* 2016-11-21 to 25-11-2016
+  - Prepared document for portable-media document review.
+  - Hosted couple of labs on staging environment
+  - Test and bug fixed NITK industrial electrical drives lab in openedx studio.
+  - Added as members (balamma and reena) in *virtrual-labs*, *openedx-vlead*, organizations on github and gave full permissions as per requested repostories.
+  - Settingup machine and installed ubuntu:14.04_64 bit LTS on physical machine
+
+
