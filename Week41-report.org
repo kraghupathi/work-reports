@@ -1,0 +1,8 @@
+* 2016-11-28 to 02-12-2016
+  - Hosted couple of labs on base4 and base1.
+  - Installed and configured docker on physical machine
+  - Created couple of containers and images on docker
+  - Hosted few labs on docker container and tested it (Whether the experiments are working or not)
+  - Understanding kubernetes orchestration system as per maruthi sir suggested.
+
+
