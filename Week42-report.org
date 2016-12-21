@@ -1,10 +1,7 @@
-* 2016-12-05 to 09-12-2016
- - Ported amrita 7 labs on OpenedX 
- - Tested each experiment wise feedback forms and simulations with Full screen buttons of 7 labs. 
- - Created repositories of each lab and pushed in [[https://github.com/openedx-vlead][openex-vlead]]
- - Prepared json spec files for each lab and pushed in [[https://github.com/vlead/lab-specifications/tree/master/Amritha-Labs][amrita-labs]]
- - Exported all 79 labs from OpenedX studio to local machine.
- - Changed repository names of all 79 labs and renamed them to proper naming convention which includes institute name.
- - Cloned 21 repositories and removed old sources and pushed latest sources in github repository.
-
+* 2016-12-12 to 16-12-2016
+ - Ported amrita 7 labs on OpenedX
+ - Tested and fixing the bugs of all 7labs
+ - Prepared lab spec files of 7 labs and pushed in github repository
+ - Ported fluid mechanics lab on OpebedX
+ - Hosted coulpe of labs on staging environment.
 
