@@ -1,0 +1,9 @@
+* 2016-12-19 to 23-12-2016
+ - Steps followed for Import/Export labs to Open edX platform on portable-media
+  + Exported all 79 labs from OpenedX studio to local machine
+  + Imported 79 labs to OpenedX platform on portable-media
+  + Added analytics in simulation part of each experimnet wise on OpenedX labs. 
+ - I have implemented *supybot IRC logging server* for =#vlead= and =#vlabs-engineers= on base4 container and its working now.
+ - I have implemented an *IRC bot* using *supybot* with named as *vlead-logging*. 
+ - Hosted coulpe of labs on staging environment.
+
