@@ -1,0 +1,465 @@
+#+AUTHOR: Raghupathi Kammari
+#+TITLE: Work Report of Raghupathi
+
+*Note* : Attended 2016-Summer Internship from 16-May-2016 to 10-June-2016
+
+* Month of May
+** Week14
+*** 16-May-2016 to 20-May-2016
+     + What are the insights gained?
+     + Learnt to use git and emacs.
+     + learnt about data model, object model and ORM
+     + started working in groups to implement user directory
+       application and in the process learnt many new concepts
+     + What is my footprint in the realization of the project?
+     + Understood the basics of developing a web application 
+
+** Week15
+*** 23-May-2016 to 27-May-2016
+  + What are the insights gained?
+  + concepts of object relational model
+  + REST API
+  + Concepts of Front-End and learnt about MVC architecture.   
+  + What is my footprint in the realization of the project?
+  + I understood how to relate the data base with the object model and also got familiar with the concepts of Front_End
+
+** Week16
+*** 30-May-2016 to 31-May-2016
+  + Implemented Front-End of the application
+  + Worked mostly on implementing add-user, edit-user and delete-user of the
+       application.
+  + Fixed some errors in this part
+
+* Month of June
+** Week16
+*** 01-June-2016 to 03-June-2016
+  + Got rid of many errors meanwhile.
+  + Understood new concepts of Angular Js.
+  + Finished Front-End part of the application
+  + Deployed the application both by manually and Auto Deployment Services(ADS)
+  + Understood the concepts of deployment
+  + Also worked on documentation of the application
+  + We completed the web application and prepared documentation.
+
+** Week17
+*** 06-June-2016 to 10-June-2016
+  + I helped to Summer Internship about OpenVZ and Installation OpenVZ
+  + Creating containers, set IP and Proxy, Creating user with password, Enable remote login in both the container.
+  + Using SCP to copy files or directories each other. 
+  + Understood the functionality of Apache server,Public & Private  DNS server, Reverse
+       proxy, STPI router,Ansible and Nagios  
+  + Learnt about the VLEAD network infrastructure
+  + Learnt about AWS infrastructure which I found to be similar to VLEAD
+     infrastructure with some additional features
+  + Understood how a Virtual Machine(VM) is created in AWS cloud
+  + Started with Docker introduction and installation
+  + Learnt how to create containers and use them
+  + Learnt some basic commands in Docker like
+        - Creating container
+        - Display all active and non-active containers
+        - logs,start,stop,restart,inspect etc...
+        - Creating an image
+   + Learnt many new commands or operations in docker
+   + Simultaneously documented it
+   + Learnt few more operations in docker
+   + Fixed some errors in the containers
+   + Explored more of Docker
+   + Explored few more operations in docker
+   + Tried to understand Docker Hub
+   + Applied basic commands and played around with docker images and containers
+   + Hosted a simple html page in docker container using apache 
+   + Tried few more commands in docker 
+   + Prepared Documentation on Docker
+
+
+** Week18
+*** 15-June-2016 to 19-June-2016
+  + I took backup all base machines(BASE1, BASE2 and BASE3)
+  + I created document for backedup containers (=ca.vlabs.ac.in=, =qa.vlabs.ac.in= and =issues.vlabs.ac.in=) using *Rsnapshot*, which is available at  [[https://bitbucket.org/vlead/backups/src/46647917b33b7af5852d988c525bf85dc8f39ac1/current-status-of-backup.org?fileviewer=file-view-default][here]]
+  + I have created a container on Base4 machine for taking backup from base1
+  + I understood cron jobs and successfuly backed up all containers.
+  + I have prepared a document for all containers in Base1 machine
+  + I tred manual restoration files on Base4 machine using *Rsync* and *scp*.
+  + Successfuly restored all files in container for testing couple of files.
+  + I Created container on Base4 machine for restoration all backups
+  + Restoration of containers backed up in Base1 machine, which is (*ca.vlabs.ac.in* and *issues.vlabs.ac.in*) 
+  + I have succefuly restored the all containers in Base1. The newly restored container(Base4) is containing all the required files which original container had.
+
+** Week19
+*** 20-June-2016 to 22-June-2016
+  + I read about *Fork bomb* and configured *Fork bomb* on local machine
+  + Understanding fork() bomb and I tried to configure on local machine
+  + Installed *Redmine* web application in container (which is *Base4*).
+  + Installed web servers such as, Apache and mysql-server.
+  + Configured redmine, setting up users and admin credentials.
+  + Succefuly working redmine at [[http://10.4.15.230:3000/][here]]
+  + I have learned about *ADS* service and understood how it works background.
+  + Deploy the couple of labs on *Base4* machine
+  + I read about *Bandwidth* and *BandwidthD* and Installed, configured on container, which is available at (*Base4* machine)
+  + I have gone through *Nagios*, Installed and Configured on container, which is available at (*Base4* machine)
+
+** Week20
+*** 28-June-2016 to 30-June-2016
+  * Today I have learned about *Ansible* tutorial, which is taken from [[http://www.tecmint.com/install-and-configure-ansible-automation-tool-in-linux/][here]].
+  * Installed and Configured *Ansible* on local machine.
+  * Learnt about *Leave Management System* and *Jorani*, which is taken from [[http://jorani.org/][here]]
+  * Installed and Configured *Jorani* on container (*Base4* machine)
+  * Created container on *Base* machine for setting up *HR-leave management system*
+  * Installed mysql, apache, php, xampp and phpmyadmin on container.
+  * Installed and configured below links on container.
+  * *Sentrifugo* [[http://www.sentrifugo.com/installation-guide]]
+  * *Orangehrm*  [[https://www.orangehrm.com/OrangeHRM_Installation]]  and [[http://linuxpitstop.com/install-orangehrm-on-ubuntu-15-04/]]
+  * Successfully installed and configured using above links.
+  * Installed and Configured on container (CTID-16291), which is available on *Base4* machine
+  * Installation steps for *Icehrm* HR-Management System
+  * Downloaded *Icehrm* from [[https://sourceforge.net/projects/icehrm/]]
+  * Copied *icehrm-16.1.OS.zip* file to =/var/www/= directory and extract zip file using below commands
+#+BEGIN_EXAMPLE
+cp icehrm-16.1.OS.zip /var/www/
+cd /var/www/
+unzip icehrm-16.1.OS.zip
+#+END_EXAMPLE
+  * Created mysql DB for icehrm using below command
+#+BEGIN_EXAMPLE
+create database icehrm_db;
+grant all on icehrm_db.* to 'icehrm_user'@'localhost' identified by 'icehrm_user_pwd';
+#+END_EXAMPLE
+  * Provide permissions to required folders 
+#+BEGIN_EXAMPLE
+sudo chmod 777 icehrm-16.1.OS
+#+END_EXAMPLE
+  * Status of *Attendance and Leave Management System* tool, which is *Orangehrm*.
+  * After installation is done I have tested operations like creating users, user login, changing user password, applying leave, attendance, setting up leave types and job categories.
+  * Successfully its working for both attendance and leave management system.
+
+* Month of July
+** Week21
+*** 04-July-2016 to 08-July-2016
+  -  Configured and tested HR-Leave Management System tool using Follow the below steps.
+  +  Adding Compensatory Casual Leave, Casual Leave and Service Leave.
+  +  Email notifications
+  +  Changing vlabs logo
+  +  Adding couple of employees and tested it (whether getting email notifications or not).
+  - I discussed with Priya about HR-Leave Management System tool and given a Demo.
+  - After peer review with Priya Following are the changes to be made on the portal.
+ - Job Title
+ + Program Head
+ + HR/Admin
+ + Sr.Program Manager
+ + Program Manager
+ + Technical Manager
+ + Project Engineer
+ + Jr.Project Engineer
+ + L1 Trainee
+ + RA/Intern
+ - Job Categorie
+ + Finance
+ + HR/Admin
+ + Engineering
+ * Employment Status 
+ + Full Time-Consultant
+ + Part Time-Consultant
+ + Full Time-Employee
+ + Part Time-Employee
+ + Full Time-Intern
+ + Part Time-Intern  
+ - Supervisor
+ + Priya
+ + Lalit
+ + Thirumal
+ + Ravi  
+ * All notifications go to HR-Admin (hr-admin@vlabs.ac.in)
+ * Exporting to CSV
+ * Integration with LDAP authentication
+ * Include the link in automated mail
+  - Configured and tested email notifications, supervisors, job categories, job title and email subscriptions.
+  - Customized landing page of Orangehrm. I changed vlabs logo, login page and vlead logo.
+ 
+** Week22
+*** 11-July-2016 to 15-July-2016
+  - Learnt indetail the model of the systems cluster at VLEAD. The
+    tools, systems, configurations, setup files and related
+    discussions are all part of the model.
+  - Read about Base1, Base4 and AWS clusters.
+  - Customizing the OrangeHR-Management portal and tested whether attendance, email notifications and leave management is working or not.
+  - I read about DNS servers and Reverse proxy server. 
+  - Read about Nagios, rsyslog_server and router.
+  - Checking alerts for VLEAD
+  Monitoring the services using nagios webpage.  I will be
+getting alerts also from nagios if any service is in critical state or
+if any service went down/stopped running.
+
+Especially, I am checking disk space of Outreach portal VM everyday
+as well as all the lab VMs.
+** (2016-07-14 Thursday)
+  - Generated employee attendance daily and month wise reports for Orangehrm portal using below process.
+1). Use database
+2). listing punch in/out for all the users time.
+3). listing all employee numbers and employee username.
+4). Joining two tables, why because emp_number and employee_id common on both tables. by doing this we can get user_name and emp-number.
+Generating employee attendance reports is done successfully
+** (2016-07-15 Friday)
+  - Implemantation of  automation script for generating employee attendance.
+  - It will generate the following reports with in-time and out-time details for each employee.
+1. day wise reports and
+2. Monthly wise reports
+
+** Week23
+*** 18-July-2016 to 22-July-2016
+ - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.  
+ - Checking disk space of Outreach portal VM everyday as well as all the lab VMs.
+
+  - I have removed all the 2016-interns related data from the attendance portal at (http://attendance.vlabs.ac.in). And before doing this I have taken database backup and tested back with restoring the same on base4 container (16298).
+  - I and ashay created vlabs email-id for PVS Maruthi Rao and we shared credentials with him.
+  - I and ashay created LDAP account  for PVS Maruthi Rao and we shared credentials with him.
+  - Removed LDAP accounts for all  2016-summer interns. 
+  - Exported couple of labs from [[http://edx-courses.vlabs.ac.in:18010][edx-cources]] into [[http://lms.vlabs.ac.in:18010][lms.vlabs.ac.in]].
+  - Wrote a schell script for generating employee attendance daily wise, monthly wise reports with in-time and out-time for each employee.
+  - I have hosted couple of labs on base1 machine.
+  - Generating the monthly wise employee attendance reports with in/out time details of each employee.
+  - I have hosted couple of labs on base1 machine.
+  - Exported couple of labs from [[http://edx-courses.vlabs.ac.in:18010][edx-cources]] into [[http://platform.vlabs.ac.in:18010][platform.vlabs.ac.in]].
+
+** Week24
+*** 25-July-2016 to 29-July-2016
+  - I have hosted couple of labs on base1 machine.
+  - Created a Vlabs email account for Mr. Manmohan
+  - I have hosted couple of labs on base1 machine.
+  - Configuring OpenEdx analytics on local machine
+  - Configuring OpenEdx analytics and LMS on local machine
+  - Read about ipython and jupyterhub
+  - Installed ipython, supervisord, ipython-notebook, jupyter and jupyter-notebook on our local machine.
+
+* Month of August
+** Week25
+*** 02-Aug-2016 to 05-Aug-2016
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - I have hosted couple of labs on base1 machine.
+  - pvs-maruthi-rao is added as a member in vlead and openedx-team organizations on github.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
+  - Installed and setting up Ipython-notebook on container on base4 machine
+  - Creared couple of notebooks on Ipython-notebook server
+
+** Week26
+*** 08-Aug-2016 to 11-Aug-2016
+  - I have hosted couple of labs on base1 machine.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
+  - Installed and configured ipython-notebook and jupyterhub in container on base4.
+  - Created couple of notebooks, inserted images, hyperlinks and videos.
+  - After creating notebook and did couple of simulation of labs.
+  - Read about the model of the systems cluster at VLEAD. The tools, systems, configurations, setup files and related discussions are all part of the model. 
+
+** Week27
+*** 16-Aug-2016 to 19-Aug-2016
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Creared couple of notebooks on Ipython-notebook server
+  - I have read about elk stack(Elasticsearch, logstash and kibana).
+  - Installed and configured elk stack in container on base4 machine.
+  - Read about the Porting Virtual Labs to Open edX Platform document.
+  - Created Problem solving lab in Openedx studio.
+  - Created section, subsections and units in problem sloving lab
+
+** Week28
+*** 22-Aug-2016 to 26-Aug-2016
+  - Ported couple of experiments on Problem solving lab
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Generated monthly attendance reports for all in/out time details of each employee
+
+** Week29
+*** 29-Aug-2016 to 30-Aug-2016
+  - Read about ELK stack, Installed and Configured in container on Base4 machine.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  - Wrote automaiton script for porting labs on OpenEdx.
+
+* Month of September
+** Week29
+*** 01-Sep-2016 to 02-Sep-2016
+ - Hosted couple of labs on staging environment.
+ - Checking cumulative analytics of virtual-labs
+ - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+ - Installed elk-stack and configurd nginx server in container on base1 machine.
+ - Checking cumulative analytics of virtual-labs
+
+** Week30
+*** 06-Sep-2016 to 09-Sep-2016
+  -  Hosted couple of labs on staging environment.
+  -  Lab performance testing for CPU and RAM usage an each lab. And created excel
+     sheet for each lab information such as concurrent users,
+     transaction rate, CPU and RAM.
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as  monitoring the services using  nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+1. AWS instance​s and their graphs
+2. AWS billing
+  -  Lab performance testing for CPU and RAM usage an each lab. And created excel
+     sheet for each lab information such as concurrent users,
+     transaction rate, CPU and RAM.
+  -  Lab performance testing for CPU and RAM usage an each lab. And created excel
+     sheet for each lab information such as concurrent users,
+     transaction rate, CPU and RAM.
+  -  Preparing json files for automation script for porting of labs on openedx.   
+   - Preparing json files for automation script for porting of labs on openedx. 
+ 
+** Week31
+*** 19-Sep-2016 to 23-Sep-2016
+  - Couple of labs porting on OpenedX studio.
+  - Installed and configured Elk-stack on our physical machine.
+  - Prepared Lab spec files for 50 labs
+  - Couple of labs hosted on staging environment
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+** Week32
+*** 26-Sep-2016 to 30-Sep-2016
+  - Created vlabs email ID's for new joined people.
+  - Imported and exported couple of labs on OpenedX
+  - Installed (Ubuntu_14.04) and setting up machine for Ravikiran
+  - Prepared VLEAD showcase one slide table.
+  - Prepared Lab spec files for 5 labs
+  - Couple of labs hosted on staging environment
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+* Month of October
+** Week33
+*** 03-Oct-2016 to 07-Oct-2016
+  - Imported and exported couple of labs on OpenedX
+  - Uploaded images for all 68 labs on OpenedX
+  - Couple of labs hosted on staging environment
+  - Hosted 72 labs on Portable media
+  - Prepared excel sheet for lab performance testing/Load test for 71 labs.
+  - Installed ELK stack on portable media.
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+** Week34
+*** 13-Oct-2016 to 16-Oct-2016
+  - Imported and exported couple of labs on OpenedX
+  - Created disk images (using clonezilla software) on portable media.
+  - Prepared slides for OpnedX benchmarking performance and Lab performance load test.
+  - Changed hostnames of 70 labs on Portable media
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+** Week35
+*** 17-Oct-2016 to 21-Oct-2016
+  - Created disk images (using dd command) on portable media.
+  - Tested couple of labs and fixed bugs on OpenedX
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+** Week36
+*** 24-Oct-2016 to 27-Oct-2016
+  - Created disk images (using dd command) on portable media.
+  - Tested couple of labs and fixed bugs on OpenedX
+  - Re-ported Industrial elctrical drives lab on OpenedX and tested it
+  - Prepared VLEAD-Employee attendance monthly report.
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+* Month of November
+** Week37
+*** 01-Nov-2016 to 04-Nov-2016
+  - Implemented the cluster setup on portable-media and followed document from [[https://github.com/openedx-vlead/portable-media/blob/master/src/index.org][here]]
+  - Checking cumulative analytics of virtual-labs.
+  - Checking alerts for VLEAD as well as monitoring the services using nagios webpage.
+  - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+    + AWS instance​s and their graphs
+    + AWS billing
+
+** Week38
+*** 07-Nov-2016 to 11-Nov-2016
+  - Implemented the cluster setup on portable-media and followed document from [[https://github.com/openedx-vlead/portable-media/blob/master/src/index.org][here]]
+  - Hosted couple of labs on portable-media.
+  - Settingup OpenedX platform on portable-media
+  - Installed and configured OpenVZ web panel on local machine
+
+** Week39
+*** 14-Nov-2016 to 18-Nov-2016
+  - Hosted couple of labs on portable-media.
+  - Settingup OpenedX platform on portable-media
+  - Created couple of labs and imported sources from git into openedx studio.
+  - Configured wireless router and setting up portable-media.
+
+** Week40
+*** 21-Nov-2016 to 25-Nov-2016
+  - Prepared document for portable-media document review.
+  - Hosted couple of labs on staging environment
+  - Test and bug fixed NITK industrial electrical drives lab in openedx studio.
+  - Added as members (balamma and reena) in *virtrual-labs*, *openedx-vlead*, organizations on github and gave full permissions as per requested repostories.
+  - Settingup machine and installed ubuntu:14.04_64 bit LTS on physical machine
+
+** Week41
+*** 28-Nov-2016 to 30-Nov-2016
+  - Hosted couple of labs on base4 and base1.
+  - Installed and configured docker on physical machine
+  - Created couple of containers and images on docker
+
+* Month of December
+** Week41
+*** 01-Dec-2016 to 02-Dec-2016
+  - Hosted few labs on docker container and tested it (Whether the experiments are working or not)
+  - Understanding kubernetes orchestration system as per maruthi sir suggested.
+
+** Week42
+*** 05-Dec-2016 to 09-Dec-2016
+ - Ported amrita 7 labs on OpenedX
+ - Tested and fixing the bugs of all 7labs
+ - Prepared lab spec files of 7 labs and pushed in github repository
+ - Ported fluid mechanics lab on OpebedX
+ - Hosted coulpe of labs on staging environment.
+
+** Week43
+*** 12-Dec-2016 to 16-Dec-2016
+- Steps followed for updating sources of OpenedX labs on github
+ + Exported all 79 labs from OpenedX studio to local machine.
+ + Changed repository names of all 79 labs and renamed them to proper naming convention which includes institute name.
+ + Gave full permissions of all labs(repositories) in openedx-vlead organization on github.
+ + Cloned 79 repositories, removed old sources and pushed latest sources in github repository.
+
+** Week44
+*** 19-Dec-2016 to 23-Dec-2016
+ - Steps followed for Import/Export labs to Open edX platform on portable-media
+  + Exported all 79 labs from OpenedX studio to local machine
+  + Imported 79 labs to OpenedX platform on portable-media
+  + Added analytics in simulation part of each experimnet wise on OpenedX labs. 
+ - I have implemented *supybot IRC logging server* for =#vlead= and =#vlabs-engineers= on base4 container and its working now.
+ - I have implemented an *IRC bot* using *supybot* with named as *vlead-logging*. 
+ - Hosted coulpe of labs on staging environment.
+
+
