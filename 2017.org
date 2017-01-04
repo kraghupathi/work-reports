@@ -1,0 +1,27 @@
+#+AUTHOR: Raghupathi Kammari
+#+TITLE: Work Report of Raghupathi
+#+DATE: [2017-Jan-02 Monday]
+#+SETUPFILE: ../../org-templates/level-2.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+* Month of Jan
+** Email alerts of VLEAD
+ - Checking every day email alerts of VLEAD as well as  monitoring the services using  nagios webpage.
+ - Amazon monitoring update During all this timings along with the alert mails, following things were monitored:
+  + AWS instance​s and their graphs
+  + AWS billing 
+ - Checking cumulative analytics of virtual-labs
+
+** 02-Jan-2017
+ - Settingup portable media on local machine.
+ - Updated hostnames of amrita newly 7 labs on Portable-media cluster.
+ - Imported/Exported OpenedX labs to portable media.
+ - Configured router for portable media
+ - Prepared documentation for IRC logging server
+
+** 03-Jan-2017
+ - Updated analytics in artificial neural netwroks lab on OpenedX
+ - Pushed latest sources of OpenedX labs in github repositories.
+ - Working with shiva on portable media
