@@ -73,6 +73,8 @@ Run the training job setup script
 
 > $ cd ~/KFLab/tf-mnist
 
+> $ ./train.bash
+
 > $ ./serve.bash
 
 ## Model Testing
