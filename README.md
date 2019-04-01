@@ -14,7 +14,7 @@ We recommend that your system meets the following requirements:
 
 * Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
-Install the vagrant plugins
+#### Install the vagrant plugins
 
 > $ vagrant plugin install vagrant-disksize
 
@@ -52,7 +52,7 @@ This will take a few minutes to complete. Once the installation is completed suc
 
 > $ export no_proxy="10.10.10.10,127.0.0.1,localhost" 
 
-#### Set corporate proxy in docker enginer (If run this setup behind the proxy)
+#### Setup corporate proxy in docker engine (If run this setup behind the proxy)
 
 > $ mkdir -p /etc/systemd/system/docker.service.d
 
@@ -85,16 +85,17 @@ If there is any rate limit error from github, please follow the steps to generat
 - Go to [Github Token Setup](https://github.com/settings/tokens)
 - Copy the token and set an environment variable in your shell: _export GITHUB_TOKEN=<token>_.
  
-## Setup train and serve stage on cluster
-
-Run the training job setup script
+## Run the training job setup script
 
 > $ ./train.bash
+
+## Start TF serving on the trained results
 
 > $ ./serve.bash
 
 ## Model Testing
 ### Using a local python client
+
 Port forward to access the serving port locally
 
 > $ ./portf.bash
