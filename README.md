@@ -16,31 +16,30 @@ We recommend that your system meets the following requirements:
 
 Install the vagrant plugins
 
-> $ 
+> $ vagrant plugin install vagrant-disksize
 
 ### Setup vagrant machine for MiniKF installation
 
 Run the following commands to install MiniKF:
 
-> $ vagrant box add 
+> cd ~
 
-> $ vagrant init kraghupathi/minikf
+> $ git clone https://github.com/CiscoAI/hcl-cisco-project1
 
-Add the following lines in Vagrantfile
+> cd ~/hcl-cisco-project1/vagrant/minikf
 
-> 
-
+> $ vagrant box add kraghupathi/minikf
 
 > $ vagrant up
 
 This will take a few minutes to complete. Once the installation is completed successfully
 
 
-Login to MiniKF VM
+### Login to MiniKF VM
 
 > $ vagrant ssh
 
-### Deployment of BLE RSSI model
+### Deployment of mnist model
 
 Install the following packages
 
