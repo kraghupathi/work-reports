@@ -32,7 +32,7 @@ Run the following commands to install MiniKF:
 
 > $ vagrant up
 
-This will take a few minutes to complete. Once the installation is completed successfully
+This will take a few minutes to complete. Once the installation is completed successfully.
 
 
 ### Login to MiniKF VM
@@ -40,24 +40,43 @@ This will take a few minutes to complete. Once the installation is completed suc
 > $ vagrant ssh
 
 ### Deployment of mnist model
+#### Setup corporate proxy (If run this setup behind the proxy)
 
-Install the following packages
+> $ echo 'Acquire::https::Proxy "http://proxy.example.com:80/";' >> /etc/apt/apt.conf
+
+> $ echo 'Acquire::http::Proxy "http://proxy.example.com:80/";' >> /etc/apt/apt.conf
+
+> $ echo 'export http_proxy="http://proxy.example.com:80/"' >> /etc/profile
+
+> $ echo 'export https_proxy="http://proxy.example.com:80/"' >> /etc/profile
+
+> $ export no_proxy="10.10.10.10,127.0.0.1,localhost" 
+
+#### Set corporate proxy in docker enginer (If run this setup behind the proxy)
+
+> $ mkdir -p /etc/systemd/system/docker.service.d
+
+> $ echo '[Service]' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+
+> $ echo 'Environment="HTTP_PROXY=http://proxy.example.com:80/"' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+
+> $ echo 'Environment="HTTPS_PROXY=http://proxy.example.com:80/"' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+
+> $ systemctl daemon-reload && service docker restart
+
+### Install the following packages
 
 > $ sudo apt-get update
 
 > $ sudo apt-get install -y curl wget nfs-server python3-pip virtualenv
 
-Installation of Kubeflow
+### Installation of Kubeflow and depoyment of Mnist
 
 > cd ~
 
 > $ git clone https://github.com/ciscoAI/KFLab
 
-> $ cd ~/KFLab/tf-mnist/minikf 
-
-## Installation of Kubeflow
-
-> $ cd ~/KFLab/tf-mnist
+> $ cd ~/KFLab/tf-mnist/minikf
 
 > $ ./install.bash
 
@@ -70,8 +89,6 @@ If there is any rate limit error from github, please follow the steps to generat
 
 Run the training job setup script
 
-> $ cd ~/KFLab/tf-mnist
-
 > $ ./train.bash
 
 > $ ./serve.bash
@@ -80,15 +97,13 @@ Run the training job setup script
 ### Using a local python client
 Port forward to access the serving port locally
 
-> $ cd ~/KFLab/tf-mnist
-
 > $ ./portf.bash
 
 Run a sample client code to predict images(See mnist-client.py)
 
 > cd ~
 
-> $ virtualenv --system-site-packages env
+> $ virtualenv -p python3 env
 
 > $ source ~/env/bin/activate
 
@@ -102,10 +117,16 @@ Run a sample client code to predict images(See mnist-client.py)
 
 > $ pip3 install pandas
 
-> $ TF_MNIST_IMAGE_PATH=data/7.png python mnist_client.py
+> $ cd ~/KFLab/tf-mnist/minikf
+
+> $ TF_MNIST_IMAGE_PATH=data/7.png python3 mnist_client.py
 
 
 ### Kubeflow dashboard
+
+You can access the Kubeflow dashboard by opening a browser and going to:
+
+http://10.10.10.10
 
 How to log in
 
