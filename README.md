@@ -86,12 +86,19 @@ Port forward to access the serving port locally
 Run a sample client code to predict images(See mnist-client.py)
 
 > $ sudo apt-get install -y virtualenv python3-pip python-pip
+
 > $ virtualenv --system-site-packages env
+
 > $ source ./env/bin/activate
+
 > $ pip3 install --upgrade tensorflow
+
 > $ pip3 install tensorflow-serving-api
+
 > $ pip3 install python-mnist
+
 > $ pip3 install Pillow
+
 > $ pip3 install pandas
 
 > $ TF_MNIST_IMAGE_PATH=data/7.png python mnist_client.py
