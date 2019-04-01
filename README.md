@@ -85,11 +85,11 @@ Port forward to access the serving port locally
 
 Run a sample client code to predict images(See mnist-client.py)
 
-> $ sudo apt-get install -y virtualenv python3-pip python-pip
+> cd ~
 
 > $ virtualenv --system-site-packages env
 
-> $ source ./env/bin/activate
+> $ source ~/env/bin/activate
 
 > $ pip3 install --upgrade tensorflow
 
@@ -111,4 +111,5 @@ How to log in
 Use these credentials to log in to all services, for example, JupyterHub, Rok:
 
 username: user
+
 password: 12341234
