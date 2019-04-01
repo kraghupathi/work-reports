@@ -128,10 +128,10 @@ You can access the Kubeflow dashboard by opening a browser and going to:
 
 http://10.10.10.10
 
-How to log in
+#### How to log in
 
 Use these credentials to log in to all services, for example, JupyterHub, Rok:
 
-username: user
+**username:** user
 
-password: 12341234
+**password:** 12341234
