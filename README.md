@@ -93,6 +93,9 @@ If there is any rate limit error from github, please follow the steps to generat
 
 > $ ./serve.bash
 
+Ensure that all pods are running in the namespace set in variables.bash. The default namespace is kubeflow
+kubectl get pods -n kubeflow
+
 ## Model Testing
 ### Using a local python client
 
