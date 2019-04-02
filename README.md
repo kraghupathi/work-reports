@@ -42,27 +42,33 @@ This will take a few minutes to complete. Once the installation is completed suc
 ### Deployment of mnist model
 #### Setup corporate proxy (If run this setup behind the proxy)
 
-> $ echo 'Acquire::https::Proxy "http://proxy.example.com:80/";' >> /etc/apt/apt.conf
+1. Add the following lines in **/etc/apt/apt.conf** file
 
-> $ echo 'Acquire::http::Proxy "http://proxy.example.com:80/";' >> /etc/apt/apt.conf
+> Acquire::http::Proxy "http://proxy.example.com:80/";
 
-> $ echo 'export http_proxy="http://proxy.example.com:80/"' >> /etc/profile
+> Acquire::https::Proxy "http://proxy.example.com:80/";
 
-> $ echo 'export https_proxy="http://proxy.example.com:80/"' >> /etc/profile
+2. Export the corporate proxy 
+
+> $ export http_proxy="http://proxy.example.com:80/"
+
+> $ export https_proxy="http://proxy.example.com:80/"
 
 > $ export no_proxy="10.10.10.10,127.0.0.1,localhost" 
 
 #### Setup corporate proxy in docker engine (If run this setup behind the proxy)
 
-> $ mkdir -p /etc/systemd/system/docker.service.d
+> $ sudo mkdir -p /etc/systemd/system/docker.service.d
 
-> $ echo '[Service]' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+Add the following lines in **/etc/systemd/system/docker.service.d/http-proxy.conf**
 
-> $ echo 'Environment="HTTP_PROXY=http://proxy.example.com:80/"' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+> [Service]
 
-> $ echo 'Environment="HTTPS_PROXY=http://proxy.example.com:80/"' >> /etc/systemd/system/docker.service.d/http-proxy.conf
+> Environment="HTTP_PROXY=http://proxy.example.com:80/"'
 
-> $ systemctl daemon-reload && service docker restart
+> Environment="HTTPS_PROXY=http://proxy.example.com:80/"
+
+> $ sudo systemctl daemon-reload && sudo systemctl enable docker && sudo service docker restart
 
 ### Install the following packages
 
@@ -122,7 +128,7 @@ Run a sample client code to predict images(See mnist-client.py)
 
 > $ pip3 install pandas
 
-> $ cd ~/KFLab/tf-mnist/minikf
+> $ cd ~/KFLab/tf-mnist
 
 > $ TF_MNIST_IMAGE_PATH=data/7.png python3 mnist_client.py
 
@@ -140,3 +146,5 @@ Use these credentials to log in to all services, for example, JupyterHub, Rok:
 **username:** user
 
 **password:** 12341234
+
+
