@@ -6,7 +6,6 @@
     - [Installation and Setup Kubeflow Lab](#installation-and-setup-kubeflow-ab)
     - [Kubeflow dashboard](#kubeflow-dashboard)
 
-# Setup MiniKF in Vagrantbox on Ubuntu_18.04
 ## System requirements
 We recommend that your system meets the following requirements:
 
@@ -19,11 +18,12 @@ We recommend that your system meets the following requirements:
 
 1. **Install Vagrant**
 
-   Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
+
+Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
 
 2. **Install Virtualbox**
 
-    Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
+Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
 
 3. **Install vagrant plugins**
 
@@ -49,6 +49,7 @@ We recommend that your system meets the following requirements:
 
 This will take a few minutes to complete. Once the installation is completed successfully.
 
+
 2.  Login to minikf VM
 
         
@@ -69,9 +70,9 @@ Setup the corporate proxy (If run this setup behind the proxy)
 2. Export the proxy
 
        ```
-      export http_proxy="http://proxy.example.com:80/"
-      export https_proxy="http://proxy.example.com:80/"
-      export no_proxy="10.10.10.10,127.0.0.1,localhost"
+       export http_proxy="http://proxy.example.com:80/"
+       export https_proxy="http://proxy.example.com:80/"
+       export no_proxy="10.10.10.10,127.0.0.1,localhost"
 
        ```
 
@@ -80,6 +81,7 @@ Setup the corporate proxy (If run this setup behind the proxy)
 
         
         $ sudo mkdir -p /etc/systemd/system/docker.service.d
+
 
 Add the following lines in /etc/systemd/system/docker.service.d/http-proxy.conf
 
