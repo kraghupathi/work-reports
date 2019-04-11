@@ -3,7 +3,7 @@
     - [System requirements](#system-requirements)
     - [Prerequisites](#prerequisites)
     - [Setup vagrant machine](#setup-vagrant-machine)
-    - [Installation and Setup Kubeflow Lab](#installation-and-setup-kubeflow-ab)
+    - [Setup Kubeflow application](#setup-kubeflow-application)
     - [Kubeflow dashboard](#kubeflow-dashboard)
 
 ## System requirements
@@ -54,7 +54,7 @@ We recommend that your system meets the following requirements:
         
         $ vagrant ssh
 
-## Installation and Setup Kubeflow Lab
+## Setup Kubeflow application
 
    Setup the corporate proxy (If run this setup behind the proxy)
 
@@ -103,7 +103,7 @@ We recommend that your system meets the following requirements:
         
         $ sudo apt-get update && sudo apt-get install -y curl wget nfs-server python3-pip virtualenv
 
-5. Setup Kubeflow and deploye the mnist model
+5. Setup Kubeflow and deploy the mnist model
 
 
    Refer [link](https://github.com/CiscoAI/KFLab/blob/master/tf-mnist/README.md#prerequisites) to setup the kubeflow
