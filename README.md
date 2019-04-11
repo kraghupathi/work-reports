@@ -16,16 +16,15 @@ We recommend that your system meets the following requirements:
 ## Prerequisites
 
 
-1. **Install Vagrant**
+1. Install Vagrant
 
+ Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
 
-Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
+2. Install Virtualbox
 
-2. **Install Virtualbox**
+ Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
 
-Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
-
-3. **Install vagrant plugins**
+3. Install vagrant plugins
 
         
         $ vagrant plugin install vagrant-disksize
@@ -47,7 +46,7 @@ Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
         
         $ vagrant up
 
-This will take a few minutes to complete. Once the installation is completed successfully.
+    This will take a few minutes to complete. Once the installation is completed successfully.
 
 
 2.  Login to minikf VM
@@ -57,9 +56,10 @@ This will take a few minutes to complete. Once the installation is completed suc
 
 ## Installation and Setup Kubeflow Lab
 
-Setup the corporate proxy (If run this setup behind the proxy)
+   Setup the corporate proxy (If run this setup behind the proxy)
 
 1.  Add the following lines in /etc/apt/apt.conf file
+
 
        ```
        Acquire::http::Proxy "http://proxy.example.com:80/";
@@ -83,7 +83,7 @@ Setup the corporate proxy (If run this setup behind the proxy)
         $ sudo mkdir -p /etc/systemd/system/docker.service.d
 
 
-Add the following lines in /etc/systemd/system/docker.service.d/http-proxy.conf
+   Add the following lines in /etc/systemd/system/docker.service.d/http-proxy.conf
 
        ```
        [Service]
@@ -105,7 +105,7 @@ Restart docker service
 5. Setup Kubeflow and deploye the mnist model
 
 
-Refer [link](https://github.com/CiscoAI/KFLab/blob/master/tf-mnist/README.md) to setup the kubeflow
+   Refer [link](https://github.com/CiscoAI/KFLab/blob/master/tf-mnist/README.md) to setup the kubeflow
 
 
 ## Kubeflow dashboard
