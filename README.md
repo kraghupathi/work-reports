@@ -1,12 +1,12 @@
 # Table of Contents
-- [Setup MiniKF in Vagrantbox on Ubuntu_18.04](#setup-minikf-in-vagrantbox-on-ubuntu_18.04)
+- [Setup MiniKF in Vagrantbox on Ubuntu](#setup-minikf-in-vagrantbox-on-ubuntu)
     - [System requirements](#system-requirements)
     - [Prerequisites](#prerequisites)
     - [Setup vagrant machine](#setup-vagrant-machine)
     - [Setup Kubeflow application](#setup-kubeflow-application)
     - [Kubeflow dashboard](#kubeflow-dashboard)
 
-# Setup MiniKF in Vagrantbox on Ubuntu_18.04
+# Setup MiniKF in Vagrantbox on Ubuntu
 
 ## System requirements
 We recommend that your system meets the following requirements:
