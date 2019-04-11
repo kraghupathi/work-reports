@@ -18,11 +18,11 @@ We recommend that your system meets the following requirements:
 
 1. Install Vagrant
 
- Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
+   Refer [link](https://www.vagrantup.com/downloads.html) to install vagrant
 
 2. Install Virtualbox
 
- Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
+   Refer [link](https://www.virtualbox.org/wiki/Downloads) to install virtualbox
 
 3. Install vagrant plugins
 
@@ -46,7 +46,7 @@ We recommend that your system meets the following requirements:
         
         $ vagrant up
 
-    This will take a few minutes to complete. Once the installation is completed successfully.
+      #This will take a few minutes to complete. Once the installation is completed successfully.
 
 
 2.  Login to minikf VM
@@ -62,6 +62,7 @@ We recommend that your system meets the following requirements:
 
 
        ```
+
        Acquire::http::Proxy "http://proxy.example.com:80/";
        Acquire::https::Proxy "http://proxy.example.com:80/";
 
@@ -92,7 +93,7 @@ We recommend that your system meets the following requirements:
 
        ```
 
-Restart docker service
+   Restart docker service
 
         
         $ sudo systemctl daemon-reload && sudo systemctl enable docker && sudo service docker restart
