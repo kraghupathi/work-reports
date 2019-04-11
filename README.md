@@ -58,7 +58,7 @@ We recommend that your system meets the following requirements:
 
    Setup the corporate proxy (If run this setup behind the proxy)
 
-1.  Add the following lines in /etc/apt/apt.conf file
+1.  Add the following lines in **/etc/apt/apt.conf** file
 
 
 
@@ -77,14 +77,14 @@ We recommend that your system meets the following requirements:
 
        ```
 
-3. Add the proxy in Docker enginer
+3. Add the proxy in Docker engine
 
 
         
         $ sudo mkdir -p /etc/systemd/system/docker.service.d
 
 
-   Add the following lines in /etc/systemd/system/docker.service.d/http-proxy.conf
+   Add the following lines in **/etc/systemd/system/docker.service.d/http-proxy.conf**
 
        ```
        [Service]
