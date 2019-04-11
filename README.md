@@ -61,8 +61,8 @@ We recommend that your system meets the following requirements:
 1.  Add the following lines in /etc/apt/apt.conf file
 
 
-       ```
 
+       ```
        Acquire::http::Proxy "http://proxy.example.com:80/";
        Acquire::https::Proxy "http://proxy.example.com:80/";
 
@@ -106,7 +106,7 @@ We recommend that your system meets the following requirements:
 5. Setup Kubeflow and deploye the mnist model
 
 
-   Refer [link](https://github.com/CiscoAI/KFLab/blob/master/tf-mnist/README.md) to setup the kubeflow
+   Refer [link](https://github.com/CiscoAI/KFLab/blob/master/tf-mnist/README.md#prerequisites) to setup the kubeflow
 
 
 ## Kubeflow dashboard
