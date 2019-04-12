@@ -68,10 +68,10 @@ This tutorial demonstrates:
    We are creating and storing the docker image in the local machine.
    To upload the image in the docker-hub and use it, refer the URL : https://github.com/CiscoAI/KFLab/tree/master/tf-mnist
 
-       ```
-       IMAGE=belrssi-demo:v1
-       docker build . --no-cache  -f Dockerfile -t ${IMAGE}
-       ```
+        ```
+        IMAGE=belrssi-demo:v1
+        docker build . --no-cache  -f Dockerfile -t ${IMAGE}
+        ```
 
 2. Run the training job setup script
 
@@ -79,10 +79,8 @@ This tutorial demonstrates:
 	      $ ./train.bash
         
         # Ensure that all pods are running in the namespace set in variables.bash. The default namespace is kubeflow
-
-        ```
-        $ kubectl get pods -n kubeflow
-        ```
+        kubectl get pods -n kubeflow
+        
 
 3. Start TF serving on the trained results
 
