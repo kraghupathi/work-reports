@@ -30,7 +30,7 @@
 
        $ vagrant box add ubuntu/xenial64
 
-5. Run the vagrantfile
+5. Run VM to setup the cluster
 
 
        $ vagrant up
