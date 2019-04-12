@@ -123,8 +123,10 @@ You should see the following result
 Point `IMAGE` to your training image. We are creating and storing the docker image in the local machine.   To upload the image in the docker-hub and use it, refer the [URL](https://github.com/CiscoAI/KFLab/tree/master/tf-mnist)
 
         ```
-        IMAGE=belrssi-client:v1
-        docker build . --no-cache  -f Dockerfile -t ${IMAGE}
+        $ cd webapp/
+        $ IMAGE=belrssi-client:v1
+        $ docker build . --no-cache  -f Dockerfile -t ${IMAGE}
+        $ cd ../
         ```
 Expose your web application on the Internet is NodePort. Define variables in variables.bash and run the following script:
 
