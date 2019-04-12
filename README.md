@@ -35,7 +35,7 @@
 
        $ vagrant up
 
-6. Loging into the vagrantbox
+6. Loging into the VM
 
 
        $ vagrant ssh
