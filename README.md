@@ -76,7 +76,7 @@ This tutorial demonstrates:
 2. Run the training job setup script
 
         
-	      $ ./train.bash
+        $ ./train.bash
         
         # Ensure that all pods are running in the namespace set in variables.bash. The default namespace is kubeflow
         kubectl get pods -n kubeflow
